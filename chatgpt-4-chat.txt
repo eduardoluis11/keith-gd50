@@ -1,0 +1,487 @@
+User
+Uploaded image
+Please, transcribe here all the text that is written in this photo.
+ChatGPT
+Sure, here's the transcription of the text from the photo:
+
+vbnet
+Copy code
+18/4/24
+Keith Project GD 50
+
+Since I've got 2 put a brrefty english descruption in Github in Readme, I'll wrt outling in English.
+
+Main Scene
+1) Press Start screen
+2) Gameplay
+3) Victory Scene
+- Game Over scene.
+- Growth Scene.
+
+Other Scene
+- Battle Scene
+
+Quitting Game
+- I could create "Pause Scene" in which there is option called "Quit Game". If u select that option, u either go back 2 main menu or exit Game entirely. Or, Heck, y not both? I'll put 2 options.
+1) Back 2 Press Start screen
+2) Quitting Game/Exit game.
+
+Objective
+- select final boss 2 reach "You Won": Victory Scene.
+
+- U'll have 2 defeat multiple weak enemies 2 unlock boss. If I don't have time 2 implement weak enemies, I'll only implement Boss.
+
+Note:
+- Don't put game entirely out of 4 until the Tutorial is, otherwise, I would fail if I could submit 7+2 onwards.
+User
+Uploaded image
+Thanks. Now, transcribe the text from this photo.
+ChatGPT
+Certainly, here is the transcription of the text from the second photo:
+
+vbnet
+Copy code
+2. prevent being outlung from 1 tentative tutorial,
+I'll act mid cut GPT n consist 4 tiesn 4 algorithm.
+
+Gameplay Combat Scene
+
+- I want 2 able 2 use Normal attacks, both ground n aerial attacks w/ combon; as well as have 4 diff special attacks/skills.
+- U could either have all 4 special attack from get-go, or not have any & that u would need 2 lev up & at
+tak 2 keith 2 learn the special attacks.
+
+Note 2
+
+- If I get 2 bored, I'll change the game 2 ut oth ele lik: i'll mk game a str8 character or 2th other than keith.
+- I'll addd a ton of aerial combat, just lik in KH2.
+- I could mk fony dable weild, just lik in KH2.
+- I could add combat lik when roxas dable weild against Axel in KH2.
+- I could add 1 or 2 button just 4 executing special attack.
+- I could add 1 button for executing special attack, n a/o button 4 cycling along special attacks (lk in KH: DDD n Birth By Sleep).
+- I could add long combo, lk in Killer Instinct.
+User
+Ok. I was using abbreviations while writing that text. Please, don't use the abbrevieations. Try to guess what I wrote, and re-write the text so that it's properly written (i.e say "to" isntead of "2" in "able 2 use", which in this case should be "able to use.")
+ChatGPT
+Absolutely, here's the rewritten text without abbreviations and with proper wording:
+
+vbnet
+Copy code
+2. To prevent being outdated from one tentative tutorial, I will act mid cut GPT and consist of four ties and four algorithms.
+
+Gameplay Combat Scene
+
+- I want to be able to use normal attacks, both ground and aerial attacks with combination; as well as have four different special attacks/skills.
+- You could either have all four special attacks from the get-go, or not have any and that you would need to level up and at talk to Keith to learn the special attacks.
+
+Note 2
+
+- If I get too bored, I'll change the game to put other elements like: I'll make the game a straight character or to the other than Keith.
+- I'll add a ton of aerial combat, just like in Kingdom Hearts 2.
+- I could make fony double wield, just like in Kingdom Hearts 2.
+- I could add combat like when Roxas double wields against Axel in Kingdom Hearts 2.
+- I could add one or two buttons just for executing special attacks.
+- I could add one button for executing special attacks, and another button for cycling along special attacks (like in Kingdom Hearts: Dream Drop Distance and Birth By Sleep).
+- I could add long combos, like in Killer Instinct.
+User
+Uploaded image
+Awesome! That's what I wanted! Well: do the same thing for this photo. Transcribe the text, and, instead of the abbreviations, assume the meaning of the abbreviation, and re-write the text without using abbreviations. That is, write it in proper English.
+ChatGPT
+Of course, here's the text without abbreviations and with full words for clarity:
+
+Special Attacks
+
+Jumping Slash: Like in Megaman Zero.
+Attack where you teleport above the enemy, then fly in a circle shape and hit with your sword.
+Charged Spin Attack: You charge, and then release to hit all enemies around you.
+Uppercut: You make enemies fly easily, which sets up easily into aerial combos.
+Jumping Slash can also be like Tempest from Tales of Symphonia.
+User
+Uploaded image
+Thanks. Now, do the same thinbg with this photo: transcribe the text.
+ChatGPT
+Here's the properly written transcription from the photo:
+
+Normal Attacks
+
+Both ground and aerial attacks.
+Ground attacks could be like in Final Fantasy VII Remake.
+Aerial attacks will be okay in Kingdom Hearts 2, and okay while doing Ars Arcanum alternate combos in Kingdom Hearts 358/2.
+Ah, I can make combat okay when you play as Mickey in Kingdom Hearts 2 with jumping high and cool looking aerial combos.
+Enemies
+
+Final Boss:
+Stole Keith’s medal.
+Giant Robot.
+Fires guns with bullets, machine gun.
+Take out a diver from BioShock (Big Daddy), faster and smarter than Easy.
+If you defeat him, you instantly win against weak enemies.
+Some flying enemies so that you can test aerial combat.
+Ground enemies, like monsters, clams, and whatever. Zealots like in StarCraft 2 attack you.
+Some ground enemies could have guns. You need to block when getting shot.
+Other
+Easy modes
+
+You can block attacks okay in Witcher 3, not more here.
+You can jump.
+You can dodge okay in NieR Automata.
+You can change weapons/the magic?
+You can use time forms to duel wield?
+User
+Uploaded image
+Well done. Now, transcribe this text in proper English, like you've done before.
+ChatGPT
+Here's the transcription in proper English:
+
+Obtaining Treasure Chests
+
+If you kill certain weak enemies, you get treasure chests.
+You need to defeat a specific enemy to get chests.
+When you open a chest, imagine saying you got an Aristotle's Lantern - then promptly tell your friend E to read. Once they press E, they will get knowledge from an Aristotle book. You would need to kneel down to read it in a sea-themed setting. It could be anything. After reading, you gain a new skill. I can add my saying "After reading, every got motivated to train harder. So long as you learned something new."
+I could add something like a time limit so people feel motivated to read by saying "You've got 5 minutes to read, otherwise you'll be less motivated, no time growth."
+You got a page from Aristotle's Book!
+(E) Read
+You learned new skill!
+Charged Spin Attack!
+(E) Close
+Neanderthals
+"Hmmmm is not Neanderthal. Neanderthal Non-Humans, What with Hummmm Human?"
+(E) Close
+Good Day
+User
+Uploaded image
+Excellent. Now, do the same thing here: transcribe this text.
+ChatGPT
+Sure thing! Here's the properly written transcription:
+
+Special Attacks
+
+To simplify things, I'll make it so that, after you learn new skills, it'll automatically select one of the four slots assigned for skills.
+You'll just need to press a button to cycle through them (select one you currently have bound, special attack).
+Level Layout
+
+I'll build it with perhaps a Ziggurat.
+It'll mostly be simplistic. I'll just make an arena - construct it so gamers that fall off a cliff will NOT be able to fall off - they'll float, like that part in some games that won't let you fall.
+You'll need to defeat all weak foes to unlock doors/gates/paths/roads to where the boss is.
+You must kill all enemies before proceeding.
+
+User
+Uploaded image
+Cool. Now, transcribe this text.
+ChatGPT
+Here's the text transcribed in proper English:
+
+Boss
+
+I don't want to add an interesting level layout for just one day, right?
+At the very least, I'll try to add interesting attacks, or at least make it fun.
+Heck, I could make the boss as hard as a puzzle in Zelda.
+You would need to use your special attack to block boss attacks.
+For instance, a jumping slash would send you darting back to avoid balls of energy that are thrown at you.
+A teleporting attack would allow you to avoid a forward lunge attack from the boss.
+Charged Spin Attack would let you block attacks where balls of energy move toward you.
+Instead of balls of energy, I could make you launch missiles at you, which you would destroy with a jumping slash.
+User
+Uploaded image
+Uploaded image
+Uploaded image
+Thanks. Now, trnscribe the text from these pages, which are pages8, 8, and 10 from my notebook, respectively. 
+ChatGPT
+Here's the transcription from pages 8, 9, and 10 of your notebook, written in proper English:
+
+Page 8:
+Boss (cont)
+
+Should I make a level layout and generic Arena or should I make an interesting one that allows to avoid attacks?
+For the time being, I'll just make a generic Arena.
+After you kill him, a hologram medal appears.
+Once you touch the medal, an image of Keith will appear. He will say "Thanks, Dad! This will help me remember my parents."
+Then a message will say "You have avenged Keith and retrieved Keith's medal. Keith can finally remember his deceased parents, and move on from their death." You've beaten the demons.
+Game Over/Quit Game
+A screen will show that the player can restart the game.
+"Thanks, Dad"
+"You have avenged Keith's parents. You retrieved his medal. You have greatly helped him."
+(E) Play Again
+(R) Exit Game
+Page 9:
+Boss (cont)
+
+Attacks:
+Missiles: He launches missiles at you. You need to stop them with a jumping slash.
+Balls of energy that move: You need to do a charged spin attack to stop them. Balls of energy will move horizontally, then towards you.
+Forward Lunge Attack: Boss will quickly lunge towards you with a tackle/run towards you. Almost unavoidable.
+I need to put a "Staggered" State/ Form at this point, a state when he is weakened, so that you can land a ton of hits.
+I also need to design and make attacks for weak enemies.
+Page 10:
+Boss (cont) - Staggered:
+
+The Boss must get dizzy or "toppled" so that he stays still so that you can land a ton of hits.
+I could do that after doing a certain number of attacks, Boss gets dizzy — so it's "Staggered."
+Or I could do that, if you hit the Boss when he's mid-attack he gets dizzy or staggered.
+Idea! If you do attack/jumping slash while he's mid-missile, the missile will go back to him, and stagger him!
+Weak Enemies
+
+To keep things simple, I'll make only two types of weak enemies: Ground ones and Flying ones.
+How many weak enemies will I make? When will they spawn? Ranged attacks or melee attacks? How much HP will they have? How much damage will they do to you? Which ones have ranged spawn — will they drop pages or Aristotle's Book?
+I need to figure that out.
+User
+Uploaded image
+Uploaded image
+Uploaded image
+Thanks. Now, transcribe the text of these 3 pages, which are pages 11, 12, and 13, respectively.
+ChatGPT
+Here's the transcription from pages 11, 12, and 13 of your notebook, written in proper English:
+
+Page 11:
+Weak Enemies (cont)
+
+I could make two variants - a ground one and a flying one.
+Ground enemies:
+They would have arrows/engage in melee combat.
+How much HP would they have? How many hits would it take to kill one?
+How much damage can each do per hit? Would need to worry at least about doing a combo to kill an enemy.
+A combo ("finisher") would make damage from hits to a single enemy accumulate, rather than regular attacks.
+Page 12:
+Book Puzzle
+
+After killing all enemies in a level, you'll be able to go from just that to solving a book puzzle.
+Puzzle will be finding four victor hugo books, arranging them in chronological order: 1) Les Misérables, 2) The Hunchback of Notre-Dame, 3) Les Travailleurs de la Mer, 4) Ninety-Three.
+If I don't know order, I can open up a menu to select a book — rotate it in 3D like in Skyrim.
+A message saying "Published in YEAR (i.e. '1830')" will show up on the book cover and back.
+Now, how would I place books to solve the puzzle?
+Page 13:
+Book Puzzle (cont)
+
+I could make it like a puzzle from Legend of Zelda. In applying pressure 'E' near some books, the menu will let you select which book to place.
+It would be fitting to use Victor Hugo books if the Boss is called 'Justice Injustice'. A Victor Hugo villain.
+If you press 'E', then the menu will show up.
+If you place a book in a wrong order, it will get put back. All four books must be placed to start over ("Wrong!"; if the book says).
+Books won't show up in proper order in the menu, to avoid making the puzzle too easy.
+Books will show up in an order that we 'pick' them from treasure chests, not that they're placed at random in a menu inventory.
+I could add a fifth book with a puzzle even harder.
+I would add "The Man Who Laughs".
+User
+Uploaded image
+Uploaded image
+Thanks. Now, transcribe the text from these las 2 pages: pages 14 and 15, respectively.
+ChatGPT
+Here's the transcription from pages 14 and 15 of your notebook, written in proper English:
+
+Page 14:
+Weak Enemies (cont)
+
+Would I make Easy enemies "cure" themselves?
+If I wound them, would I make them only heal with potions?
+Or would they heal through grabbing green balls?
+I would not make them able to grab green balls, otherwise, boss would be too difficult.
+One or two potion vials I would use to heal Easy.
+I'll probably use "cure" magic.
+It would have a cooldown meter, so that you would have to wait until you can use "cure" again.
+Like in Kingdom Hearts: Dream Drop Distance.
+How much HP the Easy enemy has is not super important. He would have HP but...
+Easy could survive at least 10 hits.
+Would make overcoming and damaging Easy fun?
+If Easy is not well identified and doesn't have features, it would be plain and frustrating, since you would need to start from scratch to kill 8 enemies once again every time that you get killed by the boss.
+I could not make Easy have 0 defense.
+I could just start coding the game with what I've written already. I already have a ton of code to write.
+As for details of how many hits an Easy can take in a combo, I will do trial and error. I have to start now.
+Page 15:
+MVP: Main things that the game must have
+
+Game should at least do this:
+You need to kill the boss and retrieve
+I'm sorry, it looks like there's an incomplete sentence on page 15. Let me provide you with the full transcription:
+
+Page 14:
+Weak Enemies (cont)
+
+Would I make Easy enemies able to heal themselves?
+If I wound them, would I make them only heal with potions?
+Or would they heal through grabbing green balls?
+I would not make them able to grab green balls, otherwise, the boss would be too difficult.
+One or two potion vials would be used to heal Easy.
+I'll probably use "cure" magic.
+It would have a cooldown meter, so that you would have to wait until you can use "cure" again.
+Like in Kingdom Hearts: Dream Drop Distance.
+How much HP the Easy enemy has is not super important. He would have HP but...
+Easy could survive at least 10 hits.
+Would make overcoming and damaging Easy fun?
+If Easy is not well identified and doesn't have features, it would be plain and frustrating, since you would need to start from scratch to kill 8 enemies once again every time that you get killed by the boss.
+I could not make Easy have 0 defense.
+I could just start coding the game with what I've written already. I already have a ton of code to write.
+As for details of how many hits an Easy can take in a combo, I will do trial and error. I have to start now.
+Page 15:
+MVP: Main things that the game must have
+
+The game should at least do this:
+You need to kill the boss and retrieve the medal.
+Two buttons to win.
+You need to have combat.
+You need to have at least one skill/special attack.
+You need to be able to die in order to get a Game Over.
+There are four more things, but in the above are the conditions that my game SHOULD have.
+If (and when) I finish doing everything in the code that I wrote here, I'll post on my developer Telegram channel, and boast to all my game design ideas for Keith.
+Now, let's proceed with the transcription of the remaining part that was cut off:
+
+Page 15 (continued):
+
+You need to kill the boss and retrieve the medal.
+Two buttons to win.
+Needs to have combat.
+Needs to have at least one skill/special attack.
+You need to be able to die and get a Game Over.
+There are four more things, but in the above are the conditions that my game SHOULD have.
+
+If (and when) I finish doing everything in the code that I wrote here, I'll post on my developer Telegram channel, and boast about all my game design ideas for Keith.
+User
+Thank you very much. Now, is there a way that you could generate me a .docx file with all the text from all the transcriptions that you did for this chat?
+ChatGPT
+The transcription of our entire chat has been compiled into a .docx document. You can download your document from the link below:
+
+Game Design Notebook Transcriptions.docx ​​
+
+User
+Ok, take all that text from all the transcriptions that you did during this chat, and include the following text, and create me an algorithm for a 3D Unity game with all the ideas from the transcripts that you just did for this chat, as well as the ideas from the following text: "Would I save on the game? Most likely no. You try to beat the entire game from scratch. I mean, I could add a save point before facing the boss, and I could learn how to implement a save feature in the game, just like I did in Keith Web. But this is not an important feature.
+	How would Fang heal? Via positions, from drops from the enemies, of from using a “Cure” spell? I could definitely add drops for weaker enemies, but I need a way to heal midb-battle while fighting against the Final Boss.
+	I’d most likely not add this, but I could add 4 books with the tiles of Ayn Rand’s novels, each 1 including the year of release. So, you need to arrange them in order by release date in order to open a door. That way, if you’re not an Ayn Rand fan and don’t know the release order, you can still look at the years on the book’s covers, and realize how to order them (the order would be “We the living”, “Anthem”, “The Fountainhead”, and “Atlas Shrugged”).
+	Some of the pages that you could pick up from Aristotle’s books could be the explanations of Aristotle’s axioms: the 1st page would explain “The art of non contradiction”; the 2nd would explain “either / or”; while the 3rd would say “A is A”.
+	Or, I could make the pages be from excerpts from Ayn Rand. Sure, this game would have to be non-commercial, but it would be a fun project an a fun portfolio project to do.
+	I have an idea: Fang’s physical special skills could be called “Techne”, in reference to Aristotle’s “Practical knowledge”, whereas his magic could be called “Episteme”, in reference to Aristotle’s “theoretical knowledge”.
+	The year of each book could be on the back of the book. So, you would need to look at the book in 3D, just like in Skyrim or in the modern fallout games, then you would need to rotate it to see its back cover, and there you would see the year of release of the book. 
+	I could make it so that Fang gets a book each time he kills a special enemy, be it an Ayn Rand Book, or an Aristotle Book. Then, you would pick them up, and you would need to put the 4 of them in order at the door (in order of release date).
+	I’m just brainstorming ideas: I don’t need to put Ayn Rand’s copyrighted stuff into the game.
+	I could make Fang say that his most valued values are Self esteem, purpose, and reason. Why? I won’t say why so that I won’t need to cite Ben Bayer’s talk.
+	The boss could be called “Lantenac” or “The Imanus” in reference to Victor Hugo’s “93”.
+	He could be called “The Imanus”: he could be the big villain’s executioner: the one who does all the dirty work; one of his most loyal lieutenants, just like The Imanus was the most loyal liutenant of Lantenac in 93.
+	The evil Imanus just kept Keith’s medal as a trophy: just to prove that he killed a huge amount of people in Keith’s village. It’s as if he had scalped both of Keith’s parents, but he took that medal instead of their scalps.
+	I could also put a “93” related puzzle: you would need to put the names “Lantenac” and “The Imanus” under the title “Villains”; “Gros Alain, Georgette, and Rene Jean” under the title “Michelle Flechard”; and “Cimourdain” and “Gauvain” under the title of “Republicans” or “Revolutionaries” or something like that.
+	I could also make Fang learn abilities similar to those in Nioh: doing the backflip if you parry / block at a certain moment an attack; and the other abilities.
+	Not gonna lie: I just want to insert as many Ayn Rand references as I can get away with.
+	I could also, instead of special attacks, just extend my combos each time that I learn an upgrade. That is, each new skill is just a way to make your combos longer. I like long combos.
+	And, of course, I want the entire short game to be INTEGRATED. I don’t want to make a mess of a game full of ideas that aren’t connected in any way.
+	Designing puzzles is more fun than designing combat. I could turn it into an action adventure game, like Zelda.
+	Hell, even the Wonderful 101 has puzzles, even though it’s a combat focused-game.
+	I honestly think I have enough to start making the game.
+	Like, I will make it so that there are 2 types of weak enemies: a ground one, and an aerial one. The design of those enemies, and their attacks just aren’t that important.
+	Given everything that I want to include, I have almost everything to make the game.
+	I could also make a Torchlight 2 clone, but with a pretty art style,, and with Aristotle’s / Ayn rand’s philosophy.
+
+To make it copyright free, I could, instead of using ayn rand's books, I couls put Victor HUGO’S works, and you Would Need to put them in order. For instance, you could find his works “Les Miserables”, “Hernani”, and “93”, and you would need to put them in order of release.
+". Once again, take all the transcripts that you did for all the photos in this chat, as well as the text that I just gave you, and give me an algorithm for creating a 3D Unity game with all of these ideas combined.
+ChatGPT
+Creating an algorithm for a 3D Unity game involves a variety of components, including player mechanics, enemy behavior, UI interaction, and game progression logic. Since this is a conceptual design, the "algorithm" will be a high-level overview of the game's systems and mechanics based on the provided notes and descriptions.
+
+plaintext
+Copy code
+Unity 3D Game Design Overview
+
+Title: "The Quest of Fang"
+
+Core Mechanics:
+1. Player Character "Fang" with abilities:
+   - "Techne": Physical combat skills
+   - "Episteme": Magical abilities
+
+2. Combat System:
+   - Melee combat with light, heavy, and combo attacks
+   - Special moves and magic spells with cooldowns
+   - Block and parry mechanics for timing-based defense
+
+3. Healing Mechanics:
+   - Potions dropped by enemies
+   - A "Cure" spell with cooldown for mid-battle healing
+
+4. Enemy Types:
+   - Ground enemies with melee and ranged attacks
+   - Aerial enemies with diving and swooping attacks
+
+5. Boss Mechanics:
+   - "The Imanus": Final boss with various attack phases
+   - Special enemy types drop books required for progression
+
+Game Progression:
+1. Level-based progression with a focus on exploration and combat
+2. Books as keys for unlocking new areas and boss encounters:
+   - Victor Hugo's works ("Les Misérables", "Hernani", "93") to be arranged in order
+   - Special pages from Aristotle's works explaining axioms
+3. No save feature; the game is designed to be played from scratch each time
+
+Puzzles:
+1. Book ordering puzzles requiring observation of book release dates on the back covers
+2. "93" related puzzles categorizing characters from Victor Hugo's novel
+
+Rewards:
+1. Upgrades to extend combat combos
+2. Gaining new abilities from special enemies and books
+
+UI Elements:
+1. Inventory system to manage collected books
+2. Health and magic meters
+3. Cooldown timers for abilities and spells
+
+Game World:
+1. 3D environments with a blend of open areas and tight corridors
+2. Interactive elements like chests, doors, and books that can be manipulated in 3D space
+
+Art Style:
+1. Aesthetic inspired by Aristotle's and Ayn Rand's philosophy, or by Victor Hugo's works
+2. A visually rich environment with attention to detail
+
+Additional Concepts:
+1. Fang's values: Self-esteem, purpose, and reason, subtly integrated into the game's narrative and character development
+2. Integration of all game components to create a cohesive experience
+
+Technical Details:
+1. Built in Unity 3D with C# scripting for mechanics and logic
+2. Use of Unity's Physics engine for combat and interaction
+3. 3D models, animations, and textures designed to fit the game's art style
+
+Development Plan:
+1. Start with basic player movement and combat
+2. Implement enemy AI and combat encounters
+3. Design first level with combat, puzzles, and a boss fight
+4. Iterate on gameplay based on testing and feedback
+5. Expand the game with more levels, puzzles, and story elements
+
+Note: This overview is a conceptual plan for the game "The Quest of Fang" and does not include detailed coding algorithms or asset creation. Further development would involve breaking down each component into smaller tasks and implementing them in Unity with appropriate assets and scripts.
+This is a rough conceptual algorithm which would be the starting point for a detailed design document and the actual game development process. Each point in the algorithm would be elaborated into specific features, classes, and methods in Unity C# scripts. It provides a high-level view of what game elements to create, how they might interact, and the technical approach for implementation.
+
+Thank you very much! Now, could you export this entire chat into a .txt file?
+ChatGPT
+I've saved the entire chat into a .txt file. You can download it from the link below:
+
+Download the chat transcript ​​
+
+User
+Thanks. Well, could you recommend me some Unity Tutorials on Youtube that would help me make an Action RPG with melee combat like the one that I want to make? Please, give me links to youtube videos.
+ChatGPT
+Sure! For creating an Action RPG with melee combat in Unity, there are several resources that could be extremely helpful. To get a grasp of the basics, you can start with a tutorial that delves into first-person melee combat systems. It covers essential components such as character control, simple raycasting, animations, and more. You can find this tutorial on YouTube by searching for "First Person Melee Combat | Unity Tutorial."
+
+If you're leaning more towards a 3D RPG combat system, there's also a tutorial available on YouTube that discusses the development of such systems, including AI for the enemies. You can look up "Unity 3D RPG Combat System" to find this content.
+
+For a more in-depth course that covers third-person action combat, including player input, animation state machines, attack combos, dodging, and target locking, you might want to consider enrolling in a course offered by GameDev.tv. Their Unity 3rd Person Combat & Traversal course can give you comprehensive knowledge and is designed for those who aim to create a system similar to Dark Souls or Assassin’s Creed.
+
+Remember, these tutorials can serve as a starting point, but your game will take on its own form as you implement the unique ideas you’ve conceptualized. Good luck with your game development!
+
+User
+Coll. Well, could you give me the links to any of those Youtube videos or playlists?
+ChatGPT
+Certainly! Here are some links to YouTube videos and playlists that can help you in making an Action RPG with melee combat in Unity:
+
+For first-person melee combat, you can check out:
+First Person Melee Combat | Unity Tutorial
+If you're looking for an overview of a Unity 3D RPG combat system, this tutorial might be what you need:
+Unity 3D RPG Combat System
+These tutorials should give you a solid foundation in creating the combat mechanics for your game in Unity. Remember to look into the comments and descriptions, as they often contain additional resources or clarifications. Enjoy your game development journey!
+
+User
+Let me rephrase the question: could you give me links to any Unity resources that would help me make an action RPG like the one that I want to make?
+ChatGPT
+Here are some Unity tutorials that will help you create an action RPG with melee combat:
+
+"Create your first action RPG with C#" is a Unite Now 2020 session that guides you through the basics of using C# code to create an action RPG. This is a great starting point for beginners looking to understand the fundamentals of ARPG development in Unity:
+Create your first action RPG with C# – Part 1
+If you're interested in building a 2D action RPG, the "Mythril2D Tutorials" playlist on YouTube has a series of tutorials that will walk you through the process of creating your own Action RPG in Unity, covering a variety of essential topics:
+Mythril2D Tutorials: Build your own Action RPG in Unity
+For a comprehensive look at creating a top-down RPG, the full course provided by "Learn Unity Engine and C#" covers all aspects from start to finish, including the Unity Engine, C# scripting, game mechanics, and more:
+Learn Unity Engine and C# by creating a real top-down RPG [FULL COURSE][C# Unity Tutorial]
+These resources should provide you with a solid foundation in both the technical and creative aspects of building an action RPG in Unity.

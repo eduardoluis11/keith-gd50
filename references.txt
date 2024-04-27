@@ -1,0 +1,49 @@
+References
+
+
+
+
+1) ChatGPT 4.0. It transcribed all of my notes from my notebook. I took pictures of my notebook with my game design ideas, and asked it to transcribe it.
+
+2) Usare esto para crear el combate con espada en Keith para GD50: tutorial de combate de unity en 3D (AGREGARLO A MIS FUENTES): https://www.youtube.com/watch?v=gHaJUNiItmQ 
+
+3) Este video también menciona brevemente como crear melee combat, y ADEMAS, me dice como agregar skills / special attacks en Unity. Es un tutorial oficial de Unity, por lo que es mejor. INCLUIRLO EN MIS FUENTES: https://www.youtube.com/watch?v=Jv9jGyIWelU 
+
+4) Aqui sale el tutorial de agregar un skill en mayor detalle: https://learn.unity.com/tutorial/implementing-an-ability-system-training-video?uv=2019.3&courseId=5ee7df73edbc2a001edbc7fd&projectId=5eea865cedbc2a0023b03b00#5eea8ad8edbc2a002071fce7 
+
+5) ChatGPT 4.0. “Ok, take all that text from all the transcriptions that you did during this chat, and include the following text, and create me an algorithm for a 3D Unity game with all the ideas from the transcripts that you just did for this chat, as well as the ideas from the following text: "Would I save on the game? Most likely no. You try to beat the entire game from scratch. I mean, I could add a save point before facing the boss, and I could learn how to implement a save feature in the game, just like I did in Keith Web. But this is not an important feature.
+	How would Fang heal? Via positions, from drops from the enemies, of from using a “Cure” spell? I could definitely add drops for weaker enemies, but I need a way to heal midb-battle while fighting against the Final Boss.
+	I’d most likely not add this, but I could add 4 books with the tiles of Ayn Rand’s novels, each 1 including the year of release. So, you need to arrange them in order by release date in order to open a door. That way, if you’re not an Ayn Rand fan and don’t know the release order, you can still look at the years on the book’s covers, and realize how to order them (the order would be “We the living”, “Anthem”, “The Fountainhead”, and “Atlas Shrugged”).
+	Some of the pages that you could pick up from Aristotle’s books could be the explanations of Aristotle’s axioms: the 1st page would explain “The art of non contradiction”; the 2nd would explain “either / or”; while the 3rd would say “A is A”.
+	Or, I could make the pages be from excerpts from Ayn Rand. Sure, this game would have to be non-commercial, but it would be a fun project an a fun portfolio project to do.
+	I have an idea: Fang’s physical special skills could be called “Techne”, in reference to Aristotle’s “Practical knowledge”, whereas his magic could be called “Episteme”, in reference to Aristotle’s “theoretical knowledge”.
+	The year of each book could be on the back of the book. So, you would need to look at the book in 3D, just like in Skyrim or in the modern fallout games, then you would need to rotate it to see its back cover, and there you would see the year of release of the book. 
+	I could make it so that Fang gets a book each time he kills a special enemy, be it an Ayn Rand Book, or an Aristotle Book. Then, you would pick them up, and you would need to put the 4 of them in order at the door (in order of release date).
+	I’m just brainstorming ideas: I don’t need to put Ayn Rand’s copyrighted stuff into the game.
+	I could make Fang say that his most valued values are Self esteem, purpose, and reason. Why? I won’t say why so that I won’t need to cite Ben Bayer’s talk.
+	The boss could be called “Lantenac” or “The Imanus” in reference to Victor Hugo’s “93”.
+	He could be called “The Imanus”: he could be the big villain’s executioner: the one who does all the dirty work; one of his most loyal lieutenants, just like The Imanus was the most loyal liutenant of Lantenac in 93.
+	The evil Imanus just kept Keith’s medal as a trophy: just to prove that he killed a huge amount of people in Keith’s village. It’s as if he had scalped both of Keith’s parents, but he took that medal instead of their scalps.
+	I could also put a “93” related puzzle: you would need to put the names “Lantenac” and “The Imanus” under the title “Villains”; “Gros Alain, Georgette, and Rene Jean” under the title “Michelle Flechard”; and “Cimourdain” and “Gauvain” under the title of “Republicans” or “Revolutionaries” or something like that.
+	I could also make Fang learn abilities similar to those in Nioh: doing the backflip if you parry / block at a certain moment an attack; and the other abilities.
+	Not gonna lie: I just want to insert as many Ayn Rand references as I can get away with.
+	I could also, instead of special attacks, just extend my combos each time that I learn an upgrade. That is, each new skill is just a way to make your combos longer. I like long combos.
+	And, of course, I want the entire short game to be INTEGRATED. I don’t want to make a mess of a game full of ideas that aren’t connected in any way.
+	Designing puzzles is more fun than designing combat. I could turn it into an action adventure game, like Zelda.
+	Hell, even the Wonderful 101 has puzzles, even though it’s a combat focused-game.
+	I honestly think I have enough to start making the game.
+	Like, I will make it so that there are 2 types of weak enemies: a ground one, and an aerial one. The design of those enemies, and their attacks just aren’t that important.
+	Given everything that I want to include, I have almost everything to make the game.
+	I could also make a Torchlight 2 clone, but with a pretty art style,, and with Aristotle’s / Ayn rand’s philosophy.
+
+To make it copyright free, I could, instead of using ayn rand's books, I couls put Victor HUGO’S works, and you Would Need to put them in order. For instance, you could find his works “Les Miserables”, “Hernani”, and “93”, and you would need to put them in order of release.
+". Once again, take all the transcripts that you did for all the photos in this chat, as well as the text that I just gave you, and give me an algorithm for creating a 3D Unity game with all of these ideas combined.”
+Accessed on April 27th, 2024.
+
+6) ChatGPT 4.0. 
+"Coll. Well, could you give me the links to any of those Youtube videos or playlists?"
+Accessed on April 27th, 2024.
+
+7) ChatGPT 4.0
+"Let me rephrase the question: could you give me links to any Unity resources that would help me make an action RPG like the one that I want to make?"
+Accessed on April 27th, 2024.
