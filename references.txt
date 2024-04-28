@@ -58,3 +58,7 @@ Accessed on April 28th, 2024.
    - Aerial enemies with diving and swooping attacks"."
 Accessed on April 28th, 2024.
 
+10) Eduardo Luis Salinas Rivas, Dreadhalls Project.
+GitHub.
+https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/LoadSceneOnInput.cs
+Accessed on April 28th, 2024.
