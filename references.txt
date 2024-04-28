@@ -47,3 +47,14 @@ Accessed on April 27th, 2024.
 7) ChatGPT 4.0
 "Let me rephrase the question: could you give me links to any Unity resources that would help me make an action RPG like the one that I want to make?"
 Accessed on April 27th, 2024.
+
+8) ChatGPT 4.0
+"There's an extra mechanic that I forgot to inculde: earning EXP. This is an action RPG, so you level up. By defeating enemies, you earn experience, so that you can level up. By leveling up, your stats increase (HP, Defense, Attack points). Jot that down."
+Accessed on April 28th, 2024.
+
+9) ChatGPT 4.0
+"Thanks! Now, give me an algorithm, both for C# code and the functionalities that I'll have to sue for the Unity Editor, to do the following things for my game: "4. Enemy Types:
+   - Ground enemies with melee and ranged attacks
+   - Aerial enemies with diving and swooping attacks"."
+Accessed on April 28th, 2024.
+
