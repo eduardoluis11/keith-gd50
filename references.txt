@@ -62,3 +62,9 @@ Accessed on April 28th, 2024.
 GitHub.
 https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/LoadSceneOnInput.cs
 Accessed on April 28th, 2024.
+
+11) ChatGPT 4.0
+"Awesome. Now, make me an algorithm for the c# scripting and the unity editor for making this part of my game: "5. Boss Mechanics:
+   - "The Imanus": Final boss with various attack phases". I've attached you some of my own drawings to represent some of the boss mechanics. ost of the images show the boss' attacks. In the first image, I show that the boss will be able to summon some laser balls that will surround the player to then hurt him. In the 2nd image, I show an attack in which the boss lunges at the player to tackle him (the boss is the one with horns and a crown). In the 4th image, I show the boss launching missiles at the player as one of his attacks. Then, in the 3rd image (yes, it's in the wrong order), I show a sketch that shows that, if the player hits the missile with his sword, the missile will be sent back to the boss, and damage the boss. The boss will also become staggered by that missile hit, which will give the opportunity to the player to land multiple hits to the boss. Those images and these descriptions that I've been writing are a summary of the boss' attacks and mechanics. So, knowing all this, create the algorithm for the c# scripting and the algorithm to create the boss' mechanics for my Unity game."
+Accessed on April 28th, 2024.
+
