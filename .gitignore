@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# "Cartoon Heroes" Folder from the Assets folder
+/[Aa]ssets/[Cc]artoon [Hh]eroes/
+
+# "MediumMechStriker" Folder from the Assets folder
+/[Aa]ssets/[Mm]edium[Mm]ech[Ss]triker/

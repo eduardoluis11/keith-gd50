@@ -76,3 +76,23 @@ Accessed on April 29th, 2024.
 https://www.youtube.com/watch?v=PUSOg5YEflM
 Accessed on April 29th, 2024.
 
+14) ChatGPT 4.0
+
+"Thanks. Now, create me an algorithm and tell me some tips on how to do the c# scripting for the following algorithm: "1. Player Character "Fang" with abilities:
+   - "Techne": Physical combat skills
+   - "Episteme": Magical abilities". And, in general, tell me how to create a playable character for a third person game in Unity in 3D to create my main character on my main scene. I will use a capsule as the object that will represent Fang, the playable character. However, if you could tell me how to attach a 3D model of a human to it, the better."
+Accessed on May 1st, 2024.
+
+15) José Díaz. Medieval cartoon character for Unity.
+Unity Asset Store.
+https://assetstore.unity.com/packages/3d/characters/medieval-cartoon-warriors-90079#publisher
+
+16) Mech Warrior 3D model.
+MSGDI.
+Unity Asset Store
+https://assetstore.unity.com/packages/3d/characters/robots/medium-mech-striker-124342
+
+17) Jose Diaz
+Set Character Tutorial.
+Youtube Tutorial explaining how to import the Medieval cartoon charactewrs into the Unity Scene.
+https://youtu.be/sz7QUqFeuTY?si=I1ZTSisYXCr-hpTz
