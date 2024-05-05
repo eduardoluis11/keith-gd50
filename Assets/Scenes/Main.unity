@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 6674175}
   - component: {fileID: 6674179}
   - component: {fileID: 6674180}
+  - component: {fileID: 6674181}
   m_Layer: 0
   m_Name: Fang Capsule
   m_TagString: Untagged
@@ -254,6 +255,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 300
+--- !u!114 &6674181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98408ccb1f951404da5e16ee12466a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPower: 10
+  magicPower: 20
+  health: 100
 --- !u!43 &8151041
 Mesh:
   m_ObjectHideFlags: 0
@@ -3011,8 +3027,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661657721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -334.75, y: 15.17, z: 396.49}
-  m_LocalScale: {x: 7.954608, y: 7.954608, z: 7.954608}
+  m_LocalPosition: {x: -346.87, y: 10.38, z: 397.14}
+  m_LocalScale: {x: 1.5330915, y: 1.8414747, z: 1.5330915}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
