@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  rotationSpeed: 720
   jumpForce: 300
 --- !u!114 &6674181
 MonoBehaviour:
@@ -5529,6 +5530,7 @@ GameObject:
   - component: {fileID: 2123712072}
   - component: {fileID: 2123712071}
   - component: {fileID: 2123712074}
+  - component: {fileID: 2123712075}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5617,6 +5619,20 @@ MonoBehaviour:
   target: {fileID: 6674178}
   offset: {x: 0, y: 5, z: -10}
   smoothSpeed: 0.125
+--- !u!114 &2123712075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123712070}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ac298c3fd35f2428f2ff089530dc2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6674178}
+  mouseSensitivity: 100
 --- !u!1001 &1335341725003707047
 PrefabInstance:
   m_ObjectHideFlags: 0

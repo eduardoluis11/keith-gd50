@@ -109,3 +109,11 @@ Accessed on May 4th, 2024.
 "Thanks. Now, I have both the player character and the game's boss with a capsule 3d object, and both have a RigidBody component. Well, right now, if I touch the boss with the player character, the player character falls to the floor, as if he had been toppled by the boss. Could you tell me how to make the player character touch the boss character without either of them falling to the floor? What I did in both the player character and the boss character was to create a 3D capsule game object, attach a RigidBody component to the capsule, and drag and drop the character's game object inside of the capsule. Thanks to that, they're both affected by gravity, and if they touch the floor, they won't clip through the floor. However, right now, the capsule's 3D model is covering 3D model of each character. Also, there's the issue that, if the player touches the boss, the player falls to the ground. So, tell me the ideal way to add collision detection to both characters, how to make the capsules be invisible (if I even have to use them), and tell me how to prevent the player character from falling to the floor if he touches the boss' 3D model. I'm using Unity 2021."
 https://chat.openai.com/share/c21508a7-c2e9-4406-9d38-66a7af89b0df
 Accessed on May 4th, 2024.
+
+20) ChatGPT 4.0.
+"Cool. Well, now, In my Unity game, I want to be able to rotate the camera while moving the mouse. As of right now, the camera will always be behind the player character. However, that means that I can't see behind Fang's back. Well, I want to be able to move the camera if I move my mouse. Tell me how to do that. I'm using Unity 2021."
+Accessed on May 5th, 2024.
+
+21) ChatGPT 4.0.
+"Thanks. Now, Fang, the player character, never turns. Yes, I can move in all directions using the WASD and arrow keys. However, his character 3D model never looks back. So, if the boss is behind me, I would be unable to turn and attack him, since the player character's 3D model never turns back, even if I walk backwards. How can I make the 3D model of my player character to turn around once I start walking backwards?"
+Accessed on May 5th, 2024.
