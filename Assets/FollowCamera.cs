@@ -20,6 +20,33 @@ public class FollowCamera : MonoBehaviour
     public float smoothSpeed = 0.125f;
     private Vector3 velocity = Vector3.zero;
 
+// This makes the camera has less lag and be more smooth, but the camera angle is horrible (source: Copilot).
+//    IEnumerator SmoothMove(Vector3 targetPosition, float duration)
+//{
+//    float time = 0;
+//    Vector3 startPosition = transform.position;
+//
+//    while (time < duration)
+//    {
+//        transform.position = Vector3.Lerp(startPosition, targetPosition, time / duration);
+//        time += Time.deltaTime;
+//        yield return null; // Wait for the next frame
+//    }
+//    transform.position = targetPosition;
+//}
+//
+//void LateUpdate()
+//{
+//    // This will make it so that the camera is always behind the player
+//    Vector3 desiredPosition = target.position + offset;
+//
+//
+//
+//    StartCoroutine(SmoothMove(desiredPosition, smoothSpeed));
+//    transform.LookAt(target);
+//}
+
+    // This makes the camera to always follow the player from behind.
     void LateUpdate()
     {
         Vector3 desiredPosition = target.position + offset;
@@ -34,20 +61,20 @@ public class FollowCamera : MonoBehaviour
         // not follow the player all that well.
         //        Vector3 velocity = Vector3.zero;
         //        transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, smoothSpeed);
-        
+
         // This makes the Camera Follow the Player
         transform.LookAt(target);
     }
 
-    // // Start is called before the first frame update
-    // void Start()
-    // {
+     // Start is called before the first frame update
+     void Start()
+     {
         
-    // }
+     }
 
-    // // Update is called once per frame
-    // void Update()
-    // {
+     // Update is called once per frame
+     void Update()
+     {
         
-    // }
+     }
 }

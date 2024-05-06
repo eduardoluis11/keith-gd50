@@ -135,3 +135,9 @@ Accessed on May 6th, 2024.
 Attached the FollowCamera.cs script.
 Highlighted lines 15 to 29 from the FollowCamera.cs script.
 Accessed on May 6th, 2024.
+
+25) Copilot from Pycharm: Professional Edition.
+"Well, look at my current code for the FollowCamera monobehavior. Use the current code, since the code that you gave me made the camera to follow the player froam way too far away, and I wanted the camera to stay closer to the player. Well, is there a way to make the current code to make the camera move even smoother, be it by making it more optimized, or to make it lag less while following the player?"
+Attached the FollowCamera.cs script.
+Highlighted lines 15 to 29 from the FollowCamera.cs script.
+Accessed on May 6th, 2024.

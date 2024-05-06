@@ -1,0 +1,36 @@
+Give me some Unity tutorials to show me how to make a game with a 3rd-person camera that follows the player from behind.
+
+Sure, here are some Unity tutorials that can guide you on how to create a game with a 3rd-person camera that follows the player from behind:
+
+1. [Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)](^1^) by Unity¹. This tutorial covers how to install Cinemachine, create a virtual camera with the third person follow body, assign a follow target game object to the camera, adjust the camera side, distance and field of view, and more¹.
+
+2. [Creating a Third Person Camera (Unity Tutorial)](^2^) by Ketra Games². This tutorial guides you on how to create a free look camera and set it to follow and look at the character, adjust the orbit radiuses and heights of the camera for different zoom levels, add a child object to the character for the camera to focus on, and more².
+
+3. [How to Program in Unity: Third Person Movement Explained](^3^) by iHeartGameDev³. This tutorial explains how to program a third person camera and movement in Unity using Cinemachine and some vector math³.
+
+Remember, practice is key when learning new concepts. Happy coding! 😊
+
+Source: Conversation with Bing, 6/5/2024
+(1) Creating a Third Person Camera using Cinemachine in Unity! (Tutorial). https://www.youtube.com/watch?v=537B1kJp9YQ.
+(2) Creating a Third Person Camera using Cinemachine in Unity! (Tutorial). https://www.youtube.com/watch?v=537B1kJp9YQ.
+(3) Creating a Third Person Camera (Unity Tutorial) - YouTube. https://www.youtube.com/watch?v=jiyOZbKRfaY.
+(4) Creating a Third Person Camera (Unity Tutorial) - YouTube. https://www.youtube.com/watch?v=jiyOZbKRfaY.
+(5) How to Program in Unity: Third Person Movement Explained. https://www.youtube.com/watch?v=-shDcRpTypk.
+(6) How to Program in Unity: Third Person Movement Explained. https://www.youtube.com/watch?v=-shDcRpTypk.
+(7) A Guide to First and Third Person Cameras for Unity Games. https://gamedevacademy.org/unity-3d-first-and-third-person-view-tutorial/.
+(8) Creating a Third Person Camera - Unity Game Development Tutorial. https://www.ketra-games.com/2021/12/creating-a-third-person-camera-unity-game-tutorial.html.
+(9) undefined. https://dotnetfiddle.net/b3FtrT.
+(10) undefined. https://ko-fi.com/ketragames.
+(11) undefined. http://www.ketra-games.com.
+(12) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_6a650fe418b57d2e86c9b8d5ab5e2902.js.
+(13) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_7fa4ddcaa46197924177c8e5c91a0857.js.
+(14) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_bd94d0a4b1f9fda13ff38ffd9d62c4c4.js.
+(15) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_1b4888fbe0a217bc08a5eda4512bc31e.js.
+(16) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_ad470757968653316140d0a5ad6ae575.js.
+(17) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_557b5ac9ce375b44426a5241765ed6ce.js.
+(18) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_8e53b84756b443406ef8e78840fa2f9f.js.
+(19) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_61d55a4eef87b405915dc678e497d6bb.js.
+(20) undefined. https://gamedevacademy.org/wp-content/cache/breeze-minification/js/breeze_fcff4d2d6a9768745104b42fb9fb756f.js.
+(21) en.wikipedia.org. https://en.wikipedia.org/wiki/Unity_(game_engine).
+
+===================================================================================================================
