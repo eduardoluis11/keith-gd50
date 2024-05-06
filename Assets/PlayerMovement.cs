@@ -35,21 +35,29 @@ public class PlayerMovement : MonoBehaviour
         // Create movement vector
     	Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
+
+
+
+       // Check if movement vector is significant to avoid rotating when player is nearly stationary
+       if (movement.magnitude > 0.1f)
+       {
+
+           //            // This lets the player rotate, but without causing the camera to shake (source: Copilot).
+           //            movement = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0) * movement;
+
+           // Create a rotation that looks along the forward vector
+           Quaternion newRotation = Quaternion.LookRotation(movement);
+           // Smoothly rotate towards the new rotation
+           rb.rotation = Quaternion.RotateTowards(rb.rotation, newRotation, rotationSpeed * Time.deltaTime);
+       }
+
         // Move the player. This makes the player move and rotate.
         // BUG: now the player moves way too slowly.
         rb.MovePosition(transform.position + movement * speed * Time.deltaTime);
 
-        // This is the old way to move the player. It moves the player quickly, but the player only moves forwards, but never backwards.
+        // // This is the old way to move the player. It moves the player quickly, but the player only moves forwards, but never backwards.
     	// transform.Translate(movement * speed * Time.deltaTime);  
 
-        // Check if movement vector is significant to avoid rotating when player is nearly stationary
-        if (movement.magnitude > 0.1f)
-        {
-            // Create a rotation that looks along the forward vector
-            Quaternion newRotation = Quaternion.LookRotation(movement);
-            // Smoothly rotate towards the new rotation
-            rb.rotation = Quaternion.RotateTowards(rb.rotation, newRotation, rotationSpeed * Time.deltaTime);
-        }
 
 
         // This lets the Player jump while pressing the space bar.

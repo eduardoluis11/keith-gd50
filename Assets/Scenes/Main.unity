@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0fb5770002bf946902cfa02ca29765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 30
   rotationSpeed: 720
   jumpForce: 300
 --- !u!114 &6674181
@@ -5618,7 +5618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 6674178}
   offset: {x: 0, y: 5, z: -10}
-  smoothSpeed: 0.125
+  smoothSpeed: 100
 --- !u!114 &2123712075
 MonoBehaviour:
   m_ObjectHideFlags: 0

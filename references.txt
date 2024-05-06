@@ -117,3 +117,21 @@ Accessed on May 5th, 2024.
 21) ChatGPT 4.0.
 "Thanks. Now, Fang, the player character, never turns. Yes, I can move in all directions using the WASD and arrow keys. However, his character 3D model never looks back. So, if the boss is behind me, I would be unable to turn and attack him, since the player character's 3D model never turns back, even if I walk backwards. How can I make the 3D model of my player character to turn around once I start walking backwards?"
 Accessed on May 5th, 2024.
+
+22) Copilot from Pycharm: Professional Edition.
+"/fix I'm making a 3D unity game which is a 3rd-person Action RPG in which you fight against a boss by using your sword. This script handles the movement of the playable character, who's called "Fang". Well, this code lets the player walk, and, if they walk to a side, they will turn around. However, the camera shakes whenever the player moves. On the default speed, which is of "5", is not that noticeable, but the player walks too slowly. At higher speeds, the player can move quick, but the camera shakes so much that it gives me motion sickness, making the game virtually unplayable. Meanwhile, if I remove any rotation from this code, and use "transform.Translate(movement * speed * Time.deltatime)", the player can move quickly and the camera won't shake, but the 3D model won't be able to rotate when wakling to a side or backwards. So please, take this snippet, and tell me what should I do in my Unity game to remove that camera shake whenever the player character moves by using this script."
+Attached the PlayerMovement.cs script.
+Highlighted lines 23 to 59 from the PlayerMovement.cs script.
+Accessed on May 6th, 2024.
+
+23) Copilot from Pycharm: Professional Edition.
+"/explain That didn't work. The camera is still shaking while I move. Please, tell me what the selected snippet does. Then, tell me if you can find out what's causing the camera shaking."
+Attached the PlayerMovement.cs script.
+Highlighted lines 23 to 59 from the PlayerMovement.cs script.
+Accessed on May 6th, 2024.
+
+24) Copilot from Pycharm: Professional Edition.
+"/fix The FollowCamera.cs script is the one that generates the camera shaking bug. I want the camera to follow the player character while they move. However, the camera shakes whenever the player moves. So please, modify this function so that the camera stops shaking while the player moves. This script is currently attached to the camera game object."
+Attached the FollowCamera.cs script.
+Highlighted lines 15 to 29 from the FollowCamera.cs script.
+Accessed on May 6th, 2024.
