@@ -141,3 +141,9 @@ Accessed on May 6th, 2024.
 Attached the FollowCamera.cs script.
 Highlighted lines 15 to 29 from the FollowCamera.cs script.
 Accessed on May 6th, 2024.
+
+26) Cinemachine Tutorial from Youtube.
+Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
+Unity.
+https://www.youtube.com/watch?v=537B1kJp9YQ
+Accessed on May 7th, 2024.
