@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 6674181}
   - component: {fileID: 6674183}
   - component: {fileID: 6674182}
+  - component: {fileID: 6674184}
   m_Layer: 0
   m_Name: Fang Capsule
   m_TagString: Untagged
@@ -329,10 +330,32 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6674184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c01d729544c85042a06bc2af2589f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0}
+  magnitude: 0.25
+  shouldMove: 0
+  shouldTurn: 0
+  turn: 0
+  look: {fileID: 0}
+  arrow: {fileID: 0}
+  arrowBone: {fileID: 0}
+  arrowPrefab: {fileID: 0}
+  fireTransform: {fileID: 0}
 --- !u!43 &8151041
 Mesh:
   m_ObjectHideFlags: 0

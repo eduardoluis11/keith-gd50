@@ -164,3 +164,9 @@ Accessed on May 8th, 2024.
 ". So, how can I fix this bug?
 Highlighted line 4 from the PlayerMovement.cs script.
 Accessed on May 8th, 2024.
+
+30) PlayerLocomotionsInputController.cs file from the Official Unity Cinemachine Tutorial.
+Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
+Unity.
+https://www.youtube.com/watch?v=537B1kJp9YQ
+Accessed on May 8th, 2024.
