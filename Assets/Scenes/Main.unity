@@ -257,6 +257,9 @@ MonoBehaviour:
   speed: 30
   rotationSpeed: 720
   jumpForce: 300
+  _look: {x: 0, y: 0}
+  rotationPower: 3
+  followTransform: {fileID: 692076972}
 --- !u!114 &6674181
 MonoBehaviour:
   m_ObjectHideFlags: 0
