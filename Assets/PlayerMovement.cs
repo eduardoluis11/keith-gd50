@@ -41,8 +41,8 @@ public class PlayerMovement : MonoBehaviour
     // This will also help me move around. (source: PlayerMovementInputController.cs file).
     public Vector3 nextPosition;
 
-    // This will affect the camera (source: PlayerMovementInputController.cs file).
-    public Camera camera;
+    // // This will affect the camera (source: PlayerMovementInputController.cs file).
+    // public Camera camera;
 
     // These 2 variables will also help me rotate to turn around (source: PlayerMovementInputController.cs file).
     public float rotationLerp = 0.6f;
