@@ -153,3 +153,14 @@ Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
 Unity.
 https://www.youtube.com/watch?v=537B1kJp9YQ
 Accessed on May 7th, 2024.
+
+28) Copilot from VS Code.
+/fix This line of code is giving me a bug in the editor of Unity 2021. This is the error message: "Assets\PlayerMovement.cs(49,24): error CS0246: The type or namespace name 'InputAction' could not be found (are you missing a using directive or an assembly reference?)". The game does not compile unless I fix this. How can I fix this?
+Highlighted line 49 from the PlayerMovement.cs script.
+Accessed on May 8th, 2024.
+
+29) Copilot from VS Code.
+@workspace /fix  I'm already doing that, and that didn't fix the bug. In fact, I have yet another bug in the Unity editor that doesn't let me execute my game that says: "Assets\PlayerMovement.cs(4,19): error CS0234: The type or namespace name 'InputSystem' does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)
+". So, how can I fix this bug?
+Highlighted line 4 from the PlayerMovement.cs script.
+Accessed on May 8th, 2024.

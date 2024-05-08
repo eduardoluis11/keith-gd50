@@ -1,0 +1,95 @@
+eduardoluis11: What's the unity 2021 equivalent of the "using UnityEngine.InputSystem;
+" module?
+
+GitHub Copilot: In Unity 2021, the equivalent module for `using UnityEngine.InputSystem;` remains the same. The new Input System was introduced in Unity 2019.1 and it's still being used in Unity 2021. So, you can use `using UnityEngine.InputSystem;` in Unity 2021 as well.
+
+eduardoluis11: How can I use the "InputValue" type of value in Unity 2021?
+
+GitHub Copilot: In Unity's new Input System, `InputValue` is a struct that is used to read values from input actions. Here's an example of how you can use it:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private Vector2 move;
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        move = context.ReadValue<Vector2>();
+    }
+
+    void Update()
+    {
+        // Use the move value for player movement
+    }
+}
+```
+
+In this example, `OnMove` is a method that is called when an input action occurs. The `context` parameter is of type `InputAction.CallbackContext`, which contains the `InputValue`. The `ReadValue<T>` method is used to read the value as a specific type, in this case a `Vector2`. The `move` variable is then used in the `Update` method to move the player.
+
+eduardoluis11: This snippet is giving me a bug in Unity 2021. What's the equivalent of "InputValue" in Unity 2021?
+
+GitHub Copilot: In Unity 2021, the equivalent of `InputValue` is `InputAction.CallbackContext`. Here's how you can modify your code:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private Vector2 _look;
+
+    public void OnLook(InputAction.CallbackContext context)
+    {
+        _look = context.ReadValue<Vector2>();
+    }
+}
+```
+
+In this code, `OnLook` is a method that is called when an input action occurs. The `context` parameter is of type `InputAction.CallbackContext`, which contains the input value. The `ReadValue<T>` method is used to read the value as a specific type, in this case a `Vector2`. The `_look` variable can then be used to control the player's look direction.
+
+==============================================================================================================
+
+eduardoluis11: /fix This line of code is giving me a bug in the editor of Unity 2021. This is the error message: "Assets\PlayerMovement.cs(49,24): error CS0246: The type or namespace name 'InputAction' could not be found (are you missing a using directive or an assembly reference?)". The game does not compile unless I fix this. How can I fix this?
+
+GitHub Copilot: The error message indicates that the `InputAction` type cannot be found. This is likely because the necessary namespace, `UnityEngine.InputSystem`, is not being used in your script. 
+
+You can fix this by adding `using UnityEngine.InputSystem;` at the top of your script. Here's how your code should look:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem; // Add this line
+
+public class PlayerMovement : MonoBehaviour
+{
+    public void OnLook(InputAction.CallbackContext context)
+    {
+        // Your code here
+    }
+}
+```
+
+This will allow your script to recognize `InputAction` and `InputAction.CallbackContext` as valid types.
+
+==============================================================================================================
+
+eduardoluis11: @workspace /fix  I'm already doing that, and that didn't fix the bug. In fact, I have yet another bug in the Unity editor that doesn't let me execute my game that says: "Assets\PlayerMovement.cs(4,19): error CS0234: The type or namespace name 'InputSystem' does not exist in the namespace 'UnityEngine' (are you missing an assembly reference?)
+". So, how can I fix this bug?
+
+GitHub Copilot: The error message you're seeing suggests that the Unity Input System package is not installed in your project. The Unity Input System is a separate package and is not included in Unity by default.
+
+Here are the steps to install the Unity Input System:
+
+1. Open your Unity project.
+2. Go to `Window` -> `Package Manager`.
+3. In the Package Manager window, look for `Input System` in the list of packages. If it's not there, make sure `Unity Registry` is selected in the `Packages:` dropdown.
+4. Click on the `Input System` package and then click `Install`.
+
+After the package is installed, Unity will prompt you to restart the editor. After the restart, the `UnityEngine.InputSystem` namespace should be recognized by the editor, and the error should be resolved.
+
+
+
+
+
