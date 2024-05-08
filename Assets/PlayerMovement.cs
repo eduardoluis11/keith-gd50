@@ -23,9 +23,12 @@ public class PlayerMovement : MonoBehaviour
 	public float jumpForce = 300f;  // This will allow me to jump.
 	private Rigidbody rb;
 
-    // This will help me rotate to turn around (source: PlayerMovementInputController.cs file from Cinemachine tutorial).
+    // This will help me look around (source: PlayerMovementInputController.cs file from Cinemachine tutorial).
     public Vector2 _look;
-    // public float rotationPower = 3f;
+
+    // This will help me move around (source: PlayerMovementInputController.cs file).
+    public Vector2 _move;
+
 
     // This will allow the Cinemachine camera to follow the player around. The user will have to put the Empty
     // Game Object that is right behind the Player Object into the Follow Transform slot in the Unity Editor (source:
@@ -51,6 +54,12 @@ public class PlayerMovement : MonoBehaviour
     public void OnLook(InputValue value)
     {
         _look = value.Get<Vector2>();
+    }
+
+    // This will modify the _move variable (source: PlayerMovementInputController.cs file).
+    public void OnMove(InputValue value)
+    {
+        _move = value.Get<Vector2>();
     }
 
     // End of the variables for rotating the player based on region (source: PlayerMovementInputController.cs file.
