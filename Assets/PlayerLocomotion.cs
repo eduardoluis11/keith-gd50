@@ -20,28 +20,37 @@ PlayerLocomotionsInputController.cs file from the Official Unity Cinemachine Tut
 public class PlayerLocomotion : MonoBehaviour
 {
 
-    private PlayerMovement _movement;
+    private PlayerMovement _playerMovement;
+
+
 
     // The Unity Editor needs this to get the Skeleton with the Animator Component to let me move.
-    private Animator _animator;
+    private Animator _playerAnimator;
+
 
 
     // This should modify the player's velocity.
-    public Vector2 velocity = Vector2.zero;
-    public float magnitude = 0.26f;
+    public Vector2 playersVelocity = Vector2.zero;
+
+
+    public float velocitysMagnitude = 0.26f;
+
+
+
     private Vector2 smoothDeltaPosition = Vector2.zero;
 
 
     // This should get the Animator Component from the Unity Editor, as well as the player's movement.
     private void OnEnable()
     {
-        _animator = GetComponent<Animator>();
-        _movement = GetComponent<PlayerMovement>();
+        _playerAnimator = GetComponent<Animator>();
+        _playerMovement = GetComponent<PlayerMovement>();
     }
 
 
 
-    
+    // BOOKMARK (change the rest of the variables' names to make this script more original and less like the PlacerLocomotionInputController.cs script from)
+
     public bool shouldMove;
     public float turn;
     public bool shouldTurn;
@@ -54,29 +63,29 @@ public class PlayerLocomotion : MonoBehaviour
 
     public void Update()
     {
-        Vector3 worldDeltaPosition = _movement.nextPosition - transform.position;
+        Vector3 worldDeltaPosition = _playerMovement.nextPosition - transform.position;
 
         // This should re-position the player in the game's world while moving.
         float dY = Vector3.Dot(transform.forward, worldDeltaPosition);
         float dX = Vector3.Dot(transform.right, worldDeltaPosition);
         Vector2 deltaPosition = new Vector2(dX, dY);
 
-        // Bookmark
+  
 
         float smooth = Mathf.Min(1.0f, Time.deltaTime / 0.16f);
         smoothDeltaPosition = Vector2.Lerp(smoothDeltaPosition, deltaPosition, smooth);
 
         if (Time.deltaTime > 1e-6f)
         {
-            velocity = smoothDeltaPosition / Time.deltaTime;
+            playersVelocity = smoothDeltaPosition / Time.deltaTime;
         }
 
-        shouldMove = velocity.magnitude > magnitude;
+        shouldMove = playersVelocity.magnitude > velocitysMagnitude;
 
  
-        _animator.SetFloat("VelocityX", velocity.x);
-        _animator.SetBool("IsMoving", shouldMove);
-        _animator.SetFloat("VelocityY", Mathf.Abs(velocity.y));
+        _playerAnimator.SetFloat("playersVelocityX", playersVelocity.x);
+        _playerAnimator.SetBool("IsMoving", shouldMove);
+        _playerAnimator.SetFloat("playersVelocityY", Mathf.Abs(playersVelocity.y));
 
     }
 
@@ -84,7 +93,7 @@ public class PlayerLocomotion : MonoBehaviour
     private void OnAnimatorMove()
     {
         // This will modify the player's position according to the position in which the player should be next
-        transform.position = _movement.nextPosition;
+        transform.position = _playerMovement.nextPosition;
     }
 
     // // I think this is for firing arrows, SO I MIGHT NEED TO DELETE THIS LATER.
