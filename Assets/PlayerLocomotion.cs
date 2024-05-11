@@ -1,7 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.AI;
+using System.Collections.Generic;
+
 
 /* This will allow Fang to move around when pressing the WASD or arrow keys (source: Cinemachine Unity tutorial from Youtube).
 
@@ -10,30 +11,46 @@ Source of most of this code: PlayerLocomotionsInputController.cs file from the O
 EDIT LATER TO MAKE THE CODE MORE ORIGINAL.
  */ 
 
+/* This will  let the Player Move Around when combined with the PlayerMovement.cs script.
+
+The PlayerMovement.cs script only lets the player move the camera around, but not the player itself, sicne I used Unity's Player Input System.
+So, to finish letting the player be moved around by using the WASD keys, I created this script (source: Source of most of this code: 
+PlayerLocomotionsInputController.cs file from the Official Unity Cinemachine Tutorial.)
+*/
 public class PlayerLocomotion : MonoBehaviour
 {
-    private Animator _animator;
+
     private PlayerMovement _movement;
 
-    private Vector2 smoothDeltaPosition = Vector2.zero;
-    public Vector2 velocity = Vector2.zero;
-    public float magnitude = 0.25f;
+    // The Unity Editor needs this to get the Skeleton with the Animator Component to let me move.
+    private Animator _animator;
 
+
+    // This should modify the player's velocity.
+    public Vector2 velocity = Vector2.zero;
+    public float magnitude = 0.26f;
+    private Vector2 smoothDeltaPosition = Vector2.zero;
+
+
+    // This should get the Animator Component from the Unity Editor, as well as the player's movement.
     private void OnEnable()
     {
-        _movement = GetComponent<PlayerMovement>();
         _animator = GetComponent<Animator>();
+        _movement = GetComponent<PlayerMovement>();
     }
+
+    // BOOKMARK
+
+    
     public bool shouldMove;
-    public bool shouldTurn;
     public float turn;
+    public bool shouldTurn;
+
 
     public GameObject look;
 
-    public GameObject arrow;
+    // BOOKMARK
 
-    public Transform arrowBone;
-    public GameObject arrowPrefab;
 
     public void Update()
     {
@@ -54,33 +71,8 @@ public class PlayerLocomotion : MonoBehaviour
 
         shouldMove = velocity.magnitude > magnitude;
 
-        // bool isAiming = (_movement.aimValue == 1f);
+ 
 
-        // if (isAiming)
-        // {
-        //     if ((_movement.fireValue == 1f))
-        //     {
-        //         _animator.SetTrigger("Fire");
-        //         arrow.SetActive(false);
-        //         StartCoroutine(FireArrow());
-        //     }
-
-
-        //     if (_animator.GetCurrentAnimatorStateInfo(2).IsName("Fire"))
-        //     {
-        //         arrow.SetActive(false);
-        //     }
-        //     else
-        //     {
-        //         arrow.SetActive(true);
-        //     }
-
-         
-
-            
-        //     _movement.fireValue = 0f;
-        // }
-        // _animator.SetBool("IsAiming", isAiming);
         _animator.SetBool("IsMoving", shouldMove);
         _animator.SetFloat("VelocityX", velocity.x);
         _animator.SetFloat("VelocityY", Mathf.Abs(velocity.y));
@@ -95,19 +87,6 @@ public class PlayerLocomotion : MonoBehaviour
 
     [SerializeField]
     private Transform fireTransform;
-
-    IEnumerator FireArrow()
-    {
-        GameObject projectile = Instantiate(arrowPrefab);
-        projectile.transform.forward = look.transform.forward;
-        projectile.transform.position = fireTransform.position + fireTransform.forward;
-        //Wait for the position to update
-        yield return new WaitForSeconds(0.1f);
-
-        // projectile.GetComponent<ArrowProjectile>().Fire();
-        
-    }
-
 
 
 }
