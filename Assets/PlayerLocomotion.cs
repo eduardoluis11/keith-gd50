@@ -39,7 +39,7 @@ public class PlayerLocomotion : MonoBehaviour
         _movement = GetComponent<PlayerMovement>();
     }
 
-    // BOOKMARK
+
 
     
     public bool shouldMove;
@@ -49,22 +49,24 @@ public class PlayerLocomotion : MonoBehaviour
 
     public GameObject look;
 
-    // BOOKMARK
+
 
 
     public void Update()
     {
         Vector3 worldDeltaPosition = _movement.nextPosition - transform.position;
 
-        //Map to local space
-        float dX = Vector3.Dot(transform.right, worldDeltaPosition);
+        // This should re-position the player in the game's world while moving.
         float dY = Vector3.Dot(transform.forward, worldDeltaPosition);
+        float dX = Vector3.Dot(transform.right, worldDeltaPosition);
         Vector2 deltaPosition = new Vector2(dX, dY);
 
-        float smooth = Mathf.Min(1.0f, Time.deltaTime / 0.15f);
+        // Bookmark
+
+        float smooth = Mathf.Min(1.0f, Time.deltaTime / 0.16f);
         smoothDeltaPosition = Vector2.Lerp(smoothDeltaPosition, deltaPosition, smooth);
 
-        if (Time.deltaTime > 1e-5f)
+        if (Time.deltaTime > 1e-6f)
         {
             velocity = smoothDeltaPosition / Time.deltaTime;
         }
@@ -72,22 +74,23 @@ public class PlayerLocomotion : MonoBehaviour
         shouldMove = velocity.magnitude > magnitude;
 
  
-
-        _animator.SetBool("IsMoving", shouldMove);
         _animator.SetFloat("VelocityX", velocity.x);
+        _animator.SetBool("IsMoving", shouldMove);
         _animator.SetFloat("VelocityY", Mathf.Abs(velocity.y));
 
     }
 
+
     private void OnAnimatorMove()
     {
-        //Update the position based on the next position;
+        // This will modify the player's position according to the position in which the player should be next
         transform.position = _movement.nextPosition;
     }
 
-    [SerializeField]
-    private Transform fireTransform;
+    // // I think this is for firing arrows, SO I MIGHT NEED TO DELETE THIS LATER.
+    // [SerializeField]
 
+    // Bookmark (DONE!)
 
 }
 
