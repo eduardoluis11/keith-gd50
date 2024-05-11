@@ -49,11 +49,9 @@ public class PlayerLocomotion : MonoBehaviour
 
 
 
-    // BOOKMARK (change the rest of the variables' names to make this script more original and less like the PlacerLocomotionInputController.cs script from)
+    public bool playerShouldMove;
 
-    public bool shouldMove;
-    public float turn;
-    public bool shouldTurn;
+    // BOOKMARK (change the rest of the variables' names to make this script more original and less like the PlacerLocomotionInputController.cs script from)
 
 
     public GameObject look;
@@ -80,11 +78,11 @@ public class PlayerLocomotion : MonoBehaviour
             playersVelocity = smoothDeltaPosition / Time.deltaTime;
         }
 
-        shouldMove = playersVelocity.magnitude > velocitysMagnitude;
+        playerShouldMove = playersVelocity.magnitude > velocitysMagnitude;
 
  
         _playerAnimator.SetFloat("playersVelocityX", playersVelocity.x);
-        _playerAnimator.SetBool("IsMoving", shouldMove);
+        _playerAnimator.SetBool("IsMoving", playerShouldMove);
         _playerAnimator.SetFloat("playersVelocityY", Mathf.Abs(playersVelocity.y));
 
     }
