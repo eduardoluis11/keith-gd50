@@ -141,6 +141,7 @@ GameObject:
   - component: {fileID: 6674183}
   - component: {fileID: 6674182}
   - component: {fileID: 6674184}
+  - component: {fileID: 6674185}
   m_Layer: 0
   m_Name: Fang Capsule
   m_TagString: Untagged
@@ -356,6 +357,27 @@ MonoBehaviour:
   arrowBone: {fileID: 0}
   arrowPrefab: {fileID: 0}
   fireTransform: {fileID: 0}
+--- !u!95 &6674185
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7e30eee73c241d5448ce0ac372cf6602, type: 3}
+  m_Controller: {fileID: 9100000, guid: d7c55390ab0320c47b84f63184ecb1b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &8151041
 Mesh:
   m_ObjectHideFlags: 0
