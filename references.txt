@@ -170,3 +170,17 @@ Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
 Unity.
 https://www.youtube.com/watch?v=537B1kJp9YQ
 Accessed on May 8th, 2024.
+
+31) Scene Manager Quick Fix on VS Code from the PlayerDies.cs script on Line 30.
+Copilot from VS Code.
+Copilot on VS Code via "Quick Fixes".
+Accessed on May 18th, 2024.
+
+32) "DespawnOnHeight.cs" script from my "Dreadhalls" project.
+Dreadhalls project from Eduardo Salinas.
+Accessed on May 18th, 2024.
+
+33) "If the player presses "0", they will go to the "Game Over" scene." comment on VS Code's copilot.
+VS Code's copilot.
+PlayerDies.cs script.
+Accessed on May 18th, 2024.

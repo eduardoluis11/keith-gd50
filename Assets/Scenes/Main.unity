@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 6674182}
   - component: {fileID: 6674184}
   - component: {fileID: 6674185}
+  - component: {fileID: 6674186}
   m_Layer: 0
   m_Name: Fang Capsule
   m_TagString: Untagged
@@ -347,16 +348,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c01d729544c85042a06bc2af2589f10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0}
-  magnitude: 0.25
-  shouldMove: 0
-  shouldTurn: 0
-  turn: 0
+  playersVelocity: {x: 0, y: 0}
+  velocitysMagnitude: 0.26
+  playerShouldMove: 0
   look: {fileID: 0}
-  arrow: {fileID: 0}
-  arrowBone: {fileID: 0}
-  arrowPrefab: {fileID: 0}
-  fireTransform: {fileID: 0}
 --- !u!95 &6674185
 Animator:
   serializedVersion: 5
@@ -378,6 +373,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6674186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d276210ff27f7242bef8131b992ecdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &8151041
 Mesh:
   m_ObjectHideFlags: 0
