@@ -81,9 +81,10 @@ public class PlayerLocomotion : MonoBehaviour
         playerShouldMove = playersVelocity.magnitude > velocitysMagnitude;
 
  
-        _playerAnimator.SetFloat("playersVelocityX", playersVelocity.x);
-        _playerAnimator.SetBool("IsMoving", playerShouldMove);
-        _playerAnimator.SetFloat("playersVelocityY", Mathf.Abs(playersVelocity.y));
+        // These lines generate me a ton of DEBUG messages on the Unity Editor, so I commented them out.
+        // _playerAnimator.SetFloat("playersVelocityX", playersVelocity.x);
+        // _playerAnimator.SetBool("IsMoving", playerShouldMove);
+        // _playerAnimator.SetFloat("playersVelocityY", Mathf.Abs(playersVelocity.y));
 
     }
 
