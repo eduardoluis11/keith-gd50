@@ -1357,5 +1357,94 @@ In this script, the `#if UNITY_EDITOR` preprocessor directive checks if the code
 
 ====================================================================================================================
 
+Awesome. That worked. However, my game has some bugs that only show up on the Build, but NOT on the Unity Editor. For instance, I start from a scene called "Main", instead of the "Press Start" scene. Also, the player moves way too slowly on the build. Finally, I attached a capsule to a 3D model of a medieval cartoon character, and, on the build, the capsule detaches from the cartoon character, so the capsule moves, but the cartoon character doesn't. These bugs occur only on the build, but not on the Unity Editor. Maybe I need to eliminate all my scenes from the “File -> Build Settings” window, and add them again from scratch? What's going on?
 
+
+It's common for certain issues to manifest only in the built version of a game and not in the Unity Editor. Let's address each of your problems step by step.
+
+### 1. Starting from the Wrong Scene
+Ensure that your scenes are correctly configured in the Build Settings:
+
+1. **Build Settings Configuration**:
+   - Go to `File` > `Build Settings`.
+   - Ensure that all necessary scenes are added to the "Scenes in Build" list. 
+   - Make sure the `Press Start` scene is at the top of the list, as Unity starts from the first scene in this list.
+   - If not, drag the `Press Start` scene to the top.
+
+### 2. Player Movement Speed
+The difference in player movement speed could be due to several factors:
+
+1. **Frame Rate Dependent Code**:
+   - Ensure that your movement code is not frame rate dependent. Use `Time.deltaTime` to make the movement frame rate independent.
+
+   ```csharp
+   void Update()
+   {
+       float moveSpeed = 5f;
+       float move = moveSpeed * Time.deltaTime;
+       transform.Translate(move * Input.GetAxis("Horizontal"), 0, move * Input.GetAxis("Vertical"));
+   }
+   ```
+
+2. **Build Settings**:
+   - Check if there are any differences in quality settings between the Editor and the Build. Go to `Edit` > `Project Settings` > `Quality` and ensure that the quality settings are consistent.
+
+### 3. Detaching Capsule from the Character
+This issue might be related to how the capsule and the character are set up in the hierarchy or how their scripts are interacting.
+
+1. **Check Hierarchy**:
+   - Ensure that the capsule is correctly parented to the character in the hierarchy. The capsule should be a child of the character model.
+
+2. **Script Execution Order**:
+   - Ensure that there are no issues with the script execution order that might cause the capsule to move independently.
+
+3. **Animator and Rigidbody**:
+   - If your character has an Animator or Rigidbody, make sure they are not interfering with the child objects in an unexpected way.
+
+### General Steps to Troubleshoot Build-Specific Issues
+
+1. **Clear Build Settings and Re-add Scenes**:
+   - As you suggested, clearing the scenes from the Build Settings and re-adding them can help. This ensures there are no residual settings causing issues.
+   
+   ```plaintext
+   File > Build Settings > Remove all scenes
+   File > Save Project
+   File > Build Settings > Add Open Scenes (Add all necessary scenes again)
+   ```
+
+2. **Player Settings**:
+   - Check the Player Settings (`Edit` > `Project Settings` > `Player`). Ensure there are no discrepancies between settings used for the Editor and the Build.
+
+3. **Debugging Builds**:
+   - Add debug logs to help track the execution flow in the build.
+   - Use `Debug.Log` statements to log key variable values and states.
+
+4. **Consistent Configurations**:
+   - Ensure any configurations (like movement speeds, scene management settings, etc.) are consistent and not hardcoded differently for the Editor and the Build.
+
+5. **Check for Platform-Specific Issues**:
+   - Sometimes platform-specific issues can cause discrepancies between the Editor and the Build. Make sure your game settings and scripts account for different platforms if you're building for multiple platforms.
+
+### Example to Check Scene Loading
+
+Ensure your scene loading logic is consistent:
+
+```csharp
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameController : MonoBehaviour
+{
+    void Start()
+    {
+        // Ensure this is correct
+        if (SceneManager.GetActiveScene().name == "Main")
+        {
+            SceneManager.LoadScene("PressStart");
+        }
+    }
+}
+```
+
+By following these steps and checking the configurations, you should be able to diagnose and resolve the issues occurring in your build but not in the Unity Editor.
 

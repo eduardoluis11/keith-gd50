@@ -184,3 +184,15 @@ Accessed on May 18th, 2024.
 VS Code's copilot.
 PlayerDies.cs script.
 Accessed on May 18th, 2024.
+
+34) (ChatGPT Omni - 4o):
+
+I created a Script in my Unity game so that, if the player presses the Escape key, they should exit the game and go back to their desktop. Well, I'm printing a debug message that says that the player has pressed the escape key when they press it. However, I don't see the game closing or anything while pressing the escape key while playing it in my unity editor. How do I know that my game is closing preperly? Should I make a build of my unity game, and press esc to make sure that the game closes when I press the escape key? I'm using the 2021 version of Unity.
+
+Attached an image showing my Unity Editor with the debug message saying that I exited the game.
+Accessed on May 19th, 2024
+
+35) Awesome. That worked. However, my game has some bugs that only show up on the Build, but NOT on the Unity Editor. For instance, I start from a scene called "Main", instead of the "Press Start" scene. Also, the player moves way too slowly on the build. Finally, I attached a capsule to a 3D model of a medieval cartoon character, and, on the build, the capsule detaches from the cartoon character, so the capsule moves, but the cartoon character doesn't. These bugs occur only on the build, but not on the Unity Editor. Maybe I need to eliminate all my scenes from the “File -> Build Settings” window, and add them again from scratch? What's going on?
+
+(ChatGPT Omni - 4o).
+Accessed on May 19th, 2024.
