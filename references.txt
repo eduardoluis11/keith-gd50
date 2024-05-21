@@ -196,3 +196,12 @@ Accessed on May 19th, 2024
 
 (ChatGPT Omni - 4o).
 Accessed on May 19th, 2024.
+
+36) Cool. Now, I want to make the boss, "the imanus" follow the player around. If he touches the player, the player will receive damage. Give me a link to a youtube tutorial that tells me how to make an enemy and make the enemy follow the player around in Unity.
+(ChatGPT Omni - 4o).
+Accessed on May 21st, 2024.
+
+37) How to make an enemy follow player in unity | unity 3d | unity tutorial
+James Waghmare
+Youtube
+https://www.youtube.com/watch?v=krKavfBuEQg
