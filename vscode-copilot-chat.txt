@@ -121,3 +121,8 @@ However, your code doesn't seem to use the _agent variable to move the character
 If you don't intend to use Unity's built-in pathfinding, you can remove the NavMeshAgent component from your GameObject in the Unity editor. If you want to use pathfinding, you'll need to use the _agent variable to move your character, like so: _agent.SetDestination(somePosition);.
 
 If you're still getting the "Failed to create agent because there is no valid NavMesh" error after removing the NavMeshAgent component, it's possible that another script in your project is trying to use a NavMeshAgent. You'll need to find and fix that script.
+
+==================================================================================================
+
+I clicked on line 45 in PlayerStats.cs in the "SceneManager" line of code, and clicked on "Quick Fix" on VS code 
+to fix a bug in which I needed to import Unity's SceneManager library in order to load my scenes (liek the Game Over scene). 

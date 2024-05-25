@@ -222,3 +222,13 @@ Accessed on May 25th, 2024.
 41) "Thanks. Now, give me an algorithm so that, if a capsule that contains an enemy makes collision with the player character, the player character will lose some HP (health points). I've already created the capsule for the enemy. So, give me an algorithm that will let me do what I just told you. I guess I would need to create a new script for handling the damage that the enemy can do to the player."
 Pycharm Copilot.
 Accessed on May 25th, 2024.
+
+42) "Thanks. Now, make it so that, if the player character's HP drops to 0, that the "Game Over" scene will be loaded. This will make it so that, if the player loses all of his HP, the player will lose and get a Game Over."
+Pycharm Copilot.
+I attached the EnemyDamage.cs, LoadSceneOnInput.cs, and PlayerStats.cs scripts.
+Accessed on May 25th, 2024.
+
+43) "I clicked on line 45 in PlayerStats.cs in the "SceneManager" line of code, and clicked on "Quick Fix" on VS code 
+to fix a bug in which I needed to import Unity's SceneManager library in order to load my scenes (liek the Game Over scene)."
+VS Code Copilot.
+Accessed on May 25th, 2024.

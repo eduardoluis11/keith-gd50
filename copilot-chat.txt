@@ -370,4 +370,41 @@ To use this script, you would attach it to the enemy's capsule. Also, make sure 
 
 ====================================================================================================
 
+Thanks. Now, make it so that, if the player character's HP drops to 0, that the "Game Over" scene will be loaded. This will make it so that, if the player loses all of his HP, the player will lose and get a Game Over.
+
+
+Sure, you can add this functionality to the `PlayerStats.cs` script. You will need to check if the player's HP has dropped to 0 in the `Update` method, and if so, load the "Game Over" scene.
+
+You will need to use `SceneManager.LoadScene("GameOver");` to load the "Game Over" scene. Make sure you have added the "GameOver" scene to your build settings in Unity.
+
+Here's how you can modify your `PlayerStats.cs` script:
+
+```csharp
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PlayerStats : MonoBehaviour
+{
+    public int HP = 100;
+    public int attack = 10;
+    public int defense = 5;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (HP <= 0)
+        {
+            // Load the "Game Over" scene
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+
+    // Rest of your PlayerStats code...
+}
+```
+
+In this code, the `Update` method checks every frame if the player's HP has dropped to 0 or less. If it has, it loads the "Game Over" scene.
+
+====================================================================================================
+
 
