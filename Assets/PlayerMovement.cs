@@ -94,8 +94,17 @@ public class PlayerMovement : MonoBehaviour
 
         // All of the below snippet of code is from the PlayerMovementInputController.cs file (source: Cinemachine
         // tutorial from Unity).
+        /* Based on the provided scripts, the camera movement is being controlled by the FollowCamera.cs script.
+        However, the mouse input that controls the camera's rotation seems to be handled in the PlayerMovement.cs
+        script, specifically in the OnLook method and the Update method.  In the Update method, the following code is
+        responsible for the vertical rotation of the camera (source: Pycharm's Copilot).
+
+        I will make the camera move up when I move the mouse upwards, and viceversa. To achieve that, I will add a
+        negative sign to the "look.y" variable to invert the movement of the camera when I move the mouse up and down
+        (source: Copilot).
+        */
         #region Vertical Rotation
-        followTransform.transform.rotation *= Quaternion.AngleAxis(_look.y * rotationPower, Vector3.right);
+        followTransform.transform.rotation *= Quaternion.AngleAxis(-_look.y * rotationPower, Vector3.right);
 
 
 
@@ -117,6 +126,8 @@ public class PlayerMovement : MonoBehaviour
 
         followTransform.transform.localEulerAngles = cameraAngles;
         #endregion
+        // End of the code for moving the camera up and down by moving the mouse (source:
+        // PlayerMovementInputController.cs file).
 
         nextRotation = Quaternion.Lerp(followTransform.transform.rotation, nextRotation, Time.deltaTime * rotationLerp);
 

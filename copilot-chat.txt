@@ -276,4 +276,68 @@ To use this script, you would attach it to the same game object as your `PlayerM
 
 ====================================================================================================
 
+Look at my current scripts, and tell me which one is telling my Unity game to move / rotate my camera when I move my mouse. I want to know that because, if I move my mouse upwards, the camera will move downwards, and viceversa. Well, I want to modify that so that, if I move the mouse upwards, the camera will look upwards.
+
+
+Based on the provided scripts, the camera movement is being controlled by the `FollowCamera.cs` script. However, the mouse input that controls the camera's rotation seems to be handled in the `PlayerMovement.cs` script, specifically in the `OnLook` method and the `Update` method.
+
+In the `Update` method, the following code is responsible for the vertical rotation of the camera:
+
+```csharp
+#region Vertical Rotation
+followTransform.transform.rotation *= Quaternion.AngleAxis(_look.y * rotationPower, Vector3.right);
+
+var cameraAngles = followTransform.transform.localEulerAngles;
+cameraAngles.z = 0;
+
+var angle = followTransform.transform.localEulerAngles.x;
+
+//Clamp the Up/Down rotation
+if (angle > 180 && angle < 340)
+{
+    cameraAngles.x = 340;
+}
+else if(angle < 180 && angle > 40)
+{
+    cameraAngles.x = 40;
+}
+
+followTransform.transform.localEulerAngles = cameraAngles;
+#endregion
+```
+
+The `_look.y` value is being multiplied by `rotationPower` and then used to rotate the `followTransform` (which is the camera) around the right axis (Vector3.right). This is what causes the camera to look up when the mouse is moved down and vice versa.
+
+To invert this behavior, you can simply negate the `_look.y` value by changing `_look.y * rotationPower` to `-_look.y * rotationPower`. This will cause the camera to look up when the mouse is moved up and look down when the mouse is moved down.
+
+Here's the modified code:
+
+```csharp
+#region Vertical Rotation
+followTransform.transform.rotation *= Quaternion.AngleAxis(-_look.y * rotationPower, Vector3.right);
+
+var cameraAngles = followTransform.transform.localEulerAngles;
+cameraAngles.z = 0;
+
+var angle = followTransform.transform.localEulerAngles.x;
+
+//Clamp the Up/Down rotation
+if (angle > 180 && angle < 340)
+{
+    cameraAngles.x = 340;
+}
+else if(angle < 180 && angle > 40)
+{
+    cameraAngles.x = 40;
+}
+
+followTransform.transform.localEulerAngles = cameraAngles;
+#endregion
+```
+
+This change should invert the vertical camera rotation to match the direction of the mouse movement.
+
+====================================================================================================
+
+
 

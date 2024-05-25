@@ -213,3 +213,7 @@ Accessed on May 25th, 2024.
 39) The thing is, as the name of that script suggests, that script is only supposed to handle the player's movement. I think it would be better to just create a new script to store the properties of the playable character, such as his stats (attack, defense, HP, etc). So, create me an algorithm for this new script that I want to create.
 Pycharm Copilot.
 Accessed on May 25th, 2024.
+
+39) "Look at my current scripts, and tell me which one is telling my Unity game to move / rotate my camera when I move my mouse. I want to know that because, if I move my mouse upwards, the camera will move downwards, and viceversa. Well, I want to modify that so that, if I move the mouse upwards, the camera will look upwards."
+Pycharm Copilot.
+Accessed on May 25th, 2024.
