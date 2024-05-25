@@ -205,3 +205,11 @@ Accessed on May 21st, 2024.
 James Waghmare
 Youtube
 https://www.youtube.com/watch?v=krKavfBuEQg
+
+38) I want the main character of my  Unity game, Fang, to have a property called "HP", which will store Fang's health points. He will initially have 100 points of HP. HP will be an integer. Well, I want to insert into the playable character's equivalent of it's "init()" function the property that will store their HP. Well, give me an algorithm that will let me assign new properties to the playable character, and create a property called "HP", which will be an integer. Tell me if it's better to create a new script, or if I should insert the "HP" property into one of my existing scripts. Just give me an algorithm for it.
+Pycharm Copilot.
+Accessed on May 25th, 2024.
+
+39) The thing is, as the name of that script suggests, that script is only supposed to handle the player's movement. I think it would be better to just create a new script to store the properties of the playable character, such as his stats (attack, defense, HP, etc). So, create me an algorithm for this new script that I want to create.
+Pycharm Copilot.
+Accessed on May 25th, 2024.
