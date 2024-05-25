@@ -339,5 +339,35 @@ This change should invert the vertical camera rotation to match the direction of
 
 ====================================================================================================
 
+Thanks. Now, give me an algorithm so that, if a capsule that contains an enemy makes collision with the player character, the player character will lose some HP (health points). I've already created the capsule for the enemy. So, give me an algorithm that will let me do what I just told you. I guess I would need to create a new script for handling the damage that the enemy can do to the player.
+
+Sure, you can create a new script to handle the enemy's damage. This script could be named `EnemyDamage.cs` and could look something like this:
+
+```csharp
+using UnityEngine;
+
+public class EnemyDamage : MonoBehaviour
+{
+    public int damage = 10;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerStats playerStats = collision.gameObject.GetComponent<PlayerStats>();
+            if (playerStats != null)
+            {
+                playerStats.HP -= damage;
+            }
+        }
+    }
+}
+```
+
+In this script, `damage` is the amount of HP the player will lose when the enemy collides with them. The `OnCollisionEnter` method is a Unity callback that is invoked when this object starts colliding with another object. Inside this method, we first check if the object we collided with is the player (by checking if its tag is "Player"). If it is, we get the `PlayerStats` component from the player object and reduce the player's HP by the enemy's damage.
+
+To use this script, you would attach it to the enemy's capsule. Also, make sure that your player character's game object has the tag "Player" and the `PlayerStats` script attached.
+
+====================================================================================================
 
 

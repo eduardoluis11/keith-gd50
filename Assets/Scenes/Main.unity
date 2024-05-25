@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6674187}
   m_Layer: 0
   m_Name: Fang Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3176,6 +3176,7 @@ GameObject:
   - component: {fileID: 661657723}
   - component: {fileID: 661657722}
   - component: {fileID: 661657727}
+  - component: {fileID: 661657728}
   m_Layer: 0
   m_Name: Imanus Capsule
   m_TagString: Untagged
@@ -3276,6 +3277,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 6674178}
   speed: 1.5
+--- !u!114 &661657728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661657721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb0c2a3111881444686ffa7f83fa9a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &692076972
 GameObject:
   m_ObjectHideFlags: 0

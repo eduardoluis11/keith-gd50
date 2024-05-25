@@ -214,6 +214,11 @@ Accessed on May 25th, 2024.
 Pycharm Copilot.
 Accessed on May 25th, 2024.
 
-39) "Look at my current scripts, and tell me which one is telling my Unity game to move / rotate my camera when I move my mouse. I want to know that because, if I move my mouse upwards, the camera will move downwards, and viceversa. Well, I want to modify that so that, if I move the mouse upwards, the camera will look upwards."
+40) "Look at my current scripts, and tell me which one is telling my Unity game to move / rotate my camera when I move my mouse. I want to know that because, if I move my mouse upwards, the camera will move downwards, and viceversa. Well, I want to modify that so that, if I move the mouse upwards, the camera will look upwards."
+Pycharm Copilot.
+Attached the FollowCamera.cs and the PlayerMovement.cs scripts.
+Accessed on May 25th, 2024.
+
+41) "Thanks. Now, give me an algorithm so that, if a capsule that contains an enemy makes collision with the player character, the player character will lose some HP (health points). I've already created the capsule for the enemy. So, give me an algorithm that will let me do what I just told you. I guess I would need to create a new script for handling the damage that the enemy can do to the player."
 Pycharm Copilot.
 Accessed on May 25th, 2024.
