@@ -34,3 +34,46 @@ Source: Conversation with Bing, 6/5/2024
 (21) en.wikipedia.org. https://en.wikipedia.org/wiki/Unity_(game_engine).
 
 ===================================================================================================================
+
+I have a bug in my 3D Unity game in which, if the capsule Game Object for the enemy touches the player, the player will fall down to one of his sides. The player is a 3D model with a capsule attached to it. Well, the player's capsule falls down if the enemy capsule touches it. Well, what I want is that the enemy capsule should touch the player's capsule, so that the enemy hurts and deals damage to the player if the enemy touches the player. And I don't want neither the player nor the enemy's capsule to fall to their sides. Could you give me links to Youtube Unity tutorials that explain to me how to handle collisions between a player and an enemy?
+
+(I attached a screenshot of my Unity editor showing Fang falling over after being tocuhed by the Enemy).
+
+
+
+I understand that you're having an issue with your Unity game where the player's capsule falls over when it collides with the enemy's capsule. You want the enemy to deal damage to the player upon collision, but you don't want either the player or the enemy to fall over. 
+
+Here are some YouTube tutorials that might help you understand how to handle collisions in Unity:
+
+1. [Detecting Enemy Collisions - Unity Tutorial](^1^): This tutorial explains how to add collisions, a win condition, and prefabs to a 2D platformer game in Unity¹.
+
+2. [Detecting Collisions (OnCollisionEnter) - Unity Official Tutorials](^2^): This tutorial shows how to detect collisions between objects in Unity using the OnCollisionEnter function².
+
+3. [A Better Way To Manage Collision in Unity (For Beginners)](^3^): This tutorial explains how to merge OnCollisionEnter and OnTriggerEnter in Unity to create a centralized collision system for game development³.
+
+You might also find the following resources helpful:
+
+- [Unity - Manual: OnCollision events](^4^): This is Unity's official documentation on collision events. It explains how to use OnCollisionEnter, OnCollisionStay, and OnCollisionExit functions⁴.
+
+- [Unity - Manual: Example scripts for collider events](^6^): This page provides example scripts for collider events⁶.
+
+Remember, one of the key things to ensure is that at least one of the GameObjects involved in the collision should have a non-kinematic Rigidbody. If both GameObjects in a collision are kinematic, the collision does not call OnCollision functions⁴.
+
+I hope these resources help you solve your problem! If you have any more questions, feel free to ask. Happy coding! 😊
+
+Source: Conversation with Copilot, 26/5/2024
+(1) Detecting Enemy Collisions - Unity Tutorial - YouTube. https://www.youtube.com/watch?v=ND1orPLw5EQ.
+(2) Detecting Enemy Collisions - Unity Tutorial - YouTube. https://www.youtube.com/watch?v=ND1orPLw5EQ.
+(3) Detecting Collisions (OnCollisionEnter) - Unity Official Tutorials. https://www.youtube.com/watch?v=QRp4V1JTZnM.
+(4) Detecting Collisions (OnCollisionEnter) - Unity Official Tutorials. https://www.youtube.com/watch?v=QRp4V1JTZnM.
+(5) A Better Way To Manage Collision in Unity (For Beginners). https://www.youtube.com/watch?v=TRvnN4bfAxM.
+(6) A Better Way To Manage Collision in Unity (For Beginners). https://www.youtube.com/watch?v=TRvnN4bfAxM.
+(7) Unity - Manual: OnCollision events. https://docs.unity3d.com/Manual/collider-interactions-oncollision.html.
+(8) Unity - Manual: OnCollision events. https://docs.unity3d.com/Manual/collider-interactions-oncollision.html.
+(9) Unity - Manual: Example scripts for collider events. https://docs.unity3d.com/Manual/collider-interactions-example-scripts.html.
+(10) Unity - Manual: Example scripts for collider events. https://docs.unity3d.com/Manual/collider-interactions-example-scripts.html.
+(11) How Do I Ignore a Collision Between an Enemy and the Player?. https://discussions.unity.com/t/how-do-i-ignore-a-collision-between-an-enemy-and-the-player/220466.
+(12) Odd issue with collision between player and enemy.. https://discussions.unity.com/t/odd-issue-with-collision-between-player-and-enemy/37833.
+
+=================================================================================================
+

@@ -232,3 +232,8 @@ Accessed on May 25th, 2024.
 to fix a bug in which I needed to import Unity's SceneManager library in order to load my scenes (liek the Game Over scene)."
 VS Code Copilot.
 Accessed on May 25th, 2024.
+
+44) "Cool. Well, now, I have a bug in which, if the capsule Game Object for the enemy touches the player, the player will fall down to one of his sides. The player is a 3D model with a capsule attached to it. Well, the player's capsule falls down if the enemy capsule touches it. Well, what I want is that the enemy capsule should touch the player's capsule, so that the enemy hurts and deals damage to the player if the enemy touches the player. And I don't want neither the player nor the enemy's capsule to fall to their sides. Could you give me links to Youtube Unity tutorials that explain to me how to make a 3D enemy to touch and deal damage to the player?"
+ChatGPT 4o (Omni).
+(I attached an image showing that the player character fell over in the Unity Editor).
+Accessed on May 26th, 2024.
