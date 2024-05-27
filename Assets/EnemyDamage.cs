@@ -18,6 +18,9 @@ object has the tag "Player" and the `PlayerStats` script attached (source: Copil
 public class EnemyDamage : MonoBehaviour
 {
 
+    // This is the PlayerStats script that will be used to access the Player's HP (source: https://www.youtube.com/watch?v=_1Oou4459Us)
+    public PlayerStats playerStats;
+
     // This is the damage that the Boss will do to the Player (source: Copilot)
     public int damage = 10;
 
@@ -26,16 +29,28 @@ public class EnemyDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerStats playerStats = collision.gameObject.GetComponent<PlayerStats>();
-            if (playerStats != null)
-            {
-                // If the Boss touches the Player, the Player will take damage
-                playerStats.HP -= damage;
 
-                // DEBUG: This will print "Player took (number of points) damage" in the console
-                Debug.Log("Player took " + damage + " damage");
+            // I optimized my code that makes the Boss damage the player (source: https://www.youtube.com/watch?v=_1Oou4459Us)
 
-            }
+            // If the Boss touches the Player, the Player will take damage
+            playerStats.HP -= damage;
+
+            // DEBUG: This will print "Player took (number of points) damage" in the console
+            Debug.Log("Player took " + damage + " damage");
+
+
+
+
+            // PlayerStats playerStats = collision.gameObject.GetComponent<PlayerStats>();
+            // if (playerStats != null)
+            // {
+            //     // If the Boss touches the Player, the Player will take damage
+            //     playerStats.HP -= damage;
+
+            //     // DEBUG: This will print "Player took (number of points) damage" in the console
+            //     Debug.Log("Player took " + damage + " damage");
+
+            // }
         }
     }
 

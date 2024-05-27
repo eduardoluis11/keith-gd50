@@ -237,3 +237,8 @@ Accessed on May 25th, 2024.
 ChatGPT 4o (Omni).
 (I attached an image showing that the player character fell over in the Unity Editor).
 Accessed on May 26th, 2024.
+
+45) Player Health System #1: Taking Damage (Unity Tutorial).
+Youtube.
+https://www.youtube.com/watch?v=_1Oou4459Us
+Accessed on May 27th, 2024.

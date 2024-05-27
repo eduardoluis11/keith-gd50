@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 6674185}
   - component: {fileID: 6674186}
   - component: {fileID: 6674187}
+  - component: {fileID: 6674188}
   m_Layer: 0
   m_Name: Fang Capsule
   m_TagString: Player
@@ -401,6 +402,18 @@ MonoBehaviour:
   HP: 100
   attack: 10
   defense: 5
+--- !u!114 &6674188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6674174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bcbe1d657903cc42808cd72bc034281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &8151041
 Mesh:
   m_ObjectHideFlags: 0
@@ -3178,6 +3191,7 @@ GameObject:
   - component: {fileID: 661657727}
   - component: {fileID: 661657728}
   - component: {fileID: 661657729}
+  - component: {fileID: 661657730}
   m_Layer: 0
   m_Name: Imanus Capsule
   m_TagString: Enemy
@@ -3290,7 +3304,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0c2a3111881444686ffa7f83fa9a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
+  playerStats: {fileID: 6674187}
+  damage: 10
 --- !u!54 &661657729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3299,7 +3314,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661657721}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -3307,6 +3322,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &661657730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661657721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0ffd620b4ef5a44c97357e8db94610f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &692076972
 GameObject:
   m_ObjectHideFlags: 0
