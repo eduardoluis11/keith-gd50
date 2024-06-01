@@ -77,3 +77,27 @@ Source: Conversation with Copilot, 26/5/2024
 
 =================================================================================================
 
+
+In my Unity game, if the enemy's capsule touches the player's capsule, buggy behavior will occur. The player's capsule will fall over to the side. Meanwhile, the enemy's capsule will start flying and start going farther and farther towards the sky, getting farther and farther away from the player. I don't want that. I just want the player and the enemy's capsule to slightnly nudge each other when they collide with each other. What would you recommend? Tweaking the collision settings (such as the gravity) for each capsule in the Unity Editor? Or would you recommend creating 2 scripts for handling collision: one for the enemy's capsule, and another one for the player's capsule (like the ones that I attached to this message)? Or would you recommend both tweaking the settings on the Unity editor, and creating a script for the collision detection for each capsule?
+
+
+
+
+I understand your issue. When the player's capsule and the enemy's capsule collide in your Unity game, you want them to slightly nudge each other without falling over or flying away. Here are some suggestions:
+
+1. **Tweak Physics Settings in Unity Editor**: You can adjust the Rigidbody properties of your capsules in the Unity Editor. This includes properties like Mass, Drag, and Angular Drag. A high mass will make an object more stable. Drag can be used to slow down movement, and Angular Drag can be used to prevent an object from spinning out of control. You can also adjust the Physics Material of your colliders. A Physics Material with a high friction will make the capsules more likely to stick together, while a material with a low friction will make them slide apart.
+
+2. **Create Collision Handling Scripts**: You can create separate scripts for the player and the enemy capsules to handle collisions. In these scripts, you can use the OnCollisionEnter, OnCollisionStay, and OnCollisionExit methods to detect when a collision occurs and decide what should happen. For example, you could apply a small force to push the capsules apart, or you could change the velocity of the capsules directly.
+
+3. **Use Layers and the Physics Matrix**: Unity allows you to assign objects to different layers, and you can then use the Physics Matrix to control which layers can collide with each other. You could assign your player and enemy capsules to different layers and then adjust the Physics Matrix so that they can collide with each other but not with other objects.
+
+4. **Adjust the Collider Shapes**: If your capsules are falling over, it might be because the colliders do not match the shape of the capsules very well. You can try adjusting the size and position of the colliders, or you could use a different type of collider that fits better.
+
+In conclusion, I would recommend both tweaking the settings in the Unity Editor and creating collision detection scripts for each capsule. This will give you the most control over the behavior of your capsules. Remember to test your game frequently while making these adjustments to see what works best. Good luck with your game development! 😊
+
+Source: Conversation with Copilot, 1/6/2024
+(1) https://www.reddit.com/r/Unity3D/comments/aah5h3/cyclesio_gameplay_footage_feedback.... https://www.reddit.com/r/Unity3D/comments/aah5h3/cyclesio_gameplay_footage_feedback_appreciated/.
+(2) https://nonafox.itch.io/eternal-blue. https://nonafox.itch.io/eternal-blue.
+(3) https://www.youtube.com/watch?v=7qCRZQzEwd8. https://www.youtube.com/watch?v=7qCRZQzEwd8.
+(4) https://devforum.roblox.com/t/animation-not-looking-as-intended-help/2528508. https://devforum.roblox.com/t/animation-not-looking-as-intended-help/2528508.
+(5) https://www.youtube.com/watch?v=Fq4U-yKxokg. https://www.youtube.com/watch?v=Fq4U-yKxokg.

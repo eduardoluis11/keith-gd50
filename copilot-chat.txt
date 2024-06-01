@@ -407,4 +407,52 @@ In this code, the `Update` method checks every frame if the player's HP has drop
 
 ====================================================================================================
 
+/fix In my Unity game, if the enemy's capsule touches the player's capsule, buggy behavior will occur. The player's capsule will fall over to the side. Meanwhile, the enemy's capsule will start flying and start going farther and farther towards the sky, getting farther and farther away from the player. I don't want that. I just want the player and the enemy's capsule to slightnly nudge each other when they collide with each other. What would you recommend? Tweaking the collision settings (such as the gravity) for each capsule in the Unity Editor? Or would you recommend creating 2 scripts for handling collision: one for the enemy's capsule, and another one for the player's capsule (like the ones that I attached to this message)? Or would you recommend both tweaking the settings on the Unity editor, and creating a script for the collision detection for each capsule?
+
+
+
+The behavior you're describing sounds like it could be due to the physics settings of the capsules in Unity. Here are a few things you could try:
+
+**Problem 1: Capsules falling over or flying away**
+
+This could be due to the mass, drag, or gravity settings of the Rigidbody components attached to your capsules.
+
+**Solution:**
+
+1. Check the mass of your capsules. If one capsule has a much larger mass than the other, it could cause the lighter one to fly away upon collision. Try setting the masses to be equal.
+
+2. Check the drag settings. If the drag is too low, objects can continue moving for a long time after a collision. Try increasing the drag.
+
+3. Check the gravity settings. If gravity is too low, objects can float away after a collision. Make sure gravity is enabled and set to a reasonable value.
+
+You can adjust these settings in the Unity Editor by selecting the capsule and modifying the Rigidbody component in the Inspector.
+
+**Problem 2: Capsules not colliding as expected**
+
+This could be due to the collision detection mode of the Rigidbody components.
+
+**Solution:**
+
+1. Check the collision detection mode of your Rigidbody components. If it's set to "Discrete", try changing it to "Continuous" for more accurate collision detection.
+
+Again, you can adjust this setting in the Unity Editor by selecting the capsule and modifying the Rigidbody component in the Inspector.
+
+As for your scripts, they seem to be empty at the moment. If you want to add custom behavior when the player and enemy collide, you could add this to your `PlayerCollisionDetection.cs` and `BossCollisionDetection.cs` scripts. For example, you could add a method like this to handle the collision:
+
+```csharp
+private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.CompareTag("Enemy"))
+    {
+        // Handle collision with enemy
+    }
+}
+```
+
+This method will be called when the player collides with another object. Inside the method, we check if the object we collided with is the enemy (by checking if its tag is "Enemy"). If it is, we handle the collision as necessary.
+
+Remember to set the "Enemy" tag on your enemy capsule in the Unity Editor.
+
+====================================================================================================
+
 
