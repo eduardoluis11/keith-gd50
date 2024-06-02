@@ -48,5 +48,19 @@ public class PlayerController : MonoBehaviour
                 // MovePlayer(hit.point);
             }
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
+
+                // This will be empty for the time being.
+            }
+        }
     }
 }
