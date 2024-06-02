@@ -126,3 +126,22 @@ If you're still getting the "Failed to create agent because there is no valid Na
 
 I clicked on line 45 in PlayerStats.cs in the "SceneManager" line of code, and clicked on "Quick Fix" on VS code 
 to fix a bug in which I needed to import Unity's SceneManager library in order to load my scenes (liek the Game Over scene). 
+
+=============================================================================================
+
+@workspace /fix Thanks. Now, if I click on the floor in my Unity game, the player, which is represented by a cube, should move to that position. However, instead, when I click on the floor, I get this error message in Unity's console: ""SetDestination" can only be called on an active agent that has been placed on a NavMesh. UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3) PlayerMotor:MoveToPoint (UnityEngine.Vector3) (at Assets/PlayerMotor.cs:25) PlayerController:Update () (at Assets/PlayerController.cs:43) ". The line of code that is causing that bug, and the line of code that should make the player move once you click on the floor, is the one that I'm currently selecting. What's causing this bug, and how do I fix it?
+
+(highlighted line 43 from PlayerController.cs)
+
+The error message you're seeing is indicating that the SetDestination method is being called on a NavMeshAgent that is either not active or not placed on a NavMesh.
+
+Here are a few things you can check:
+
+Ensure the NavMeshAgent is enabled: Before calling SetDestination, you should ensure that the NavMeshAgent is enabled. You can do this by checking the enabled property of the NavMeshAgent.
+
+Ensure the NavMeshAgent is on the NavMesh: As mentioned in the previous response, the NavMeshAgent needs to be placed on a NavMesh for SetDestination to work. You can visualize the NavMesh in the Scene view by clicking on the Navigation tab and checking the Show NavMesh box.
+
+Here's how you can modify your code to check these conditions before calling SetDestination:
+
+In this code, agent is assumed to be your NavMeshAgent instance. Replace agent with the actual variable name if it's different. This code will only call SetDestination if the NavMeshAgent is enabled and on the NavMesh. If it's not, it will log an error message to the console.
+

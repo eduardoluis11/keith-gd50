@@ -247,3 +247,9 @@ Accessed on May 27th, 2024.
 YouTube
 https://youtu.be/S2mK6KFdv0I?si=Ij4sMgdtDxQ8w1pH
 Accessed on June 1st, 2024.
+
+47) "@workspace /fix Thanks. Now, if I click on the floor in my Unity game, the player, which is represented by a cube, should move to that position. However, instead, when I click on the floor, I get this error message in Unity's console: ""SetDestination" can only be called on an active agent that has been placed on a NavMesh. UnityEngine.AI.NavMeshAgent:SetDestination (UnityEngine.Vector3) PlayerMotor:MoveToPoint (UnityEngine.Vector3) (at Assets/PlayerMotor.cs:25) PlayerController:Update () (at Assets/PlayerController.cs:43) ". The line of code that is causing that bug, and the line of code that should make the player move once you click on the floor, is the one that I'm currently selecting. What's causing this bug, and how do I fix it?
+
+(highlighted line 43 from PlayerController.cs)"
+Copilot from VS Code.
+Accessed on June 2nd, 2024.

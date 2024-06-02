@@ -9,17 +9,22 @@ Most of this code is taken from this tutorial from Brackeys: https://youtu.be/S2
 
 */
 
+[RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
 
+    public LayerMask movementMask; // The layer mask that will be used to determine where the player can move to
+
     // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
     Camera cam;
+    PlayerMotor motor;
 
     // Start is called before the first frame update
     void Start()
     {
         // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
         cam = Camera.main;
+        motor = GetComponent<PlayerMotor>();
     }
 
     // Update is called once per frame
@@ -31,11 +36,13 @@ public class PlayerController : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out hit, 100, movementMask))
             {
                 // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
 
-                Debug.Log("We hit " + hit.collider.name + " " + hit.point);
+                motor.MoveToPoint(hit.point);
+
+                // Debug.Log("We hit " + hit.collider.name + " " + hit.point);
 
                 // // Move our player to what we hit
                 // MovePlayer(hit.point);
