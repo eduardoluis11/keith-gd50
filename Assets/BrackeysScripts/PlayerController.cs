@@ -12,6 +12,7 @@ Most of this code is taken from this tutorial from Brackeys: https://youtu.be/S2
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
+    public Interactable focus;
 
     public LayerMask movementMask; // The layer mask that will be used to determine where the player can move to
 
@@ -42,6 +43,8 @@ public class PlayerController : MonoBehaviour
 
                 motor.MoveToPoint(hit.point);
 
+                RemoveFocus();
+
                 // Debug.Log("We hit " + hit.collider.name + " " + hit.point);
 
                 // // Move our player to what we hit
@@ -58,9 +61,29 @@ public class PlayerController : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
             {
                 // Source: Brackeys: https://youtu.be/S2mK6KFdv0I?si=Me2B0Dru_yU9PCLc
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+
+                if (interactable != null)
+                {
+                    SetFocus(interactable);
+                }
 
                 // This will be empty for the time being.
             }
         }
     }
+
+    void SetFocus(Interactable newFocus)
+    {
+        focus = newFocus;
+        motor.FollowTarget(newFocus);
+    }
+
+    void RemoveFocus()
+    {
+        focus = null;
+        motor.StopFollowingTarget();
+    }
 }
+
+

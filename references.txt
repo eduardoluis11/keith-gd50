@@ -253,3 +253,8 @@ Accessed on June 1st, 2024.
 (highlighted line 43 from PlayerController.cs)"
 Copilot from VS Code.
 Accessed on June 2nd, 2024.
+
+48) Brackey's How to Make an RPG in Unity E02
+YouTube
+https://youtu.be/9tePzyL6dgc?si=i6dSdIY29xrdMJVN
+Accessed on June 4th, 2024.
