@@ -455,4 +455,66 @@ Remember to set the "Enemy" tag on your enemy capsule in the Unity Editor.
 
 ====================================================================================================
 
+I want to add the "CharactersBrackeys" folder into my .gitignore. However, Pycharm isn't highlighting the CharactersBrackeys folder to indicate that it was added to my .gitignore. And, in fact, the entirety of the "CharactersBrackeys" folder got uploaded into GitHub, which I didn't want to. So, how can I add that folder properly into my .gitignore, and how do I remove that folder from my Github repo?
+
+
+
+To properly add the "CharactersBrackeys" folder to your `.gitignore`, you should specify the path relative to the location of the `.gitignore` file. If the `.gitignore` file is in the root directory of your project and the "CharactersBrackeys" folder is directly under the "Assets" folder, you should add the following line to your `.gitignore`:
+
+```plaintext
+Assets/CharactersBrackeys/
+```
+
+This will ignore the entire "CharactersBrackeys" folder.
+
+As for removing the folder from your GitHub repository, you can do this by using the `git rm` command followed by `--cached` option. This will remove the files from the repository but not from your local file system. Here are the steps:
+
+1. First, commit your changes to the `.gitignore` file.
+2. Then, run the following command in your terminal:
+
+```bash
+git rm -r --cached Assets/CharactersBrackeys/
+```
+
+3. After running this command, commit your changes:
+
+```bash
+git commit -m "Removed CharactersBrackeys folder"
+```
+
+4. Finally, push your changes to GitHub:
+
+```bash
+git push origin main
+```
+
+This will remove the "CharactersBrackeys" folder from your GitHub repository but keep it in your local project.
+
+====================================================================================================
+
+Ok. Now, the CharacterBrackeys folder is now being highlihted by pycharm as if indicating that the .gitignore file is detecting it. However, the CharacterBrackeys folder is still uploaded into my Github repo. Will they get eliminated from my repo after some time? As a reference, once I executed all the Git commands that you gave me, I got these messages: "s/Torso_3/Male_Torso_3_Skin_Normals.tga
+ delete mode 100644 Assets/CharactersBrackeys/Male/Textures/Torsos/Torso_3/Male_Torso_3_Skin_Normals.tga.meta
+ delete mode 100644 Assets/CharactersBrackeys/Male/Textures/Torsos/Torso_3/Male_Torso_3_Yellow.tga
+ delete mode 100644 Assets/CharactersBrackeys/Male/Textures/Torsos/Torso_3/Male_Torso_3_Yellow.tga.meta
+
+D:\Torre\Clases Harvard\Game Dev CS50\Tareas\Final Project\codigo\keith-gd50 (main -> origin)
+λ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/eduardoluis11/keith-gd50.git
+   3ea961a..8537848  main -> main"
+
+
+The messages you're seeing indicate that the files have been successfully removed from your Git repository. However, they may still appear on GitHub if you're looking at a previous commit where they were still part of the repository.
+
+To confirm that the files have been removed, you can check the latest commit on your GitHub repository. You should see that the "CharactersBrackeys" folder is no longer there. If you're still seeing the folder, try refreshing the page or clearing your browser cache.
+
+Remember, the changes you made only affect the current and future commits. The "CharactersBrackeys" folder will still be present in the history of your Git repository, as it was part of the previous commits. If you want to completely remove it from your repository's history, you would need to use a more advanced Git feature like `filter-branch` or the BFG Repo-Cleaner. However, this is generally not recommended unless you need to remove sensitive data, as it can complicate your repository's history.
+
+====================================================================================================
 
