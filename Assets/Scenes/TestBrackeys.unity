@@ -3328,7 +3328,7 @@ GameObject:
   - component: {fileID: 970043306}
   - component: {fileID: 970043310}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3405,7 +3405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970043305}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -345.67603, y: 7.45, z: 421.35}
+  m_LocalPosition: {x: -345.67603, y: 7.45, z: 420.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3424,7 +3424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bde234863203fc4f8b85fbd68756278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3.64
+  radius: 1.05
+  interactionTransform: {fileID: 970043309}
 --- !u!43 &999924140
 Mesh:
   m_ObjectHideFlags: 0
