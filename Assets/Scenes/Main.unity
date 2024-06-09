@@ -934,7 +934,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1008963750}
   offset: {x: 0, y: -2.91, z: 0.16}
+  zoomSpeed: 4
+  minZoom: 5
+  maxZoom: 15
   pitch: 2
+  yawSpeed: 100
 --- !u!81 &120730786
 AudioListener:
   m_ObjectHideFlags: 0
@@ -4050,6 +4054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39fd017a79e54974ca571991296d22c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  focus: {fileID: 0}
   movementMask:
     serializedVersion: 2
     m_Bits: 256
@@ -6361,7 +6366,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1008963750}
   offset: {x: 0, y: -1.86, z: 0.75}
+  zoomSpeed: 4
+  minZoom: 5
+  maxZoom: 15
   pitch: 2
+  yawSpeed: 100
 --- !u!1001 &1335341725003707047
 PrefabInstance:
   m_ObjectHideFlags: 0
