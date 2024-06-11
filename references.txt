@@ -258,3 +258,11 @@ Accessed on June 2nd, 2024.
 YouTube
 https://youtu.be/9tePzyL6dgc?si=i6dSdIY29xrdMJVN
 Accessed on June 4th, 2024.
+
+49) Brackey's How to Make an RPG in Unity E09
+YouTube
+https://youtu.be/xppompv1DBg?si=lmjPyuIb1YNyAIhz
+Accessed on June 11th, 2024.
+
+NOTE: IF I END UP USING OTHER VIDEOS FROM Brackeys' "How to Make an RPG in Unity" tutorial, INCLUDE THEM HERE.
+THE TUTORIAL HAS 14 episodes in total. Include only the episodes that I ended up using.
