@@ -266,3 +266,8 @@ Accessed on June 11th, 2024.
 
 NOTE: IF I END UP USING OTHER VIDEOS FROM Brackeys' "How to Make an RPG in Unity" tutorial, INCLUDE THEM HERE.
 THE TUTORIAL HAS 14 episodes in total. Include only the episodes that I ended up using.
+
+50) COMBAT - Making an RPG in Unity (E11)
+YouTube
+https://youtu.be/FhAdkLC-mSg?si=6gtY_Thz0OCcBrTg
+Accessed on June 12th, 2024.
