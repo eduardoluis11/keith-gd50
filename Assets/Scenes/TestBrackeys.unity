@@ -2902,6 +2902,7 @@ GameObject:
   - component: {fileID: 661657728}
   - component: {fileID: 661657729}
   - component: {fileID: 661657730}
+  - component: {fileID: 661657731}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -3018,9 +3019,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   damage:
-    baseValue: 5
+    baseValue: 20
   armor:
     baseValue: 3
+--- !u!114 &661657731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661657721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89897ecd05f30c04cadebd51e92c6e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!43 &698121938
 Mesh:
   m_ObjectHideFlags: 0
@@ -3764,12 +3778,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1008963749}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeace52e55159704dbce266539a330af, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a0c60ba9ee029b4caf8eeb653c6bb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 10
+    baseValue: 0
   armor:
     baseValue: 0
 --- !u!114 &1008963758
@@ -3784,6 +3798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89897ecd05f30c04cadebd51e92c6e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!4 &1041557569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1335341725372029670, guid: c621c363f7cc45343ba7dc0e9901d20a, type: 3}

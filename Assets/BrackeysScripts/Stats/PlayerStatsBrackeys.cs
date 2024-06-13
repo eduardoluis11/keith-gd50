@@ -24,4 +24,15 @@ public class PlayerStatsBrackeys : CharacterStats
     // {
         
     // }
+
+    public override void Die()
+    {
+
+        // DEbug message to confirm that this function is being called when the player dies (source: VS Code from Copilot).
+        Debug.Log("Die method called");
+
+        base.Die();
+        // Kill the player
+        PlayerManager.instance.KillPlayer();
+    }
 }

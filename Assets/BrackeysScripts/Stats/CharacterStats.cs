@@ -32,6 +32,9 @@ public class CharacterStats : MonoBehaviour
         Debug.Log(transform.name + " takes " + damage + " damage.");
 
         if (currentHealth <= 0) {
+
+            // DEBUG message to confirm that this snippet exectures when the player dies
+            Debug.Log("The die() method should be called, but it's not working.");
             Die();
         }
     }
