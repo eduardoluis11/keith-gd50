@@ -3019,9 +3019,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   damage:
-    baseValue: 20
+    baseValue: 5
   armor:
-    baseValue: 3
+    baseValue: 0
 --- !u!114 &661657731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3035,6 +3035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 1
+  attackDelay: 0.6
 --- !u!43 &698121938
 Mesh:
   m_ObjectHideFlags: 0
@@ -3783,7 +3784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 0
+    baseValue: 10
   armor:
     baseValue: 0
 --- !u!114 &1008963758
@@ -3799,6 +3800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackSpeed: 1
+  attackDelay: 0.6
 --- !u!4 &1041557569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1335341725372029670, guid: c621c363f7cc45343ba7dc0e9901d20a, type: 3}
