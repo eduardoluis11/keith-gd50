@@ -13,13 +13,19 @@ public class CameraController : MonoBehaviour {
 	public Transform target;
 
 	public Vector3 offset;
+
+	public float zoomSpeed = 4f;
+
 	// public float smoothSpeed = 2f;
 
 	public float currentZoom = 10f;
 
     public float pitch = 2f;
-	// public float maxZoom = 3f;
-	// public float minZoom = .3f;
+	public float maxZoom = 3f;
+	public float minZoom = .3f;
+	public float yawSpeed = 100f;
+
+	public float currentYaw = 0f;
 	// public float yawSpeed = 70;
 	// public float zoomSensitivity = .7f;
 	// float dst;
@@ -33,16 +39,20 @@ public class CameraController : MonoBehaviour {
 	// 	targetZoom = currentZoom;
 	// }
 
-	// void Update ()
-	// {
-	// 	float scroll = Input.GetAxisRaw("Mouse ScrollWheel") * zoomSensitivity;
+	void Update ()
+	{
+		// float scroll = Input.GetAxisRaw("Mouse ScrollWheel") * zoomSensitivity;
+		currentZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 
-	// 	if (scroll != 0f)
-	// 	{
-	// 		targetZoom = Mathf.Clamp(targetZoom - scroll, minZoom, maxZoom);
-	// 	}
-	// 	currentZoom = Mathf.SmoothDamp (currentZoom, targetZoom, ref zoomSmoothV, .15f);
-	// }
+		// if (scroll != 0f)
+		// {
+		// 	targetZoom = Mathf.Clamp(targetZoom - scroll, minZoom, maxZoom);
+		// }
+		// currentZoom = Mathf.SmoothDamp (currentZoom, targetZoom, ref zoomSmoothV, .15f);
+		currentZoom = Mathf.Clamp (currentZoom, minZoom, maxZoom);
+
+		currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
+	}
 
 	void LateUpdate () {
 
@@ -52,8 +62,9 @@ public class CameraController : MonoBehaviour {
 		// transform.position = target.position - transform.forward * dst * currentZoom;
 		// transform.LookAt(target.position);
 
-		// float yawInput = Input.GetAxisRaw ("Horizontal");
-		// transform.RotateAround (target.position, Vector3.up, -yawInput * yawSpeed * Time.deltaTime);
+		// float currentYaw = Input.GetAxisRaw ("Horizontal");
+		// transform.RotateAround (target.position, Vector3.up, -currentYaw * yawSpeed * Time.deltaTime);
+		transform.RotateAround(target.position, Vector3.up, currentYaw);
 	}
 
 }
