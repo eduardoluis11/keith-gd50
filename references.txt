@@ -271,3 +271,21 @@ THE TUTORIAL HAS 14 episodes in total. Include only the episodes that I ended up
 YouTube
 https://youtu.be/FhAdkLC-mSg?si=6gtY_Thz0OCcBrTg
 Accessed on June 12th, 2024.
+
+51) PlayerController.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub
+https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/PlayerController.cs
+Accessed on June 19th, 2024.
+
+52) PlayerMotor.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub
+https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/PlayerMotor.cs
+Accessed on June 19th, 2024.
+
+53) CameraController.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub
+https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/CameraController.cs
+Accessed on June 19th, 2024.

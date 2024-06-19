@@ -62,8 +62,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // This will modify the _move variable (source: PlayerMovementInputController.cs file).
+    // This is what makes the player move if I hit the WASD keys (source: Copilot from VS Code).
     public void OnMove(InputValue value)
     {
+        // This will help me debug if the player is pressing the WASD keys.
+        Debug.Log("Player is moving and pressing the WASD keys.");
+
         _move = value.Get<Vector2>();
     }
 
@@ -202,10 +206,14 @@ public class PlayerMovement : MonoBehaviour
 
 
         // This lets the Player jump while pressing the space bar.
-        // BUG: The player can't jump yet.
+        // I removed this since the game was too buggy if I added gravity to it.
     	if (Input.GetKeyDown(KeyCode.Space)) // Jumping
     	{
         	rb.AddForce(new Vector3(0, jumpForce, 0));
+
+            // DEBUG: this is to see if the player can jump.
+            Debug.Log("Player is jumping");
+
     	}
     }
 }

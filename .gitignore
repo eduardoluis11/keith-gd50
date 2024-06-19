@@ -74,10 +74,5 @@ crashlytics-build.properties
 # "Cartoon Heroes" Folder from the Assets folder
 /[Aa]ssets/[Cc]artoon [Hh]eroes/
 
-# "Male" folder from the "CharacterBrackeys" folder from the Assets folder
-/[Aa]ssets/[Cc]haractersBrackeys
-/Assets/CharactersBrackeys/
-
 # "MediumMechStriker" Folder from the Assets folder
 /[Aa]ssets/[Mm]edium[Mm]ech[Ss]triker/
-
