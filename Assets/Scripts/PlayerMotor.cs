@@ -29,6 +29,24 @@ public class PlayerMotor : MonoBehaviour {
 		agent.SetDestination(point);
 	}
 
+	public void FollowTarget (Interactable newTarget)
+	{
+		agent.stoppingDistance = newTarget.radius * .8f;
+		agent.updateRotation = false;
+		
+		target = newTarget.interactionTransform;
+	}
+
+	public void StopFollowingTarget ()
+	{
+		agent.stoppingDistance = 0f;
+		agent.updateRotation = true;
+		
+		target = null;
+	}
+
+
+
 	// void OnFocusChanged (Interactable newFocus)
 	// {
 	// 	if (newFocus != null)
@@ -50,8 +68,11 @@ public class PlayerMotor : MonoBehaviour {
 	{
 		if (target != null)
 		{
-			MoveToPoint (target.position);
-			FaceTarget ();
+			// MoveToPoint (target.position);
+			// FaceTarget ();
+
+			agent.SetDestination(target.position);
+			FaceTarget();
 
 		}
 	}

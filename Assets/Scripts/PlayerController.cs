@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
 	// public delegate void OnFocusChanged(Interactable newFocus);
 	// public OnFocusChanged onFocusChangedCallback;
 
-	// public Interactable focus;	// Our current focus: Item, Enemy etc.
+	public Interactable focus;	// Our current focus: Item, Enemy etc.
 
 	public LayerMask movementMask;		// The ground
 	// public LayerMask interactionMask;	// Everything we can interact with
@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour {
 
 				motor.MoveToPoint(hit.point);
 
+				RemoveFocus();
+
 				// SetFocus(null);
 			}
 		}
@@ -66,14 +68,24 @@ public class PlayerController : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, 100))
 			{
 				// SetFocus(hit.collider.GetComponent<Interactable>());
+				Interactable interactable = hit.collider.GetComponent<Interactable>();
+
+				if (interactable != null)
+				{
+					SetFocus(interactable);
+				}
+				
 			}
 		}
 
 	}
 
-	// // Set our focus to a new focus
-	// void SetFocus (Interactable newFocus)
-	// {
+	// Set our focus to a new focus
+	void SetFocus (Interactable newFocus)
+	{
+
+
+
 	// 	if (onFocusChangedCallback != null)
 	// 		onFocusChangedCallback.Invoke(newFocus);
 
@@ -84,9 +96,21 @@ public class PlayerController : MonoBehaviour {
 	// 		focus.OnDefocused();
 	// 	}
 
-	// 	// Set our focus to what we hit
-	// 	// If it's not an interactable, simply set it to null
-	// 	focus = newFocus;
+		if (newFocus != focus)
+		{
+
+			if (focus != null)
+				focus.OnDefocused();
+			focus = newFocus;
+			motor.FollowTarget(newFocus);
+
+		}
+
+		// Set our focus to what we hit
+		// If it's not an interactable, simply set it to null
+		
+		newFocus.OnFocused(transform);
+		
 
 	// 	if (focus != null)
 	// 	{
@@ -94,6 +118,14 @@ public class PlayerController : MonoBehaviour {
 	// 		focus.OnFocused(transform);
 	// 	}
 
-	// }
+	}
+
+	void RemoveFocus ()
+	{
+		if (focus != null)
+			focus.OnDefocused();
+		focus = null;
+		motor.StopFollowingTarget();
+	}
 
 }
