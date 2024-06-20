@@ -145,3 +145,37 @@ Here's how you can modify your code to check these conditions before calling Set
 
 In this code, agent is assumed to be your NavMeshAgent instance. Replace agent with the actual variable name if it's different. This code will only call SetDestination if the NavMeshAgent is enabled and on the NavMesh. If it's not, it will log an error message to the console.
 
+========================================================================================
+
+How can I add an animation to a 3D model in the unity editor? I already have a FBX file with an Idle animation, and a FBX file with an animation skeleton. Well, how do I add the idle animation to the animation skeleton in the unity editor?
+
+
+To add an idle animation to an animation skeleton in the Unity Editor using your FBX files, follow these steps:
+
+Import FBX Files:
+
+Drag and drop both the FBX file with the idle animation and the FBX file with the animation skeleton into your Unity project's Assets folder. Unity will automatically import these files.
+Configure the Animation:
+
+Select the FBX file with the idle animation in the Project window.
+In the Inspector window, go to the Rig tab and make sure the Animation Type is set to "Humanoid". This ensures that Unity recognizes the animation as being suitable for a humanoid character. Click Apply.
+Next, go to the Animation tab. Here, you should see your idle animation listed. You can configure the animation settings here, such as looping the animation if it's an idle animation.
+Create an Animator Controller:
+
+In the Project window, right-click and select Create > Animator Controller. Name it appropriately (e.g., "CharacterAnimator").
+Double-click the newly created Animator Controller to open the Animator window.
+Drag and drop the idle animation from the FBX file in the Project window into the Animator window. This creates a state for the idle animation.
+Assign the Animator Controller to Your Character:
+
+Select the GameObject that represents your character in the Scene or Hierarchy window.
+In the Inspector window, add an Animator component if your character doesn't already have one. You can do this by clicking Add Component, then searching for and selecting Animator.
+Drag and drop the Animator Controller you created from the Project window into the Controller field of the Animator component in the Inspector.
+Configure the Skeleton:
+
+If your character model and animation skeleton are separate, you need to ensure that the skeleton is correctly applied to your character model. This usually involves setting up the character model to use the skeleton for animations, which can be done by ensuring both the character and the skeleton are set to use the same Avatar in their Animator components.
+Test the Animation:
+
+Enter Play mode in Unity to see your character performing the idle animation.
+If your character model and animation skeleton are in the same FBX file or correctly set up to work together, steps 4 and 5 should ensure that the idle animation applies correctly to your character. If you encounter any issues, double-check the import settings for your FBX files and ensure that the animation and character model are compatible in terms of their rigging and humanoid bone mappings.
+
+=============================================================================================

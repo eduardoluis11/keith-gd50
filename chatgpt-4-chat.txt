@@ -1565,3 +1565,57 @@ Here are some tutorials that might help you with setting up enemy collisions and
 By following these steps and using the provided example code, you should be able to ensure that the enemy deals damage to the player upon collision without causing any unwanted physical reactions like falling over.
 
 ==================================================================================================================
+
+In my Unity project, I have a .controller file, which has the animations for a 3D model, and an FBX file, which has the Animation skeleton for a 3D model. Well, if I click on the FBX file in my unity editor, and then click on the "animation" tab, I don't see the clips for the animations for the .fbx file. I only see 2 checkboxes: "import constraints", and "import animation". None of the checkboxes seem to do anything. How can I add animation clips to the FBX file with my animation skeleton?
+
+
+To add animation clips to an FBX file with an animation skeleton in Unity, follow these steps:
+
+1. **Ensure Animation Clips are Included in the FBX File**:
+   - Make sure that your FBX file actually contains animation clips. You can check this by opening the FBX file in a 3D modeling software like Blender, Maya, or 3ds Max. Ensure that the animations are exported correctly from there.
+
+2. **Importing the FBX File**:
+   - In Unity, select the FBX file in the Project window.
+   - In the Inspector window, make sure the "Import Animation" checkbox is checked.
+
+3. **Assigning Animation Clips**:
+   - With the FBX file selected, click on the "Rig" tab in the Inspector.
+   - Ensure the Animation Type is set to the correct type (e.g., Humanoid, Generic, or Legacy). Click "Apply".
+
+4. **Adding Animation Clips**:
+   - Click on the "Animations" tab in the Inspector window.
+   - Here you should see a list of animation clips that are included in your FBX file. If you don't see any clips, it means they were not properly exported with the FBX.
+   - If the clips are there, you can rename them, set their properties, and control how they loop, etc.
+
+5. **Creating an Animator Controller**:
+   - If you haven't already, create an Animator Controller by right-clicking in the Project window and selecting `Create > Animator Controller`.
+   - Double-click the Animator Controller to open the Animator window.
+
+6. **Adding Animation Clips to Animator**:
+   - Drag your animation clips from the FBX file in the Project window into the Animator window. This will create states in the Animator Controller for each clip.
+   - Set up transitions between these states according to your animation logic.
+
+7. **Assigning the Animator to Your Model**:
+   - Select your 3D model in the hierarchy.
+   - In the Inspector window, add or find the Animator component.
+   - Assign your Animator Controller to the Controller field in the Animator component.
+
+### Troubleshooting Steps
+
+1. **Reimport the FBX File**:
+   - Sometimes Unity might not recognize changes made to the FBX file immediately. Right-click on the FBX file in the Project window and select "Reimport".
+
+2. **Check Animation Export Settings**:
+   - Ensure that when exporting from your 3D modeling software, the animations are correctly set to be included in the FBX file.
+
+3. **Check Unity Console for Errors**:
+   - Look for any errors in the Unity Console that might indicate problems with the FBX file or its animations.
+
+### References
+
+- [Unity Documentation: Importing Models](https://docs.unity3d.com/Manual/ImportingModelFiles.html)
+- [Unity Documentation: Working with Animations](https://docs.unity3d.com/Manual/AnimationSection.html)
+- [Unity Learn: Introduction to Animation](https://learn.unity.com/tutorial/introduction-to-animation#)
+
+These steps should help you add and manage animation clips for your 3D model in Unity. If issues persist, you may need to review the FBX export settings in your 3D modeling software or check for compatibility issues.
+

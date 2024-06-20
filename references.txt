@@ -295,3 +295,17 @@ Brackeys.
 GitHub
 https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Interactables/Interactable.cs
 Accessed on June 20th, 2024.
+
+55) "How can I add an animation to a 3D model in the unity editor? I already have a FBX file with an Idle animation, and a FBX file with an animation skeleton. Well, how do I add the idle animation to the animation skeleton in the unity editor?"
+VS Code's Copilot.
+Accessed on June 20th, 2024.
+
+56) "In my Unity project, I have a .controller file, which has the animations for a 3D model, and an FBX file, which has the Animation skeleton for a 3D model. Well, if I click on the FBX file in my unity editor, and then click on the "animation" tab, I don't see the clips for the animations for the .fbx file. I only see 2 checkboxes: "import constraints", and "import animation". None of the checkboxes seem to do anything. How can I add animation clips to the FBX file with my animation skeleton?"
+ChatGPT 4 omni.
+Accessed on June 20th, 2024.
+
+57) Episode 3 of Brackeys' "How to make an RPG tutorial".
+Brackeys.
+Youtube.
+https://youtu.be/COckHIIO8vk?si=dR7lCjXE5HyLAcnT
+Accessed on June 20th, 2024.
