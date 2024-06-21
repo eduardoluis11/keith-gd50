@@ -309,3 +309,15 @@ Brackeys.
 Youtube.
 https://youtu.be/COckHIIO8vk?si=dR7lCjXE5HyLAcnT
 Accessed on June 20th, 2024.
+
+58) CharacterAnimator.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Anim/CharacterAnimator.cs
+Accessed on June 21st, 2024.
+
+59) INTEGRATION 01 - Making an RPG in Unity (E03)
+Brackeys
+Youtube
+https://youtu.be/COckHIIO8vk?si=txD3BSuwAvNkY4w3
+Accessed on June 21st, 2024.

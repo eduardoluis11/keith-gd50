@@ -5122,6 +5122,7 @@ GameObject:
   - component: {fileID: 1882202657}
   - component: {fileID: 1882202658}
   - component: {fileID: 1882202659}
+  - component: {fileID: 1882202660}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5223,6 +5224,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1ece618304fe314aaadbc41c62a2780, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1882202660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882202653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78c97801f8470245a682328c95e6fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1986842971
@@ -5891,6 +5904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player graphic
       objectReference: {fileID: 0}
+    - target: {fileID: 1598738155154221468, guid: f4821980fcccde04eb674384fb0a8ebf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: dce70656fc094504a8f8783ed62c2f7f, type: 2}
     - target: {fileID: 1598738155154221468, guid: f4821980fcccde04eb674384fb0a8ebf, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
