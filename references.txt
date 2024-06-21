@@ -339,3 +339,34 @@ Brackeys.
 GitHub.
 https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Stats/PlayerStats.cs
 Accessed on June 21st, 2024.
+
+63) EnemyController.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/EnemyController.cs
+
+64) ENEMY AI - Making an RPG in Unity (E10)
+Brackeys
+Youtube
+https://youtu.be/xppompv1DBg?si=CSNgYD33oE0m_LPu
+Accessed on June 21st, 2024.
+
+65) EquipmentManager.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/RPG%20Project/Assets/Scripts/EquipmentManager.cs
+
+66) PlayerManager.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/RPG%20Project/Assets/Scripts/PlayerManager.cs
+
+67) Enemy.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/RPG%20Project/Assets/Scripts/Enemy.cs
+
+68) EnemyStats.cs script from Brackeys' "How to make an RPG" tutorial.
+Brackeys.
+GitHub.
+https://github.com/Brackeys/RPG-Tutorial/blob/master/RPG%20Project/Assets/Scripts/Stats/EnemyStats.cs

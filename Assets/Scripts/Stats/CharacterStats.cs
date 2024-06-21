@@ -54,11 +54,19 @@ public class CharacterStats : MonoBehaviour {
 		// If we hit 0. Die.
 		if (currentHealth <= 0)
 		{
-			if (OnHealthReachedZero != null) {
-				OnHealthReachedZero ();
-			}
+			// if (OnHealthReachedZero != null) {
+			// 	OnHealthReachedZero ();
+			// }
+
+			Die();
 		}
 	}
+
+	public virtual void Die () {
+        // Die in some way
+        // This method is meant to be overwritten
+        Debug.Log(transform.name + " died.");
+    }
 
 	// Heal the character.
 	public void Heal (int amount)
