@@ -11,17 +11,18 @@ Source of part of this code:
 https://youtu.be/e8GmfoaOB4Y?si=5on5nACJJzCGD4SZ
 */
 
+/* Class used for all stats where we want to be able to add/remove modifiers */
+
 [System.Serializable]
 public class Stat {
 
-    [SerializeField]
-    private int baseValue;	// Starting value
-	// public int baseValue;	// Starting value
+	[SerializeField]
+	private int baseValue;	// Starting value
 
-	// Keep a list of all the modifiers on this stat
+	// List of modifiers that change the baseValue
 	private List<int> modifiers = new List<int>();
 
-	// Add all modifiers together and return the result
+	// Get the final value after applying modifiers
 	public int GetValue ()
 	{
 		int finalValue = baseValue;
@@ -29,14 +30,14 @@ public class Stat {
 		return finalValue;
 	}
 
-	// Add a new modifier to the list
+	// Add new modifier
 	public void AddModifier (int modifier)
 	{
 		if (modifier != 0)
 			modifiers.Add(modifier);
 	}
 
-	// Remove a modifier from the list
+	// Remove a modifier
 	public void RemoveModifier (int modifier)
 	{
 		if (modifier != 0)
@@ -44,3 +45,37 @@ public class Stat {
 	}
 
 }
+
+// [System.Serializable]
+// public class Stat {
+
+//     [SerializeField]
+//     private int baseValue;	// Starting value
+// 	// public int baseValue;	// Starting value
+
+// 	// Keep a list of all the modifiers on this stat
+// 	private List<int> modifiers = new List<int>();
+
+// 	// Add all modifiers together and return the result
+// 	public int GetValue ()
+// 	{
+// 		int finalValue = baseValue;
+// 		modifiers.ForEach(x => finalValue += x);
+// 		return finalValue;
+// 	}
+
+// 	// Add a new modifier to the list
+// 	public void AddModifier (int modifier)
+// 	{
+// 		if (modifier != 0)
+// 			modifiers.Add(modifier);
+// 	}
+
+// 	// Remove a modifier from the list
+// 	public void RemoveModifier (int modifier)
+// 	{
+// 		if (modifier != 0)
+// 			modifiers.Remove(modifier);
+// 	}
+
+// }

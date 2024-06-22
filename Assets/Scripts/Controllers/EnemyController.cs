@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
 
+
 /* Enemy script to make the Boss hurt the player and follow him around.
 
 Most of the code from this script comes from this tutorial from Brackeys:
@@ -11,55 +12,61 @@ Additionally, I also got some snippets from this video from Brackeys:
 https://youtu.be/xppompv1DBg?si=CSNgYD33oE0m_LPu
 */
 
+/* This script will handle the enemy's behavior. 
 
-// [RequireComponent(typeof(CharacterCombat))]
-public class EnemyController : MonoBehaviour {
+Source of most of this code: Brackeys from https://youtu.be/xppompv1DBg?si=1nNpE-RKdg8whd45
 
-	public float lookRadius = 10f;
+This will let the enemy hurt the player when they get close enough (source: 
+https://youtu.be/FhAdkLC-mSg?si=Z3h7cQ4XADFlGYhm .)
+*/
 
-	Transform target;
-	NavMeshAgent agent;
-	// CharacterCombat combatManager;
+public class EnemyController : MonoBehaviour
+{
 
-	void Start()
-	{
-		target = PlayerManager.instance.player.transform;
-		// target = Player.instance.transform;
-		agent = GetComponent<NavMeshAgent>();
-		// combatManager = GetComponent<CharacterCombat>();
-	}
+    public float lookRadius = 10f;
 
-	void Update ()
-	{
-		// Get the distance to the player
-		float distance = Vector3.Distance(target.position, transform.position);
+    Transform target;
+    NavMeshAgent agent;
+    CharacterCombat combat;
 
-		// If inside the radius
-		if (distance <= lookRadius)
-		{
-			// Move towards the player
-			agent.SetDestination(target.position);
-			if (distance <= agent.stoppingDistance)
-			{
-				// Attack
-				// combatManager.Attack(Player.instance.playerStats);
-				FaceTarget();
-			}
-		}
-	}
+    // Start is called before the first frame update
+    void Start()
+    {
+        target = PlayerManager.instance.player.transform;
+        agent = GetComponent<NavMeshAgent>();
+        combat = GetComponent<CharacterCombat>();
+    }
 
-	// Point towards the player
-	void FaceTarget ()
-	{
-		Vector3 direction = (target.position - transform.position).normalized;
-		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
-		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        float distance = Vector3.Distance(target.position, transform.position);
 
-	void OnDrawGizmosSelected ()
-	{
-		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere(transform.position, lookRadius);
-	}
+        if (distance <= lookRadius) {
+            agent.SetDestination(target.position);
 
+            if (distance <= agent.stoppingDistance) {
+
+                CharacterStats targetStats = target.GetComponent<CharacterStats>();
+
+                if (targetStats != null) {
+                    combat.Attack(targetStats);
+                }
+
+                // Attack the target
+                FaceTarget();
+            }
+        }
+    }
+
+    void FaceTarget() {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
+    void OnDrawGizmosSelected() {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, lookRadius);
+    }
 }

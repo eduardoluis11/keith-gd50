@@ -23,12 +23,36 @@ https://youtu.be/e8GmfoaOB4Y?si=mQlTqYYUBnDYzBnV
 
 public class PlayerCharacterStats : CharacterStats {
 
-	// Use this for initialization
-	public override void Start () {
+	    // // Start is called before the first frame update
+    // void Start()
+    // {
+    //     EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
+    // }
 
-		base.Start();
-		// EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
-	}
+    // // Update is called once per frame
+    // void Update()
+    // {
+        
+    // }
+
+    public override void Die()
+    {
+
+        // DEbug message to confirm that this function is being called when the player dies (source: VS Code from Copilot).
+        Debug.Log("Die method called");
+
+        base.Die();
+        // Kill the player
+        PlayerManager.instance.KillPlayer();
+    }
+
+
+	// // Use this for initialization
+	// public override void Start () {
+
+	// 	base.Start();
+	// 	// EquipmentManager.instance.onEquipmentChanged += OnEquipmentChanged;
+	// }
 
 	// void OnEquipmentChanged(Equipment newItem, Equipment oldItem)
 	// {

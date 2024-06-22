@@ -4396,9 +4396,9 @@ GameObject:
   - component: {fileID: 1530288367}
   - component: {fileID: 1530288368}
   - component: {fileID: 1530288369}
-  - component: {fileID: 1530288371}
   - component: {fileID: 1530288370}
   - component: {fileID: 1530288372}
+  - component: {fileID: 1530288373}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -4501,23 +4501,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 3.5
   interactionTransform: {fileID: 1530288366}
---- !u!114 &1530288371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1530288362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c399fcb8249d24449bdfb61fe087ba50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  damage:
-    baseValue: 0
-  armor:
-    baseValue: 0
 --- !u!114 &1530288372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,9 +4515,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   damage:
-    baseValue: 5
+    baseValue: 2
   armor:
-    baseValue: 3
+    baseValue: 0
+--- !u!114 &1530288373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530288362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a056bf8446c9749a0129366f1795a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!850595691 &1530357654
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -5436,6 +5432,7 @@ GameObject:
   - component: {fileID: 1882202659}
   - component: {fileID: 1882202660}
   - component: {fileID: 1882202661}
+  - component: {fileID: 1882202662}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5565,9 +5562,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 5
+    baseValue: 20
   armor:
     baseValue: 0
+--- !u!114 &1882202662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882202653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a056bf8446c9749a0129366f1795a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!1 &1986842971
 GameObject:
   m_ObjectHideFlags: 0

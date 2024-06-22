@@ -11,6 +11,9 @@ I also took some snippets from this video:
 https://www.youtube.com/watch?v=xppompv1DBg
 */
 
+
+/* Keeps track of enemy stats, loosing health and dying. */
+
 public class EnemyStats : CharacterStats {
 
 	public override void Die()
@@ -23,3 +26,16 @@ public class EnemyStats : CharacterStats {
 	}
 
 }
+
+// public class EnemyStats : CharacterStats {
+
+// 	public override void Die()
+// 	{
+// 		base.Die();
+
+// 		// Add ragdoll effect / death animation
+
+// 		Destroy(gameObject);
+// 	}
+
+// }
