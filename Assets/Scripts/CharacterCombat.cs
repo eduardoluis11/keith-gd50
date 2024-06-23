@@ -12,15 +12,8 @@ https://www.youtube.com/watch?v=FhAdkLC-mSg
 */
 
 /* Script for handling combat.
-
-Source of most of this code: Episode 11 of this tutorial from Brackeys: https://youtu.be/FhAdkLC-mSg?si=6gtY_Thz0OCcBrTg
 */
 
-
-/* Script for handling combat.
-
-Source of most of this code: Episode 11 of this tutorial from Brackeys: https://youtu.be/FhAdkLC-mSg?si=6gtY_Thz0OCcBrTg
-*/
 
 [RequireComponent(typeof(CharacterStats))]
 public class CharacterCombat : MonoBehaviour
@@ -28,6 +21,10 @@ public class CharacterCombat : MonoBehaviour
 
 	public float attackSpeed = 1f;
     private float attackCooldown = 0f;
+
+    public float attackDelay = .6f;
+
+    public event System.Action OnAttack;
 
 	CharacterStats myStats;
 
@@ -45,11 +42,23 @@ public class CharacterCombat : MonoBehaviour
 	{
 		if (attackCooldown <= 0f)
 		{
-			targetStats.TakeDamage(myStats.damage.GetValue());
+            StartCoroutine(DoDamage(targetStats, attackDelay));
+			// targetStats.TakeDamage(myStats.damage.GetValue());
+
+            if (OnAttack != null)
+                OnAttack();
+
 			attackCooldown = 1f / attackSpeed;
 		}
 		
 	}
+
+    IEnumerator DoDamage(CharacterStats stats, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        stats.TakeDamage(myStats.damage.GetValue());
+    }
 
 
 
