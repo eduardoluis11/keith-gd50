@@ -10,6 +10,8 @@ https://youtu.be/COckHIIO8vk?si=txD3BSuwAvNkY4w3
 
 Additionally, this script also has code from this video from Brackeys / Sebastian Lague:
 https://youtu.be/yhPRkihs-Yg?si=W_x3imWDgruUbED5
+
+I also used code from this video From Sebastian Lague: https://youtu.be/aOmqkTdqQXo?si=zIb3Mkeei33Si50q
 */
 
 public class CharacterAnimator : MonoBehaviour {
@@ -25,7 +27,7 @@ public class CharacterAnimator : MonoBehaviour {
     NavMeshAgent agent;
     protected Animator animator;
 	protected CharacterCombat combat;
-	protected AnimatorOverrideController overrideController;
+	public AnimatorOverrideController overrideController;
 
 	protected virtual void Start () {
 		agent = GetComponent<NavMeshAgent>();

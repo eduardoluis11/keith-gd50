@@ -401,3 +401,9 @@ Accessed on June 24th, 2024.
 VS Code's copilot.
 Highlighted Line 18 in PlayerAnimator.cs.
 Accessed on June 24th, 2024.
+
+75) INTEGRATION 04 - Making an RPG in Unity (E13) 
+Brackeys / sebastian Lague
+Youtube
+https://youtu.be/yhPRkihs-Yg?si=W_x3imWDgruUbED5
+Accessed on June 24th, 2024.
