@@ -50,7 +50,13 @@ public class CharacterAnimator : MonoBehaviour {
 		animator.SetTrigger("attack");
 		int attackIndex = Random.Range(0, currentAttackAnimSet.Length);
 		// overrideController[replaceableAttackAnim.name] = currentAttackAnimSet[attackIndex];
-		overrideController["Sword Slash 1"] = currentAttackAnimSet[attackIndex];
+
+		// I think this is why only the first sword slash animation plays: I'm hard-coding the name of that animation 
+		// instead of looping through all the sword slash animations.
+		// overrideController["Sword Slash 1"] = currentAttackAnimSet[attackIndex];
+
+		// I modified the code so that it loops through all sword slash attack animations 
+		overrideController[replaceableAttackAnim.name] = currentAttackAnimSet[attackIndex];
 	}
 	
 }

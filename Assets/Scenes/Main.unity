@@ -5580,7 +5580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad02ffea2bfdc244aafb01d3bf8f659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replaceableAttackAnim: {fileID: 0}
+  replaceableAttackAnim: {fileID: 7400000, guid: 176fac875603d3f419eb970f987aeab5, type: 3}
   defaultAttackAnimSet:
   - {fileID: 7400000, guid: 176fac875603d3f419eb970f987aeab5, type: 3}
   - {fileID: 7400002, guid: 176fac875603d3f419eb970f987aeab5, type: 3}
