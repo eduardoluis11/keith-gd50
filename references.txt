@@ -381,3 +381,23 @@ Brackeys
 Youtube
 https://www.youtube.com/watch?v=yhPRkihs-Yg
 Accessed on June 23rd, 2024.
+
+71) "In this c# code for my unity game, transform this line of code so that, isntead if being a dictionary with 2 keys, the weaponAnimationsDict becomes an array with just 1 key."
+VS Code's copilot.
+Highlighted Line 17 in PlayerAnimator.cs.
+Accessed on June 24th, 2024.
+
+72) "I mean, just transform this line of code so that, instead of storing stuff using 2 keys, it stores stuff by using just 1 key."
+VS Code's copilot.
+Highlighted Line 17 in PlayerAnimator.cs.
+Accessed on June 24th, 2024.
+
+73) "The "string" could be just a number (like starting from "0" and onwards). Would it be wiser just to use a regular array instead of a dictionary?"
+VS Code's copilot.
+Highlighted Line 18 in PlayerAnimator.cs.
+Accessed on June 24th, 2024.
+
+74) "Actually, I don't know the exact number of items that I will be storing into the weaponAnimationsArrray. Could you modify this so that I don't have to type the "numberOfWeapons" variable?"
+VS Code's copilot.
+Highlighted Line 18 in PlayerAnimator.cs.
+Accessed on June 24th, 2024.
