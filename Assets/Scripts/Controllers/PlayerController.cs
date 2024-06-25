@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.EventSystems;
 
-/* Controls the player. Here we chose our "focus" and where to move. 
+/* Controls the player. Here we chose our "focus" and where to move.
 
-Most of this script comes from this tutorial from this repo from a Brackeys tutorial: 
+Most of this script comes from this tutorial from this repo from a Brackeys tutorial:
 https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/PlayerController.cs
 */
 
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour {
 				{
 					SetFocus(interactable);
 				}
-				
+
 			}
 		}
 
@@ -108,9 +108,9 @@ public class PlayerController : MonoBehaviour {
 
 		// Set our focus to what we hit
 		// If it's not an interactable, simply set it to null
-		
+
 		newFocus.OnFocused(transform);
-		
+
 
 	// 	if (focus != null)
 	// 	{

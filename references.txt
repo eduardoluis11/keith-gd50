@@ -152,6 +152,8 @@ Accessed on May 7th, 2024.
 Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
 Unity.
 https://www.youtube.com/watch?v=537B1kJp9YQ
+Download link:
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDhWTmJXQUZJTlMzSTRodlRBQTF6VVhsS0Jkd3xBQ3Jtc0tra2JvWldPLS1aNVJ4M0tPa2tBUzFDbTlQUmNHTzFRWmJ3eWx1OUpiUDA0TXVQWDBHTF9pQnY1VmJNR0JKMEJZVkFCTnhlSjlWYVZMWmkzVmpPWDIxRVBEaC1GdHVRSlZhanp3Rzk2NXY5eThVN21SWQ&q=https%3A%2F%2Fon.unity.com%2F36nVNzt&v=537B1kJp9YQ 
 Accessed on May 7th, 2024.
 
 28) Copilot from VS Code.
@@ -169,6 +171,8 @@ Accessed on May 8th, 2024.
 Creating a Third Person Camera using Cinemachine in Unity! (Tutorial)
 Unity.
 https://www.youtube.com/watch?v=537B1kJp9YQ
+Download link:
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDhWTmJXQUZJTlMzSTRodlRBQTF6VVhsS0Jkd3xBQ3Jtc0tra2JvWldPLS1aNVJ4M0tPa2tBUzFDbTlQUmNHTzFRWmJ3eWx1OUpiUDA0TXVQWDBHTF9pQnY1VmJNR0JKMEJZVkFCTnhlSjlWYVZMWmkzVmpPWDIxRVBEaC1GdHVRSlZhanp3Rzk2NXY5eThVN21SWQ&q=https%3A%2F%2Fon.unity.com%2F36nVNzt&v=537B1kJp9YQ
 Accessed on May 8th, 2024.
 
 31) Scene Manager Quick Fix on VS Code from the PlayerDies.cs script on Line 30.

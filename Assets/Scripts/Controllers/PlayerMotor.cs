@@ -7,7 +7,7 @@ using UnityEngine.AI;
 		- If we have a focus move towards that.
 		- If we don't move to the desired point.
 
-Most of the code from this file comes from this file from a Brackeys tutorial: 
+Most of the code from this file comes from this file from a Brackeys tutorial:
 https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/PlayerMotor.cs
 */
 
@@ -33,7 +33,7 @@ public class PlayerMotor : MonoBehaviour {
 	{
 		agent.stoppingDistance = newTarget.radius * .8f;
 		agent.updateRotation = false;
-		
+
 		target = newTarget.interactionTransform;
 	}
 
@@ -41,7 +41,7 @@ public class PlayerMotor : MonoBehaviour {
 	{
 		agent.stoppingDistance = 0f;
 		agent.updateRotation = true;
-		
+
 		target = null;
 	}
 
@@ -83,6 +83,6 @@ public class PlayerMotor : MonoBehaviour {
 		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
 		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
 	}
-		
+
 
 }
