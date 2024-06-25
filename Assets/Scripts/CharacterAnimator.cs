@@ -34,7 +34,11 @@ public class CharacterAnimator : MonoBehaviour {
 		animator = GetComponentInChildren<Animator>();
 		combat = GetComponent<CharacterCombat>();
 
-		overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+		if (overrideController == null) {
+			overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+		}
+
+
 		animator.runtimeAnimatorController = overrideController;
 
 		currentAttackAnimSet = defaultAttackAnimSet;
