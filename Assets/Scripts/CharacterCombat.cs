@@ -9,6 +9,8 @@ https://github.com/Brackeys/RPG-Tutorial/blob/master/RPG%20Project/Assets/Script
 
 I also took some code from this file from the same tutorial:
 https://www.youtube.com/watch?v=FhAdkLC-mSg 
+
+
 */
 
 /* Script for handling combat.

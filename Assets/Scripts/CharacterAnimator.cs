@@ -11,7 +11,7 @@ https://youtu.be/COckHIIO8vk?si=txD3BSuwAvNkY4w3
 Additionally, this script also has code from this video from Brackeys / Sebastian Lague:
 https://youtu.be/yhPRkihs-Yg?si=W_x3imWDgruUbED5
 
-I also used code from this video From Sebastian Lague: https://youtu.be/aOmqkTdqQXo?si=zIb3Mkeei33Si50q
+I also used code from this video From Sebastian Lague from Episode 13 from his tutorial: https://youtu.be/aOmqkTdqQXo?si=zIb3Mkeei33Si50q
 */
 
 public class CharacterAnimator : MonoBehaviour {
