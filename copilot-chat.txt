@@ -518,3 +518,36 @@ Remember, the changes you made only affect the current and future commits. The "
 
 ====================================================================================================
 
+Awesome, now, I want you to modify the selected line of code so that my UI text in my Unity game prints me the current health points of the player, as well as the max number of health points that the player has at full health. You need to concatenate tht to the side of the "Fang: " script. Where are the current health points and the max health points stored? In the CharacterStats.cs script. The current health points are stored in the "currentHealth" variable in the CharacterStats.cs script. Meanwhile, the max number of health points at full health are stored in the "maxHealth" variable  in the CharacterStats.cs script. To call those HP related variables, first, the game calls the PlayerCharacterStats.cs script, which then calls the CharacterStats.cs script. But the variables themselves are in the CharacterStats.cs script. So, find a way to access the two aforementioned health point variables in the CharacterStats.cs script, insert them into my HealthUIText.cs script, and concatenate their values in the selected line of code.
+
+
+
+To display the current and maximum health points of the player in the UI, you need to access the `currentHealth` and `maxHealth` variables from the `CharacterStats` script.
+
+First, you need to get a reference to the `PlayerCharacterStats` script from the `HealthUIText` script. You can do this by adding a public variable of type `PlayerCharacterStats` in the `HealthUIText` script. Then, in the Unity editor, you can drag the player object (which should have the `PlayerCharacterStats` script attached) to this variable to set the reference.
+
+Once you have the reference, you can access the `currentHealth` and `maxHealth` variables and display them in the UI text. Here's how you can modify the `HealthUIText` script:
+
+```csharp
+using UnityEngine;
+using TMPro;
+
+public class HealthUIText : MonoBehaviour {
+
+    public PlayerCharacterStats playerStats; // Reference to the PlayerCharacterStats script
+    private TextMeshProUGUI textMeshProUGUI;
+
+    void Start () {
+        textMeshProUGUI = GetComponent<TextMeshProUGUI>();
+    }
+
+    void Update () {
+        // Display the current and maximum health points in the UI text
+        textMeshProUGUI.text = "Fang: " + playerStats.currentHealth + "/" + playerStats.maxHealth;
+    }
+}
+```
+
+In the Unity editor, make sure to drag the player object to the `playerStats` variable in the `HealthUIText` script to set the reference.
+
+====================================================================================================

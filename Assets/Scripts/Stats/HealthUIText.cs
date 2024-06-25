@@ -44,11 +44,25 @@ Updates the Update method to set the text of the textMeshProUGUI component. You'
 display based on your game's logic.
 Make sure to attach this script to a GameObject that has a TextMeshProUGUI component. If you follow these steps, you should be able to manipulate 
 the text without encountering the error message you mentioned (source: Copilot).
+
+To display the current and maximum health points of the player in the UI, you need to access the `currentHealth` and `maxHealth` variables from the 
+`CharacterStats` script (source: Pycharm's Copilot).
+
+First, you need to get a reference to the `PlayerCharacterStats` script from the `HealthUIText` script. You can do this by adding a public variable 
+of type `PlayerCharacterStats` in the `HealthUIText` script. Then, in the Unity editor, you can drag the player object (which should have the 
+`PlayerCharacterStats` script attached) to this variable to set the reference.
+
+Once you have the reference, you can access the `currentHealth` and `maxHealth` variables and display them in the UI text. Here's how you can modify 
+the `HealthUIText` script.
+
+In the Unity editor, make sure to drag the player object to the `playerStats` variable in the `HealthUIText` script to set the reference 
+(source: Pycharm's Copilot).
 */
 public class HealthUIText : MonoBehaviour {
 
 	// private Text text;
 
+    public PlayerCharacterStats playerStats; // Reference to the PlayerCharacterStats script (Source: Copilot)
     private TextMeshProUGUI textMeshProUGUI; // Change type to TextMeshProUGUI (Source: Copilot)
 
 
@@ -63,8 +77,10 @@ public class HealthUIText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        // Example of setting text, adjust according to your actual game logic (Source: Copilot)
-        textMeshProUGUI.text = "Fang: "; // Update to use textMeshProUGUI
+        // Example of setting text, adjust according to your actual game logic (Source: Copilot).
+        // Display the current and maximum health points in the UI text (source: Copilot).
+        // Update to use textMeshProUGUI.
+        textMeshProUGUI.text = "Fang: " + playerStats.currentHealth + "/" + playerStats.maxHealth;
 
 
 		// text.text = "Current Level: " + GrabPickups.currentLevel;

@@ -426,3 +426,8 @@ Accessed on June 25th, 2024.
 79) "@workspace /fix If I activate any of the snippets that say "text" or "Text" in my Unity game in Unity 2021, and then try to attach that script to a UI Text Game Object, I get the following error message: "Can't add 'Text' to Player HP UI because a 'TextMeshProUGUI' is already added to the game object! A GameObject can only contain one 'Graphic' component. ". How can I maniputlate the text from the UI Tet game object in Unity using the selected snippet from my script? The text game object is a "Text - TextMeshPro" object in my unity project."
 Copilot from VS Code.
 Accessed on June 25th, 2024.
+
+80) "Awesome, now, I want you to modify the selected line of code so that my UI text in my Unity game prints me the current health points of the player, as well as the max number of health points that the player has at full health. You need to concatenate tht to the side of the "Fang: " script. Where are the current health points and the max health points stored? In the CharacterStats.cs script. The current health points are stored in the "currentHealth" variable in the CharacterStats.cs script. Meanwhile, the max number of health points at full health are stored in the "maxHealth" variable  in the CharacterStats.cs script. To call those HP related variables, first, the game calls the PlayerCharacterStats.cs script, which then calls the CharacterStats.cs script. But the variables themselves are in the CharacterStats.cs script. So, find a way to access the two aforementioned health point variables in the CharacterStats.cs script, insert them into my HealthUIText.cs script, and concatenate their values in the selected line of code."
+Pycharm's Copilot.
+Highlighted Line 70 in HealthUIText.cs.
+Accessed on June 25th, 2024.
