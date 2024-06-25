@@ -221,3 +221,47 @@ Actually, I don't know the exact number of items that I will be storing into the
 Highlighted line 18 from PlayerAnimator.cs.
 
 List<List<AnimationClip>> weaponAnimationsList = new List<List<AnimationClip>>();
+
+=====================================================================================
+
+@workspace /fix If I activate any of the snippets that say "text" or "Text" in my Unity game in Unity 2021, and then try to attach that script to a UI Text Game Object, I get the following error message: "Can't add 'Text' to Player HP UI because a 'TextMeshProUGUI' is already added to the game object! A GameObject can only contain one 'Graphic' component. ". How can I maniputlate the text from the UI Tet game object in Unity using the selected snippet from my script? The text game object is a "Text - TextMeshPro" object in my unity project.
+
+
+To manipulate the text from the UI Text game object in Unity using the selected snippet from your script, and considering the error message you received, you need to modify the script to use the TextMeshProUGUI component instead of the Text component. This is because your project is using TextMeshPro for UI text rendering, which is more flexible and feature-rich compared to the older Text component.
+
+Here's how you can refactor the selected code snippet to work with TextMeshPro:
+
+
+using UnityEngine;
+using TMPro; // Add this namespace to use TextMeshPro components
+
+public class HealthUIText : MonoBehaviour {
+
+    private TextMeshProUGUI textMeshProUGUI; // Change type to TextMeshProUGUI
+
+    // Use this for initialization
+    void Start () {
+        textMeshProUGUI = GetComponent<TextMeshProUGUI>(); // Get the TextMeshProUGUI component
+    }
+
+    // Update is called once per frame
+    void Update () {
+        // Example of setting text, adjust according to your actual game logic
+        textMeshProUGUI.text = "Fang: " + GrabPickups.currentLevel; // Update to use textMeshProUGUI
+    }
+}
+
+Workspace
+To manipulate the text from the UI Text game object in Unity using the selected snippet from your script, and considering the error message you received, you need to modify the script to use the TextMeshProUGUI component instead of the Text component. This is because your project is using TextMeshPro for UI text rendering, which is more flexible and feature-rich compared to the older Text component.
+
+Here's how you can refactor the selected code snippet to work with TextMeshPro:
+
+This refactored code snippet does the following:
+
+Imports the TMPro namespace which is required to work with TextMeshPro components.
+Changes the type of the text variable to TextMeshProUGUI, which is the correct type for manipulating TextMeshPro UI text.
+Initializes the textMeshProUGUI variable in the Start method by getting the TextMeshProUGUI component attached to the same GameObject.
+Updates the Update method to set the text of the textMeshProUGUI component. You'll need to adjust the logic here to match what text you want to display based on your game's logic.
+Make sure to attach this script to a GameObject that has a TextMeshProUGUI component. If you follow these steps, you should be able to manipulate the text without encountering the error message you mentioned.
+
+===============================================================================0

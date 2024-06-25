@@ -58,7 +58,7 @@ Accessed on April 28th, 2024.
    - Aerial enemies with diving and swooping attacks"."
 Accessed on April 28th, 2024.
 
-10) Eduardo Luis Salinas Rivas, Dreadhalls Project.
+10) LoadSceneOnInput.cs file from Eduardo Luis Salinas Rivas, Dreadhalls Project.
 GitHub.
 https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/LoadSceneOnInput.cs
 Accessed on April 28th, 2024.
@@ -177,6 +177,7 @@ Copilot on VS Code via "Quick Fixes".
 Accessed on May 18th, 2024.
 
 32) "DespawnOnHeight.cs" script from my "Dreadhalls" project.
+https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/DespawnOnHeight.cs
 Dreadhalls project from Eduardo Salinas.
 Accessed on May 18th, 2024.
 
@@ -407,3 +408,21 @@ Brackeys / sebastian Lague
 Youtube
 https://youtu.be/yhPRkihs-Yg?si=W_x3imWDgruUbED5
 Accessed on June 24th, 2024.
+
+76) MazeLevelText.cs script from my own Dreadhalls project.
+https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/MazeLevelText.cs
+GitHub.
+Accessed on June 25th, 2024.
+
+77) CoinText.cs script from my own Helicopter Game submission:
+https://github.com/eduardoluis11/helicopter-gd50/blob/main/Assets/Resources/Scripts/CoinText.cs
+GitHub.
+Accessed on June 25th, 2024.
+
+78) Final Fantasy 6's Combat UI:
+https://image.api.playstation.com/vulcan/ap/rnd/202303/1307/6d9a1b6e7a3fb192cc5f79407264fd2218d9516575bc4ffd.jpg
+Accessed on June 25th, 2024.
+
+79) "@workspace /fix If I activate any of the snippets that say "text" or "Text" in my Unity game in Unity 2021, and then try to attach that script to a UI Text Game Object, I get the following error message: "Can't add 'Text' to Player HP UI because a 'TextMeshProUGUI' is already added to the game object! A GameObject can only contain one 'Graphic' component. ". How can I maniputlate the text from the UI Tet game object in Unity using the selected snippet from my script? The text game object is a "Text - TextMeshPro" object in my unity project."
+Copilot from VS Code.
+Accessed on June 25th, 2024.
