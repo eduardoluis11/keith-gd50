@@ -20,13 +20,15 @@ public class PlayerController : MonoBehaviour {
 	// public LayerMask interactionMask;	// Everything we can interact with
 
 	PlayerMotor motor;		// Reference to our motor
-	Camera cam;				// Reference to our camera
+
+	// I changed this variable's name
+	Camera playerCam;				// Reference to our camera
 
 	// Get references
 	void Start ()
 	{
 		motor = GetComponent<PlayerMotor>();
-		cam = Camera.main;
+		playerCam = Camera.main;
 	}
 
 	// Update is called once per frame
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0))
 		{
 			// Shoot out a ray
-			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+			Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 
 			// If we hit
@@ -60,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(1))
 		{
 			// Shoot out a ray
-			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+			Ray ray = playerCam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 
 			// If we hit

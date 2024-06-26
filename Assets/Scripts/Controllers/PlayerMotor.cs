@@ -16,31 +16,33 @@ https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/S
 public class PlayerMotor : MonoBehaviour {
 
 	Transform target;
-	NavMeshAgent agent;     // Reference to our NavMeshAgent
+
+	// I changed this variable's name
+	NavMeshAgent playerNavMeshAgent;     // Reference to our NavMeshAgent
 
 	void Start ()
 	{
-		agent = GetComponent<NavMeshAgent>();
+		playerNavMeshAgent = GetComponent<NavMeshAgent>();
 		// GetComponent<PlayerController>().onFocusChangedCallback += OnFocusChanged;
 	}
 
 	public void MoveToPoint (Vector3 point)
 	{
-		agent.SetDestination(point);
+		playerNavMeshAgent.SetDestination(point);
 	}
 
 	public void FollowTarget (Interactable newTarget)
 	{
-		agent.stoppingDistance = newTarget.radius * .8f;
-		agent.updateRotation = false;
+		playerNavMeshAgent.stoppingDistance = newTarget.radius * .8f;
+		playerNavMeshAgent.updateRotation = false;
 
 		target = newTarget.interactionTransform;
 	}
 
 	public void StopFollowingTarget ()
 	{
-		agent.stoppingDistance = 0f;
-		agent.updateRotation = true;
+		playerNavMeshAgent.stoppingDistance = 0f;
+		playerNavMeshAgent.updateRotation = true;
 
 		target = null;
 	}
@@ -71,7 +73,7 @@ public class PlayerMotor : MonoBehaviour {
 			// MoveToPoint (target.position);
 			// FaceTarget ();
 
-			agent.SetDestination(target.position);
+			playerNavMeshAgent.SetDestination(target.position);
 			FaceTarget();
 
 		}

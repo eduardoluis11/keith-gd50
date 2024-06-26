@@ -23,7 +23,8 @@ https://youtu.be/FhAdkLC-mSg?si=Z3h7cQ4XADFlGYhm .)
 public class EnemyController : MonoBehaviour
 {
 
-    public float lookRadius = 10f;
+    // I changed this variable's name
+    public float lookRadiusForEnemy = 10f;
 
     Transform target;
     NavMeshAgent agent;
@@ -42,7 +43,7 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= lookRadius) {
+        if (distance <= lookRadiusForEnemy) {
             agent.SetDestination(target.position);
 
             if (distance <= agent.stoppingDistance) {
@@ -67,6 +68,6 @@ public class EnemyController : MonoBehaviour
 
     void OnDrawGizmosSelected() {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lookRadius);
+        Gizmos.DrawWireSphere(transform.position, lookRadiusForEnemy);
     }
 }

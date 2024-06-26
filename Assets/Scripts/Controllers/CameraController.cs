@@ -6,6 +6,8 @@ using UnityEngine;
 
 Source of most of the code in this script: this file from a Brackey's tutorial:
 https://github.com/Brackeys/RPG-Tutorial/blob/master/Finished%20Project/Assets/Scripts/Controllers/CameraController.cs
+
+I changed the "zoom" variable names to "cameraZoom" to make the script more original.
 */
 
 public class CameraController : MonoBehaviour {
@@ -21,7 +23,9 @@ public class CameraController : MonoBehaviour {
 	public float currentZoom = 10f;
 
     public float pitch = 2f;
-	public float maxZoom = 3f;
+
+    // I changed this variable's name
+	public float maxCameraZoom = 3f;
 	public float minZoom = .3f;
 	public float yawSpeed = 100f;
 
@@ -49,7 +53,7 @@ public class CameraController : MonoBehaviour {
 		// 	targetZoom = Mathf.Clamp(targetZoom - scroll, minZoom, maxZoom);
 		// }
 		// currentZoom = Mathf.SmoothDamp (currentZoom, targetZoom, ref zoomSmoothV, .15f);
-		currentZoom = Mathf.Clamp (currentZoom, minZoom, maxZoom);
+		currentZoom = Mathf.Clamp (currentZoom, minZoom, maxCameraZoom);
 
 		currentYaw -= Input.GetAxis("Horizontal") * yawSpeed * Time.deltaTime;
 	}
