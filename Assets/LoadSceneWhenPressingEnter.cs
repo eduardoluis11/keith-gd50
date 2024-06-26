@@ -11,6 +11,8 @@ would be sent into the main (the actual gameplay) scene.
 
 Source of most of this code: My own submission for the "Dreadhalls" project:
 https://github.com/eduardoluis11/dreadhalls/blob/main/Assets/LoadSceneOnInput.cs
+
+If the player is either in the Game Over or the Victory scene, they will be sent to the Main Menu if they hit "Enter".
 */
 
 public class LoadSceneWhenPressingEnter : MonoBehaviour {
@@ -29,8 +31,8 @@ public class LoadSceneWhenPressingEnter : MonoBehaviour {
             // Start scene. This detects the current scene.
             string currentScene = SceneManager.GetActiveScene().name;
 
-            // If the Player is in the Game Over scene
-			if (currentScene == "GameOver") {
+            // If the Player is in the Game Over or the Victory scene (source: Copilot)
+			if (currentScene == "GameOver" || currentScene == "Victory") {
 
 //				// This should find the file with the whispers in the game, then, it will insert it into this variable
 //				// (source: Copilot from VS Code)

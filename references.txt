@@ -466,3 +466,8 @@ Accessed on June 26th, 2024.
 Pycharm's Copilot.
 Attached my Interactable.cs script.
 Accessed on June 26th, 2024.
+
+87) "Thanks. Now, modify this line of code to add an aditional condition that, if the scene is either "GameOver" or "Victory". That is, add the additional condition that "currentScene" could also be "Victory"."
+VS Code's Copilot.
+Highlighted line 33 from my LoadSceneWhenPressinEnter.cs script.
+Accessed on June 26th, 2024.
