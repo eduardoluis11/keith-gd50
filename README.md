@@ -2,8 +2,6 @@
 
 This is "Keith: Retrieving the Medal", my final project for Harvard's GD50 course. This is a 3D Unity game. 
 
-
-
 ## Author: 
 
 This game was created by Eduardo Salinas.
@@ -22,8 +20,28 @@ This is a sidequest of a full game called “Keith” that I want to make someda
 	
 Note that I made a web game for the Web50 course called “Keith”, which also takes place in the same game world as this Unity game. However, the web game was a 2D game made in Javascript, and it played liek a 2D sidescroller, and it had RPG elements, such as being able to level up. Also, enemies couldn’t either attach nor move in the web version of the game. So, this unity game is completely different from the Keith web game that I did for web 50.
 
-
 The name “Keith: Retrieving the medal” will be the name of the sidequest, which is the name of this project. 
+
+Well, to make the game, I created 4 scenes: one for the Main Menu or “Press Start” screen, another one for the gameplay itself, a third one for a Game Over Screen, and another one with a victory message once you defeat the boss.
+	
+You need to press Enter in the Press Start / Main Menu scene in order to play the game. Also, in the Main Menu scene, if you press the “Esc” key, you will be able to exit the game.
+	
+In the game, I created a single level using the Probuilds tools from Unity. I created a single arena for the game, which is where the player and the only enemy of the game will fight.
+	
+You will need to attack the enemy as fast as possible to defeat him. Otherwise, the enemy will defeat you. There’s no way to heal in the game. You start with 40 points of Health, whereas the enemy will start with 100 points of Health. You can deal 13 points of damage, while the enemy deals 4 points of damage. For the time being, this was the only way to balance the difficulty. That is, if you attack the enemy quickly enough, you will be able to defeat him and win. Otherwise, if you take too long in attacking him, the enemy will defeat you, and you’ll get a game over. 
+	
+You need to left-click to move, and right click on the enemy to attack him.
+	
+If the enemy doesn’t spot you, he will remain idle and won’t move. However, if you get close enough, the enemy will chase you.
+	
+Once you defeat the enemy, you will go to a new scene that will display a message saying “Victory!”. The only thing that you can do here is pressing Enter to go back to the Main Menu. This way, you’ll be able to replay the game or to exit the game if you go back to the Main Menu.
+	
+Similarly, if you’re defeated and get to the scene displaying a “Game Over” message, the only thing that you’ll be able to do is to press Enter to go back to the Main Menu. Once again, I did this so that you could easily replay the game or exit it by making you quickly go from the Game Over scene to the Main Menu scene.
+	
+The Health Points for both the player and the enemy are displayed onscreen as numbers. If the enemy’s HP drops to zero, you win. Meanwhile, if your HP drops to zero, you lose and you’ll get a Game Over. I put the UI Text with the HP in the lower corners of the screen so that the black text would be easy to read on the white floor of the game. If I had put the HP UI text in the upper part of the screen, I would have had to add a mask or colored-box with a light color so that the player would be able to easily read the black text on the background. Therefore, to make the game as quickly as possible, I ended up just moving the HP UI text to the lower part of the screen.
+	
+The game is relatively simple. I had no choice but to make the game this simple to prevent many bugs. I had bugs that made the camera shake too much, that made the enemy and the player fall if they collided with each other, among other bugs. Therefore, I didn’t have a choice but to make the game simple to prevent many of the bugs that I was encountering.
+
 
 ### How to play
 
@@ -33,13 +51,23 @@ You can exit the game by pressing the “Esc” key in the Title scene in the Ma
 	
 If you get a Game Over or you win the game, you can press Enter to go back to the Main Menu.
 	
-You can rotate the camera by pressing the “A” and “D” keys, and you can zoom the camera in or out by rotating the Mouse wheel. 
-
-
+You can rotate the camera by pressing the “A” and “D” keys, and you can zoom the camera in or out by rotating the Mouse wheel.
 
 ## Why I did it (TODO)
 
+I want to become a game dev, and I wish to make games that are half hack 'n' slash, half Action RPGs. That is, I want to make games like the Kingdom Hearts games. Specifically, I want to make a game like Kingdom Hearts 2, but with my own elements. Also, I want to make games with gameplay that is mainly combat, not solving puzzles. Even though I couldn’t add the RPG elements to this game, at the very least this game lets you use a sword, it has real-time combat, and it’s combat-focused.
+	
+Since I want to make games like Kingdom Hearts 2, I needed to make a 3D game. So, using Lua and Love2D just wouldn’t work. The only way that I could make a game with real-time combat with 3D graphics in a 3D world was by using Unity. Also, I wanted to make a game that seemed like a modern-day home console game. I didn’t want to make a 2D game with retro pixel-art graphics. Additionally, I want to become a game dev someday. 
 
+Well, many indie games that are available for modern-day home consoles, such as the PS5 and the Xbox Series consoles, are made in Unity. Also, most games nowadays in home consoles are made using either Unity or the Unreal Engine. There aren’t that many home console games made in Love2D. Therefore, since I wanted to make a game that seemed like the kind of game that you could buy on a modern day home console, and since I want to be a game dev, I decided that it would be better that I used the Unity Engine instead of Love2D. I really need to learn more on how to use Unity for the kinds of games that I want to make in the future, so I forced myself to make an ambitious game for this project, so that I would be forced to learn more about how to use Unity.
+
+Additionally, I’m interested in using the Unreal Engine someday, so that’s yet another reason why I chose to make a game in Unity. The Unreal Engine is even more complex and harder to use than Unity, as far as I’ve heard. Also, both the Unreal Engine and Unity are used a lot in creating 3D games. Therefore, if I want to learn how to make 3D games in the Unreal Engine, it would be easier for me to start by making 3D Unity games, rather than making yet another 2D game in Love2D. That’s yet another reason why I made this project in Unity rather than in Love2D.
+
+Another reason why I chose to make the game as a hack 'n' slash as the genre for the game is that I wanted to make a game that combined hack 'n' slash combat with some RPG elements. I love JRPGs. My favorite game of all time, Paper Mario, is a JRPG. However, I’m tired of turn-based combat, which is still used in some modern JRPGs. I want real-time combat. Additionally, I love hack 'n' slash games such as Mystic Heroes and No More Heroes. Well, it turns out that there is a series of games that combined elements from both hack 'n' slash and JRPGs: the Kingdom Hearts series. Therefore, I made the game as a hack 'n' slash to make it similar to a Kingdom Hearts game. Sure, I wanted to also add RPG elements to it. However, adding RPG elements would have made this project even longer than it already was, and I was struggling with fixing a ton of bugs. So, for the time being, I didn’t have a choice but to not include any RPG elements in the game.
+
+And speaking of scrapped features, I also ended up removing the ability of jumping. Just like in the Kingdom Hearts games, I wanted my game to have aerial combat. That is, I wanted the player to be able to jump and do combo attacks with his sword while in mid-air. However, I had a ton of bugs regarding gravity. If the enemy touched the player, the player would fall to the side, while the enemy would start flying towards the sky. Fixing these gravity-related bugs was hard, so I didn’t have any choice but to remove the ability to jump.
+
+Finally, I want to make “Keith”, a game I’ve been planning to do since two years ago. The game will be like Kingdom Hearts 2, and may have some elements from the Persona games. Therefore, I want it to be a 3D game. As a consequence, I will have to either use Unity or the Unreal Engine, since these two are the most commonly used engines for making 3D games. Therefore, I made this project a teaser for the full game, and to force me to learn working on a 3D game. This game will be a sidequest in the full game.
 
 
 ## Why I believe it to meet the complexity and distinctiveness requirement
@@ -57,13 +85,11 @@ Likewise, my game used more animations than any other previous project in this c
 Also, my project is complex since I had to make the entire level from scratch. With the only exception of the Portal project, all the walls and the floors for all the 3D Unity games in the course were already pre-installed with the game. Meanwhile, in my final project, I had to build all the walls and the floor for the combat arena present in the game using the Probuilds level editor. This makes it similar to the Portal project. Well, since the Portal project was more complex than pretty much every other project in the course, and given that I had to build levels in a similar fashion in my final project as in the Portal assignment, my game is more complex than most other previous homework assignments. 
 
 
-
-
 ## Notes
 
 ### Disclaimer: Use of LLM AIs
 
-GitHub's Copilot and ChatGPT 4.0 were used in this project.
+I used GitHub's Copilot, ChatGPT 4.0 / Omni, the free version of ChatGPT, and Bing's AI to write the code for this project, as well a for creating the references in APA format in this README file.
 
 ## References
 
@@ -155,4 +181,14 @@ GitHub's Copilot and ChatGPT 4.0 were used in this project.
 78. Final Fantasy 6's Combat UI. (2024). Retrieved from [https://image.api.playstation.com/vulcan/ap/rnd/202303/1307/6d9a1b6e7a3fb192cc5f79407264fd2218d9516575bc4ffd.jpg](https://image.api.playstation.com/vulcan/ap/rnd/202303/1307/6d9a1b6e7a3fb192cc5f79407264fd2218d9516575bc4ffd.jpg). Accessed on June 25th, 2024.
 79. VS Code's copilot. (2024). "@workspace /fix If I activate any of the snippets that say "text" or "Text" in my Unity game in Unity 2021, and then try to attach that script to a UI Text Game Object, I get the following error message: "Can't add 'Text' to Player HP UI because a 'TextMeshProUGUI' is already added to the game object! A GameObject can only contain one 'Graphic' component. ". How can I maniputlate the text from the UI Tet game object in Unity using the selected snippet from my script? The text game object is a "Text - TextMeshPro" object in my unity project." Accessed on June 25th, 2024.
 80. Pycharm's Copilot. (2024). Awesome, now, I want you to modify the selected line of code so that my UI text in my Unity game prints me the current health points of the player, as well as the max number of health points that the player has at full health. You need to concatenate tht to the side of the "Fang: " script. Where are the current health points and the max health points stored? In the CharacterStats.cs script. The current health points are stored in the "currentHealth" variable in the CharacterStats.cs script. Meanwhile, the max number of health points at full health are stored in the "maxHealth" variable in the CharacterStats.cs script. To call those HP related variables, first, the game calls the PlayerCharacterStats.cs script, which then calls the CharacterStats.cs script. But the variables themselves are in the CharacterStats.cs script. So, find a way to access the two aforementioned health point variables in the CharacterStats.cs script, insert them into my HealthUIText.cs script, and concatenate their values in the selected line of code. Highlighted Line 70 in HealthUIText.cs. Accessed on June 25th, 2024.
+
+81. Pycharm's Copilot. (2024). "Thanks! Now, I want to change the variable name of 1 variable in this script to make it more original. Which variable name would you recommend me changing so that it's less likely to produce buggy behavior in my Unity game?" Attached my PlayerMotor.cs script. Accessed on June 26th, 2024.
+82. Pycharm's Copilot. (2024). "Awesome. Now, change the name of one of the variables in this script to make it more original, but in a way that doesn't affect the rest of the files in my game." Attached my Stat.cs script. Accessed on June 26th, 2024.
+83. Pycharm's Copilot. (2024). "Change this variable's name to another one that better describes what this variable does." Attached my CharacterAnimator.cs script. Highlighted line 27 of my CharacterAnimator.cs script. Accessed on June 26th, 2024.
+84. Pycharm's Copilot. (2024). "Thanks. Now, change the name of one of the variables from this script to a more descriptive one, and make sure to select a variable that isn't used by other scripts and that won't make the game buggy if I change its name." Attached my CharacterCombat.cs script. Accessed on June 26th, 2024.
+85. Pycharm's Copilot. (2024). "Thanks. Now, do the same with this script: select a variable that isn't being used by other scripts, and change its name to a more descriptive name." Attached my Enemy.cs script. Accessed on June 26th, 2024.
+86. Pycharm's Copilot. (2024). "Look at all the variables inside this file. Well, select one, and change the name of the variable to a more descriptive one. Make sure that, if I change the variable name, that it won't make my unity game buggy." Attached my Interactable.cs script. Accessed on June 26th, 2024.
+87. VS Code's Copilot. (2024). "Thanks. Now, modify this line of code to add an additional condition that, if the scene is either 'GameOver' or 'Victory'. That is, add the additional condition that 'currentScene' could also be 'Victory'." Highlighted line 33 from my LoadSceneWhenPressingEnter.cs script. Accessed on June 26th, 2024.
+88. ChatGPT Omni (free tier). (2024). "I'm making an Unity game, and the UI text looks good on the Unity Editor. However, if I export a build for the game, the UI text will show up like this. The UI text that says 'Fang' should be on the upper left corner of the screen, whereas the 'Imanus' UI text should show up in the upper right corner of the screen. However, the UI text is at a lower position than it should be. I can see this exact mistaken position for both UI text elements if I click on the 'Play maximized' option in the 'Game' tab of my Unity 2021 Editor. The UI text elements look fine in the scene tab of the unity editor, and if I never play the game on 'play maximized', and if I never play any build for the game. So, could you tell me how to guarantee that the UI text elements will be shown at the correct position when playing a build of the game, and while playing on the 'play maximized' setting on my 'game' tab in my unity editor?" Uploaded an image showing the mistaken positions of the UI elements for the HP for both the player and the enemy. Accessed on June 26th, 2024.
+89. ChatGPT Omni (free tier). (2024). "Thanks. Now, when I play in maximized mode, and I go to the Title Screen of my Unity game (from Unity 2021), the text looks way smaller in the 'Play Maximized' mode of the Unity Editor, and in the Build version of the game than what it looks like in other screen sizes in the Unity Editor. The text looks too small. In the Unity editor, if I play using any other setting other than 'Play Maximized' in the 'Game' tab, the text looks big and good enough. It's in the 'Play maximized' mode and in the build version of the game where the text looks way too small and hard to read. How can I make the UI text to look bigger and easier to read in 'Play Maximized' mode and in Build versions of the game?" Uploaded an image showing that the UI text for the Title screen had a font size that was too small. Accessed on June 26th, 2024.
 
