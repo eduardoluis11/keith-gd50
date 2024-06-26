@@ -24,12 +24,17 @@ Source of most of this code: Brackeys, Episode 10, from https://youtu.be/xppompv
 public class Enemy : Interactable {
 
 	PlayerManager playerManager;
-	CharacterStats myStats;
+
+
+    //	CharacterStats myStats;
+
+    // I changed this variable's name
+    CharacterStats enemyCharacterStats;
 
 	void Start ()
 	{
 		playerManager = PlayerManager.instance;
-		myStats = GetComponent<CharacterStats>();
+		enemyCharacterStats = GetComponent<CharacterStats>();
 	}
 
 	public override void Interact()
@@ -38,7 +43,7 @@ public class Enemy : Interactable {
 		CharacterCombat playerCombat = playerManager.player.GetComponent<CharacterCombat>();
 		if (playerCombat != null)
 		{
-			playerCombat.Attack(myStats);
+			playerCombat.Attack(enemyCharacterStats);
 		}
 	}
 

@@ -37,13 +37,16 @@ public class PlayerManager : MonoBehaviour
     /* This gets loaded if the player loses all of their HP.
 
      If the player's HP drops to 0, I will load the Game Over Scene.
+
+     I changed the name of this function
      */
-    public void KillPlayer() {
+    //    public void KillPlayer() {
+    public void PlayerIsDefeated() {
         // Debug message to confirm that this function is being called, so that the scene could be reloaded
         // (source: VS Code from Copilot).
         Debug.Log("Reloading Scene");
 
-        // This loads the Game Over Scene
+        // This loads the Game Over Scene. I DIDN'T ADD THIS FROM THE BRACKEYS' TUTORIAL.
         SceneManager.LoadScene("GameOver");
         //        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

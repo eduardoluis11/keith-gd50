@@ -40,6 +40,7 @@ public class PlayerAnimator : CharacterAnimator
     {
         base.Start();
 
+        // I added this list using Copilot. I didn't copy and paste this from the Brackeys' tutorial.
         List<List<AnimationClip>> weaponAnimationsList = new List<List<AnimationClip>>();
         foreach (WeaponAnimations a in weaponAnimations)
         {

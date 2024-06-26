@@ -445,3 +445,24 @@ Accessed on June 26th, 2024.
 Pycharm's Copilot.
 Attached my Stat.cs script.
 Accessed on June 26th, 2024.
+
+83) "Change this variable's name to anotehr one that better describes what this variable does."
+Pycharm's Copilot.
+Attached my CharacterAnimator.cs script.
+Highlighted line 27 of my CharacterAnimator.cs script.
+Accessed on June 26th, 2024.
+
+84) "Thanks. Now, change the name of one of the variables from this script to a more descriptive one, and make sure to select a variable that isn't used by other scripts and that won't make the game buggy if I change its name."
+Pycharm's Copilot.
+Attached my CharacterCombat.cs script.
+Accessed on June 26th, 2024.
+
+85) "Thanks. Now, do the same with this script: select a variable that isn't being used by other scripts, and change its name to a more descriptive name."
+Pycharm's Copilot.
+Attached my Enemy.cs script.
+Accessed on June 26th, 2024.
+
+86) "Look at all the variables inside this file. Well, select one, and change the name of the variable to a more descriptive one. Make sure that, if I change the variable name, that it won't make my unity game buggy."
+Pycharm's Copilot.
+Attached my Interactable.cs script.
+Accessed on June 26th, 2024.

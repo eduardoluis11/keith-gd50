@@ -31,7 +31,11 @@ https://youtu.be/9tePzyL6dgc?si=i6dSdIY29xrdMJVN
 
 public class Interactable : MonoBehaviour {
 
-	public float radius = 3f;				// How close do we need to be to interact?
+    //	public float radius = 3f;				// How close do we need to be to interact?
+
+	// I changed this variable's name
+    public float interactionRadius = 3f;				// How close do we need to be to interact?
+
 	public Transform interactionTransform;	// The transform from where we interact in case you want to offset it
 
 	bool isFocus = false;	// Is this interactable currently being focused?
@@ -53,7 +57,7 @@ public class Interactable : MonoBehaviour {
 		{
 			// If we are close enough
 			float distance = Vector3.Distance(player.position, interactionTransform.position);
-			if (distance <= radius)
+			if (distance <= interactionRadius)
 			{
 				// Interact with the object
 				Interact();
@@ -85,7 +89,7 @@ public class Interactable : MonoBehaviour {
 			interactionTransform = transform;
 
 		Gizmos.color = Color.yellow;
-		Gizmos.DrawWireSphere(interactionTransform.position, radius);
+		Gizmos.DrawWireSphere(interactionTransform.position, interactionRadius);
 	}
 
 }

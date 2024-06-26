@@ -21,7 +21,11 @@ https://www.youtube.com/watch?v=FhAdkLC-mSg
 public class CharacterCombat : MonoBehaviour
 {
 
-	public float attackSpeed = 1f;
+    //	public float attackSpeed = 1f;
+
+    // I changed this variable's name
+    public float characterAttackSpeed = 1f;
+
     private float attackCooldown = 0f;
     const float combatCooldown = 5;
     float lastAttackTime;
@@ -59,7 +63,7 @@ public class CharacterCombat : MonoBehaviour
             if (OnAttack != null)
                 OnAttack();
 
-			attackCooldown = 1f / attackSpeed;
+			attackCooldown = 1f / characterAttackSpeed;
             InCombat = true;
             lastAttackTime = Time.time;
 		}

@@ -48,7 +48,8 @@ public class PlayerCharacterStats : CharacterStats {
         base.Defeated();
 
         // Kill the player
-        PlayerManager.instance.KillPlayer();
+        // PlayerManager.instance.KillPlayer();
+		PlayerManager.instance.PlayerIsDefeated();
     }
 
 
