@@ -440,3 +440,8 @@ Accessed on June 25th, 2024.
 Pycharm's Copilot.
 Attached my PlayerMotor.cs script.
 Accessed on June 26th, 2024.
+
+82) "Awesome. Now, change the name of one of the variables in this script to make it more original, but in a way that doesn't affect the rest of the files in my game."
+Pycharm's Copilot.
+Attached my Stat.cs script.
+Accessed on June 26th, 2024.

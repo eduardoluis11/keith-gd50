@@ -4939,7 +4939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58adbd7adb199d14da7f1ce61e896ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 10
+  lookRadiusForEnemy: 10
 --- !u!114 &1530288370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4968,9 +4968,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 40
   damage:
-    baseValue: 20
+    baseStatValue: 10
   armor:
-    baseValue: 0
+    baseStatValue: 0
 --- !u!114 &1530288373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6089,9 +6089,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage:
-    baseValue: 5
+    baseStatValue: 5
   armor:
-    baseValue: 0
+    baseStatValue: 0
 --- !u!114 &1882202662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6790,7 +6790,7 @@ MonoBehaviour:
   zoomSpeed: 4
   currentZoom: 1
   pitch: 2
-  maxZoom: 3
+  maxCameraZoom: 3
   minZoom: 0.3
   yawSpeed: 100
   currentYaw: 0

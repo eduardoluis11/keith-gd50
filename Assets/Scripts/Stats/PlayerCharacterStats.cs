@@ -35,13 +35,18 @@ public class PlayerCharacterStats : CharacterStats {
         
     // }
 
-    public override void Die()
+    // I changed this function's name
+    public override void Defeated()
+    //    public override void Die()
     {
 
         // DEbug message to confirm that this function is being called when the player dies (source: VS Code from Copilot).
         Debug.Log("Die method called");
 
-        base.Die();
+        //        base.Die();
+
+        base.Defeated();
+
         // Kill the player
         PlayerManager.instance.KillPlayer();
     }

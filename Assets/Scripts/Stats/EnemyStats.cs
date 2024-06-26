@@ -16,9 +16,12 @@ https://www.youtube.com/watch?v=xppompv1DBg
 
 public class EnemyStats : CharacterStats {
 
-	public override void Die()
+    // I changed this function's name
+    //    	public override void Die()
+	public override void Defeated()
 	{
-		base.Die();
+        //		base.Die();
+        base.Defeated();
 
 		// Add ragdoll effect / death animation
 

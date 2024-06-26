@@ -17,7 +17,11 @@ https://youtu.be/e8GmfoaOB4Y?si=5on5nACJJzCGD4SZ
 public class Stat {
 
 	[SerializeField]
-	private int baseValue;	// Starting value
+
+    //	private int baseValue;	// Starting value
+
+    // I changed this variable's name
+    private int baseStatValue;	// Starting value
 
 	// List of modifiers that change the baseValue
 	private List<int> modifiers = new List<int>();
@@ -25,7 +29,7 @@ public class Stat {
 	// Get the final value after applying modifiers
 	public int GetValue ()
 	{
-		int finalValue = baseValue;
+		int finalValue = baseStatValue;
 		modifiers.ForEach(x => finalValue += x);
 		return finalValue;
 	}

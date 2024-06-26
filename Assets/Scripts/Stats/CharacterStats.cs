@@ -55,11 +55,14 @@ public class CharacterStats : MonoBehaviour {
 		// If health reaches zero
 		if (currentHealth <= 0)
 		{
-			Die();
+            //			Die();
+            Defeated();
 		}
 	}
 
-	public virtual void Die ()
+    // I changed this function's name
+    //	public virtual void Die ()
+	public virtual void Defeated ()
 	{
 		// Die in some way
 		// This method is meant to be overwritten
