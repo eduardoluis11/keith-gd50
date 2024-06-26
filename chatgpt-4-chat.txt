@@ -1667,3 +1667,56 @@ To fix the issue with your UI text positioning in Unity when the game is played 
 
 By following these steps, you can ensure that your UI text elements stay in the desired positions on all screen sizes and resolutions.
 
+=========================================================================================================================================
+
+Thanks. Now, when I play in maximized mode, and I go to the Title Screen of my Unity game (from Unity 2021), the text looks way smaller in the "Play Maximized" mode of the Unity Editor, and in the Build version of the game than what it looks like in other screen sizes in the Unity Editor. The text looks too small. In the Unity editor, if I play using any other setting other than "Play Maximized" in the "Game" tab, the text looks big and good enough. It's in the "Play maximized" mode and in the build verison of the game where the text looks way too small and hard to read. How can I make the UI text to look bigger and easier to read in "Play Maximized" mode and in Build versions of the game?
+
+
+
+
+To ensure your UI text looks correctly sized in both "Play Maximized" mode and in build versions of your game, you need to consider the scaling of your UI elements. Unity's Canvas system allows for proper scaling of UI elements across different screen resolutions and aspect ratios. Here's a step-by-step guide on how to set this up:
+
+### 1. Using Canvas Scaler
+1. **Select your Canvas**:
+   - In the Hierarchy window, select the Canvas GameObject.
+
+2. **Adjust Canvas Scaler Settings**:
+   - In the Inspector window, find the Canvas Scaler component.
+   - Change the **UI Scale Mode** to **Scale with Screen Size**.
+   - Set the **Reference Resolution** to the resolution you are designing for (e.g., 1920x1080).
+   - Adjust the **Screen Match Mode** to **Match Width or Height**. This ensures that the scaling is proportionate.
+   - Set the **Match** slider to 0.5 for balanced scaling between width and height. You can adjust this based on whether you want to prioritize width or height scaling.
+
+### 2. Adjusting Font Size
+If the text still looks too small in "Play Maximized" mode or in builds:
+1. **Select your Text Component**:
+   - In the Hierarchy window, select the Text GameObject you want to adjust.
+
+2. **Set Font Size**:
+   - In the Inspector window, find the Text component.
+   - Increase the **Font Size** until it looks good in both the Scene view and Game view.
+
+### 3. Anchors and Pivot Points
+1. **Set Anchors**:
+   - In the Rect Transform component of the Text GameObject, set the anchors to the appropriate corners. For example, if you want the text to be in the top-left corner, set the anchors to the top-left corner.
+
+2. **Adjust Pivot Points**:
+   - Make sure the pivot point is correctly set so that the text stays anchored in the correct position when the resolution changes.
+
+### 4. Testing Different Resolutions
+1. **Test in Play Mode**:
+   - Enter Play Mode and switch between different resolutions in the Game view to see how your UI scales.
+   - Use the Play Maximized mode to ensure everything looks correct.
+
+2. **Build and Test**:
+   - Create a build of your game and test it on different screen resolutions and aspect ratios to ensure the UI looks good everywhere.
+
+Here are a few resources that might help you further:
+
+- [Unity Manual - Canvas Scaler](https://docs.unity3d.com/Manual/script-CanvasScaler.html)
+- [Unity UI Scaling Tutorial](https://www.youtube.com/watch?v=8W5ePO-NKcc)
+- [Unity Learn - UI Toolkit](https://learn.unity.com/project/uiautomation)
+
+By following these steps, you should be able to achieve consistent and properly scaled UI text across different resolutions and build versions of your Unity game.
+
+=============================================================================================================================
