@@ -2554,7 +2554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b014c56439b597a44abc19260f3fdcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
+  interactionRadius: 3
   interactionTransform: {fileID: 576920494}
 --- !u!1 &621372066
 GameObject:
@@ -4952,7 +4952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1b259bbee8e364fb158a4c26a1f9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3.5
+  interactionRadius: 3
   interactionTransform: {fileID: 1530288366}
 --- !u!114 &1530288372
 MonoBehaviour:
@@ -4966,9 +4966,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffde57fb93327aa488148a4020f8fef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
+  maxHealth: 100
   damage:
-    baseStatValue: 10
+    baseStatValue: 4
   armor:
     baseStatValue: 0
 --- !u!114 &1530288373
@@ -4983,7 +4983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a056bf8446c9749a0129366f1795a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 1
+  characterAttackSpeed: 1
   attackDelay: 0.6
 --- !u!114 &1530288374
 MonoBehaviour:
@@ -6087,9 +6087,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ff8def2bbbf2b4c99e460eda755f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 40
   damage:
-    baseStatValue: 5
+    baseStatValue: 13
   armor:
     baseStatValue: 0
 --- !u!114 &1882202662
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a056bf8446c9749a0129366f1795a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackSpeed: 1
+  characterAttackSpeed: 1
   attackDelay: 0.6
 --- !u!114 &1882202663
 MonoBehaviour:
