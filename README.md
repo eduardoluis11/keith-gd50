@@ -10,7 +10,7 @@ The "Keith" game series is copyright of Eduardo Salinas.
 
 ## Video with a demo of the game
 
-[![Keith: Retrieving the Medal](https://youtu.be/lBfJ1Q8iYyY)](https://youtu.be/lBfJ1Q8iYyY)
+[Keith: Retrieving the Medal](https://youtu.be/lBfJ1Q8iYyY)](https://youtu.be/lBfJ1Q8iYyY)
 
 ## What I did, and why I did it
 
