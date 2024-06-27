@@ -8,6 +8,10 @@ This game was created by Eduardo Salinas.
 
 The "Keith" game series is copyright of Eduardo Salinas.
 
+## Video with a demo of the game
+
+[![Keith: Retrieving the Medal](https://youtu.be/lBfJ1Q8iYyY)](https://youtu.be/lBfJ1Q8iYyY)
+
 ## What I did, and why I did it
 
 I made a 3D game in Unity 2021, which is a hack ’n’ slash game in which you need to defeat a boss to win the game. The game was supposed to be an Action RPG, but I wasn’t able to add the RPG elements to the game such as being able to level up due to time limitations and to prevent the game from having additional bugs. In it, you’re a swordsman called “Fang”, and you need to defeat an evil robot called “The Imanus”. 
